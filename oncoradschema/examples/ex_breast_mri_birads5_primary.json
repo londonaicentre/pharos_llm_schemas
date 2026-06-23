@@ -1,0 +1,147 @@
+{
+  "content": "Bilateral Breast MRI with intravenous contrast\n\nPatient: [redacted], NHS number [redacted], DOB [redacted]\nStudy date: [redacted]\nReferred by: [redacted], Breast Surgery, on behalf of the breast multidisciplinary team\n\nClinical details: Newly diagnosed, biopsy-proven invasive ductal carcinoma of the left breast (core biopsy: grade 3 NST, ER positive, HER2 negative). Referred for pre-operative staging MRI to assess disease extent prior to definitive surgical planning. No prior breast MRI for comparison.\n\nTechnique: Multiplanar, multisequence dynamic contrast-enhanced MRI of both breasts performed prone on a dedicated breast coil, including T2-weighted, pre- and dynamic post-contrast T1-weighted fat-saturated sequences following intravenous gadolinium, with subtraction and high-resolution delayed imaging. Diffusion-weighted imaging with ADC mapping was acquired.\n\nFindings:\n\nBackground parenchymal enhancement is mild and symmetrical. Fibroglandular tissue is of scattered fibroglandular density.\n\nLeft breast: At the 2 o'clock position, approximately 4 cm from the nipple, there is an irregular, spiculated enhancing mass measuring 32 x 28 x 25 mm. The mass shows heterogeneous internal enhancement with rapid initial uptake and washout kinetics (type 3 curve) and demonstrates restricted diffusion with low ADC values. Within and surrounding the mass there is associated clumped non-mass enhancement extending towards the nipple, and on the correlating mammogram fine pleomorphic microcalcifications are present, in keeping with an associated ductal carcinoma in situ component. The appearances are highly suspicious for the patient's known invasive carcinoma. There is no chest wall or pectoral muscle invasion. The nipple-areolar complex is not involved.\n\nRight breast: A 7 mm well-circumscribed, oval T2-hyperintense non-enhancing lesion at the 9 o'clock position has the typical appearance of a simple cyst and is of no concern.\n\nLeft axilla: There is a 16 mm morphologically abnormal level I axillary lymph node demonstrating cortical thickening, loss of the fatty hilum and avid enhancement, highly suspicious for nodal metastatic involvement. Two further smaller adjacent nodes show borderline cortical thickening.\n\nLeft supraclavicular fossa: An enlarged 12 mm short-axis enhancing node is identified, suspicious for metastatic supraclavicular nodal disease (N3c disease).\n\nInternal mammary chain: A 7 mm enhancing internal mammary node is seen in the left first intercostal space, suspicious for involvement.\n\nNo suspicious enhancing lesion in the right breast. No abnormal right axillary nodes. The limited views of the upper abdomen and visualised lung apices are unremarkable.\n\nImpression:\n1. Highly suspicious 32 mm irregular, spiculated enhancing mass in the left breast at 2 o'clock with an associated DCIS component, consistent with the known biopsy-proven invasive ductal carcinoma. BI-RADS 5.\n2. Suspicious metastatic left level I axillary, internal mammary and left supraclavicular nodal disease.\n3. Incidental benign right breast simple cyst.\n4. No chest wall invasion.\n\nRadiological staging: cT2 N3c M0 (locally advanced node-positive left breast carcinoma). Overall assessment: BI-RADS category 5 (highly suggestive of malignancy), left breast. Findings to be discussed at the breast MDT; this represents a baseline staging study with no prior for comparison.",
+  "output": {
+    "is_radiology_report": true,
+    "is_oncology_related": true,
+    "is_malignancy_identified": true,
+    "scan_metadata": {
+      "modality": "mri",
+      "contrast": "with_contrast",
+      "regions": ["breast"]
+    },
+    "scan_rationale": "treatment_planning",
+    "cancer_status": {
+      "overall_status": null,
+      "recist_response": null,
+      "progression_desc": null,
+      "disease_specific_scores": [
+        {
+          "scoring_system": "bi_rads",
+          "scoring_system_name_desc": "BI-RADS",
+          "score_or_stage": "BI-RADS 5",
+          "laterality": "left",
+          "score_desc": "Overall assessment: BI-RADS category 5 (highly suggestive of malignancy), left breast."
+        },
+        {
+          "scoring_system": "tnm",
+          "scoring_system_name_desc": "TNM (clinical)",
+          "score_or_stage": "cT2N3cM0",
+          "laterality": "left",
+          "score_desc": "Radiological staging: cT2 N3c M0 (locally advanced node-positive left breast carcinoma)."
+        }
+      ]
+    },
+    "cancer_lesions": [
+      {
+        "anatomical_site": "breast",
+        "anatomical_site_desc": "left breast, 2 o'clock position, approximately 4 cm from the nipple",
+        "lesion_status": "cancerous",
+        "change": null,
+        "laterality": "left",
+        "size": {
+          "longest_diameter_mm": 32,
+          "short_axis_mm": null,
+          "x_mm": 32,
+          "y_mm": 28,
+          "z_mm": 25,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "primary",
+        "morphology": "solid",
+        "internal_features": [],
+        "margin": "spiculated",
+        "shape": "irregular",
+        "uptake": null
+      },
+      {
+        "anatomical_site": "lymph_node_axillary",
+        "anatomical_site_desc": "left axilla, level I",
+        "lesion_status": "cancerous",
+        "change": null,
+        "laterality": "left",
+        "size": {
+          "longest_diameter_mm": null,
+          "short_axis_mm": 16,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      },
+      {
+        "anatomical_site": "lymph_node_supraclavicular",
+        "anatomical_site_desc": "left supraclavicular fossa",
+        "lesion_status": "cancerous",
+        "change": null,
+        "laterality": "left",
+        "size": {
+          "longest_diameter_mm": null,
+          "short_axis_mm": 12,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      },
+      {
+        "anatomical_site": "lymph_node_internal_mammary",
+        "anatomical_site_desc": "left internal mammary chain, first intercostal space",
+        "lesion_status": "cancerous",
+        "change": null,
+        "laterality": "left",
+        "size": {
+          "longest_diameter_mm": null,
+          "short_axis_mm": 7,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      }
+    ],
+    "non_cancer_findings": [
+      {
+        "finding": "cyst_benign_collection",
+        "finding_desc": "A 7 mm well-circumscribed, oval T2-hyperintense non-enhancing lesion at the 9 o'clock position with the typical appearance of a simple cyst and of no concern.",
+        "anatomical_site": "breast",
+        "anatomical_site_desc": "right breast, 9 o'clock position",
+        "is_cancer_lesion_related": false
+      }
+    ],
+    "report_summary": "Baseline pre-operative staging breast MRI for biopsy-proven left invasive ductal carcinoma, with no prior for comparison. A 32 mm irregular, spiculated enhancing mass at left 2 o'clock with an associated DCIS component (pleomorphic microcalcifications) corresponds to the known primary, BI-RADS 5, with no chest wall invasion. There is suspicious metastatic nodal disease involving the left level I axilla, left internal mammary chain and left supraclavicular fossa, giving radiological staging cT2 N3c M0 (locally advanced, node-positive). An incidental benign right breast simple cyst is noted."
+  }
+}

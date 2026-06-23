@@ -1,0 +1,53 @@
+{
+  "content": "Bilateral Digital Mammography with targeted Ultrasound\n\nPatient: [redacted], NHS number [redacted], DOB [redacted]\nStudy date: [redacted]\nReferred by: NHS Breast Screening Programme (routine recall)\n\nClinical details: Routine three-yearly screening mammogram via the NHS Breast Screening Programme. Asymptomatic. No personal or family history of breast cancer. No palpable abnormality. Recalled from screening for assessment of a focal density in the left breast.\n\nTechnique: Standard craniocaudal and mediolateral oblique digital mammographic views of both breasts, supplemented by spot-compression magnification views of the left breast and targeted ultrasound of the left breast at the area of mammographic concern.\n\nFindings:\n\nThe breasts are of heterogeneously dense parenchymal pattern, which can reduce the sensitivity of mammography.\n\nLeft breast: In the upper outer quadrant there is a 14 mm oval, circumscribed mass with parallel orientation. On spot-compression views the margins remain well defined with no spiculation, architectural distortion or associated suspicious microcalcification. Targeted ultrasound at this site demonstrates a 13 mm oval, well-circumscribed, gently lobulated hypoechoic solid mass, wider-than-tall, with no internal vascularity and no posterior acoustic features of concern. The imaging features are typical of a fibroadenoma. Given the patient's age this is favoured to be a probably-benign lesion rather than anything sinister, and is actively downgraded.\n\nElsewhere in the left breast there is a 9 mm anechoic, thin-walled lesion with posterior acoustic enhancement on ultrasound, in keeping with a simple cyst.\n\nRight breast: A cluster of coarse, popcorn-type macrocalcifications is noted in the lower inner quadrant, with appearances typical of an involuting fibroadenoma and of no concern. Scattered punctate calcifications are otherwise benign. No mass, no architectural distortion.\n\nAxillae: No abnormal or enlarged axillary lymph nodes on either side.\n\nSkin and nipples: Normal. No skin thickening or nipple retraction.\n\nImpression:\n1. Left upper outer quadrant 13-14 mm circumscribed solid mass with benign sonographic features, favoured to represent a fibroadenoma. Assessed as probably benign.\n2. Incidental left simple cyst, of no significance.\n3. Right breast benign coarse macrocalcifications consistent with an involuting fibroadenoma.\n4. No mammographic or sonographic evidence of malignancy.\n\nOverall assessment: BI-RADS category 3 (probably benign). Recommend short-interval follow-up ultrasound of the left breast in 6 months to confirm stability. No biopsy indicated at this stage. The patient may otherwise return to routine screening recall.",
+  "output": {
+    "is_radiology_report": true,
+    "is_oncology_related": true,
+    "is_malignancy_identified": false,
+    "scan_metadata": {
+      "modality": "mammography",
+      "contrast": "without_contrast",
+      "regions": ["breast"]
+    },
+    "scan_rationale": "diagnosis_or_screening",
+    "cancer_status": {
+      "overall_status": null,
+      "recist_response": null,
+      "progression_desc": null,
+      "disease_specific_scores": [
+        {
+          "scoring_system": "bi_rads",
+          "scoring_system_name_desc": "BI-RADS",
+          "score_or_stage": "BI-RADS 3",
+          "laterality": "bilateral",
+          "score_desc": "Overall assessment: BI-RADS category 3 (probably benign)."
+        }
+      ]
+    },
+    "cancer_lesions": [],
+    "non_cancer_findings": [
+      {
+        "finding": "cyst_benign_collection",
+        "finding_desc": "Left upper outer quadrant 13-14 mm oval, well-circumscribed, gently lobulated hypoechoic solid mass with benign sonographic features, no internal vascularity; features typical of a fibroadenoma. Assessed as probably benign and actively downgraded.",
+        "anatomical_site": "breast",
+        "anatomical_site_desc": "left breast, upper outer quadrant",
+        "is_cancer_lesion_related": false
+      },
+      {
+        "finding": "cyst_benign_collection",
+        "finding_desc": "A 9 mm anechoic, thin-walled lesion with posterior acoustic enhancement, in keeping with a simple cyst.",
+        "anatomical_site": "breast",
+        "anatomical_site_desc": "left breast",
+        "is_cancer_lesion_related": false
+      },
+      {
+        "finding": "other",
+        "finding_desc": "A cluster of coarse, popcorn-type macrocalcifications in the lower inner quadrant, typical of an involuting fibroadenoma and of no concern; scattered punctate calcifications otherwise benign.",
+        "anatomical_site": "breast",
+        "anatomical_site_desc": "right breast, lower inner quadrant",
+        "is_cancer_lesion_related": false
+      }
+    ],
+    "report_summary": "Routine NHS screening mammogram with targeted ultrasound in an asymptomatic woman with no cancer history, recalled for a left breast density. The left upper outer quadrant mass shows benign features favoured to be a fibroadenoma and is downgraded (probably benign), with an incidental left simple cyst and benign right breast involuting-fibroadenoma macrocalcifications. No evidence of malignancy. BI-RADS 3 overall, with short-interval 6-month follow-up ultrasound recommended."
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "content": "CT Chest and Upper Abdomen with contrast\n\nPatient: [redacted], MRN [redacted], DOB [redacted]\nStudy date: [redacted]\nReferring clinician: Dr [redacted], Oncology\n\nClinical details: Known left lower lobe NSCLC (adenocarcinoma), EGFR exon 19 deletion, on first-line osimertinib. Restaging at 12 weeks for response assessment. Please assess against RECIST target lesions.\n\nComparison: CT chest/abdomen/pelvis [redacted] (baseline RECIST study).\n\nTechnique: Single portal venous phase contrast-enhanced CT of the chest and upper abdomen. 1.25 mm reconstructions.\n\nFindings:\n\nTarget lesions:\n1. Left lower lobe primary mass: now measures 34 mm in longest diameter (previously 52 mm). It remains spiculated with an irregular contour and abuts but does not invade the adjacent oblique fissure. No new cavitation. Reduced in size.\n2. Subcarinal (station 7) mediastinal lymph node: now 11 mm in short axis (previously 18 mm). Reduced.\n\nSum of target lesion diameters (longest diameter of the mass plus short axis of the nodal target) is 45 mm, compared with a baseline sum of 70 mm, representing a 36% decrease.\n\nNon-target and new disease:\n3. Right hilar lymph node remains borderline at 9 mm short axis, stable, non-target.\n4. NEW 14 mm part-solid nodule in the right upper lobe, with a solid component of approximately 6 mm and surrounding ground-glass. Not present on the baseline study. Although the appearances are of Fleischner part-solid morphology, in the context of known adenocarcinoma this is considered a new metastatic deposit.\n5. NEW lytic metastasis in the T8 vertebral body measuring 17 mm, with a small sclerotic rim suggesting early treatment effect but a dominant lytic component. There is no significant cortical breach and no epidural extension.\n6. Left adrenal nodule is stable at 15 mm and remains indeterminate but favoured metastatic; unchanged.\n\nOther: Mild dependent atelectasis at both lung bases. No pericardial effusion. Visualised upper abdominal organs otherwise unremarkable. Small hiatus hernia.\n\nImpression:\n1. Treated left lower lobe NSCLC primary and subcarinal nodal target both reduced; target sum 45 mm versus baseline 70 mm, a 36% decrease.\n2. However there are NEW lesions: a part-solid right upper lobe metastatic nodule and a new lytic T8 vertebral metastasis.\n3. By RECIST 1.1 the appearance of new lesions denotes progressive disease, despite the reduction in the target lesions. The overall picture is therefore mixed, with responding target disease but new sites of metastatic spread.\n4. Stable indeterminate left adrenal nodule, favoured metastatic.\n\nRECIST 1.1 response: progressive disease (new lesions).\nRestaging: ryT2a N2 M1c.",
+  "output": {
+    "is_radiology_report": true,
+    "is_oncology_related": true,
+    "is_malignancy_identified": true,
+    "scan_metadata": {
+      "modality": "ct",
+      "contrast": "with_contrast",
+      "regions": ["chest", "abdomen"]
+    },
+    "scan_rationale": "post_diagnosis_follow_up",
+    "cancer_status": {
+      "overall_status": "mixed",
+      "recist_response": "progressive_disease",
+      "progression_desc": "Target sum 45 mm versus baseline 70 mm, a 36% decrease in the target lesions; however NEW part-solid right upper lobe metastatic nodule and new lytic T8 vertebral metastasis. By RECIST 1.1 the appearance of new lesions denotes progressive disease despite the reduction in target lesions. The overall picture is mixed.",
+      "disease_specific_scores": [
+        {
+          "scoring_system": "tnm",
+          "scoring_system_name_desc": "TNM restaging",
+          "score_or_stage": "ryT2aN2M1c",
+          "laterality": null,
+          "score_desc": "ryT2a N2 M1c"
+        }
+      ]
+    },
+    "cancer_lesions": [
+      {
+        "anatomical_site": "lung",
+        "anatomical_site_desc": "left lower lobe primary mass",
+        "lesion_status": "cancerous",
+        "change": "improving",
+        "laterality": "left",
+        "size": {
+          "longest_diameter_mm": 34,
+          "short_axis_mm": null,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": true,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "primary",
+        "morphology": "solid",
+        "internal_features": [],
+        "margin": "spiculated",
+        "shape": "irregular",
+        "uptake": null
+      },
+      {
+        "anatomical_site": "lymph_node_mediastinal",
+        "anatomical_site_desc": "subcarinal (station 7) mediastinal lymph node",
+        "lesion_status": "cancerous",
+        "change": "improving",
+        "laterality": null,
+        "size": {
+          "longest_diameter_mm": null,
+          "short_axis_mm": 11,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": true,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      },
+      {
+        "anatomical_site": "lymph_node_hilar",
+        "anatomical_site_desc": "right hilar lymph node",
+        "lesion_status": "uncertain",
+        "change": "stable",
+        "laterality": "right",
+        "size": {
+          "longest_diameter_mm": null,
+          "short_axis_mm": 9,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      },
+      {
+        "anatomical_site": "lung",
+        "anatomical_site_desc": "right upper lobe part-solid nodule",
+        "lesion_status": "cancerous",
+        "change": "new",
+        "laterality": "right",
+        "size": {
+          "longest_diameter_mm": 14,
+          "short_axis_mm": null,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": "part_solid_ground_glass",
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      },
+      {
+        "anatomical_site": "bone_spine",
+        "anatomical_site_desc": "T8 vertebral body",
+        "lesion_status": "cancerous",
+        "change": "new",
+        "laterality": null,
+        "size": {
+          "longest_diameter_mm": 17,
+          "short_axis_mm": null,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": null,
+        "internal_features": ["lytic"],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      },
+      {
+        "anatomical_site": "adrenal",
+        "anatomical_site_desc": "left adrenal nodule",
+        "lesion_status": "uncertain",
+        "change": "stable",
+        "laterality": "left",
+        "size": {
+          "longest_diameter_mm": 15,
+          "short_axis_mm": null,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": "solid",
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      }
+    ],
+    "non_cancer_findings": [
+      {
+        "finding": "volume_loss_collapse",
+        "finding_desc": "Mild dependent atelectasis at both lung bases.",
+        "anatomical_site": "lung",
+        "anatomical_site_desc": "both lung bases",
+        "is_cancer_lesion_related": false
+      },
+      {
+        "finding": "herniation",
+        "finding_desc": "Small hiatus hernia.",
+        "anatomical_site": "oesophagus",
+        "anatomical_site_desc": "hiatus",
+        "is_cancer_lesion_related": false
+      }
+    ],
+    "report_summary": "Restaging contrast CT chest/upper abdomen at 12 weeks of osimertinib for left lower lobe NSCLC adenocarcinoma. The two RECIST target lesions (left lower lobe primary 34 mm from 52 mm; subcarinal node 11 mm short axis from 18 mm) reduced, with target sum 45 mm versus baseline 70 mm (36% decrease). However there are NEW lesions: a 14 mm part-solid right upper lobe metastatic nodule and a new 17 mm lytic (with sclerotic rim) T8 vertebral metastasis. By RECIST 1.1 the new lesions denote progressive disease despite responding target disease, giving an overall mixed picture. Stable indeterminate left adrenal nodule favoured metastatic and a stable borderline right hilar node. Restaging ryT2a N2 M1c."
+  }
+}

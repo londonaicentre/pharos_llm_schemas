@@ -1,0 +1,218 @@
+{
+  "content": "CT Chest, Abdomen and Pelvis with intravenous contrast\n\nName: [redacted]    Hospital number: [redacted]    DOB: [redacted]\nReferring team: Gynaecological Oncology    Examination date: [redacted]\n\nClinical details: [redacted], raised CA-125 (1840 kU/L), pelvic mass on ultrasound, increasing abdominal distension. Suspected ovarian malignancy. Staging CT prior to MDT discussion.\n\nComparison: None available; this is the baseline staging study.\n\nTechnique: Volumetric contrast-enhanced CT of the chest, abdomen and pelvis acquired in the portal venous phase following 100 mL intravenous contrast. Multiplanar reformats reviewed.\n\nFindings:\n\nPelvis: There is a large, predominantly cystic adnexal mass arising from the right ovary, measuring 112 x 96 x 88 mm (longest diameter 112 mm), designated a target lesion. The mass contains thick enhancing internal septations and solid mural nodularity, consistent with a mixed solid and cystic morphology and a malignant primary ovarian neoplasm. Its margin is lobulated and it abuts but does not clearly invade the sigmoid colon. The left ovary is not separately identified. A 38 mm intramural uterine fibroid is noted, of benign appearance and degenerate centrally; this is not a site of malignancy.\n\nPeritoneum and omentum: There is extensive infiltrative omental disease (\"omental caking\") spanning the transverse and left-sided omentum, with the soft-tissue rind measuring up to 27 mm in thickness, infiltrating the adjacent fat. Innumerable tiny peritoneal nodular implants are seen studding the right hemidiaphragm, paracolic gutters and pelvic peritoneal reflections, in keeping with a miliary pattern of peritoneal carcinomatosis. Large volume ascites is present throughout the abdomen and pelvis, in this context representing malignant ascites.\n\nLiver and spleen: A 14 mm capsular (surface) soft-tissue deposit indents the segment IVb hepatic surface without parenchymal invasion, in keeping with a serosal/capsular metastatic implant. The hepatic parenchyma is otherwise normal. The spleen is normal.\n\nLymph nodes: A pathologically enlarged retroperitoneal (aortocaval) lymph node measures 16 mm in short axis. Borderline para-aortic nodes are also noted.\n\nKidneys and adrenals: A simple cortical cyst in the upper pole of the left kidney measures 19 mm, of uniform fluid attenuation with no enhancing component, benign (Bosniak I). No hydronephrosis. Adrenals normal.\n\nChest: A small right pleural effusion is present without a discrete pleural mass. There is a 4 mm indeterminate right lower lobe pulmonary nodule which is too small to characterise; this is kept under review and is of uncertain significance. No mediastinal lymphadenopathy.\n\nBones: No aggressive osseous lesion. Mild lumbar degenerative change only.\n\nImpression:\n1. Appearances are those of an advanced primary ovarian carcinoma: large mixed solid-cystic right adnexal mass with extensive peritoneal carcinomatosis, infiltrative omental caking and a miliary peritoneal deposit pattern.\n2. Capsular hepatic surface deposit and pathological retroperitoneal node.\n3. Malignant ascites and a small right pleural effusion.\n4. Indeterminate 4 mm right lower lobe nodule, to be monitored.\n5. Incidental benign left renal cyst and uterine fibroid.\n\nStaging: Radiological stage T3c N1 M1; corresponds to FIGO stage IVB given the pleural component.",
+  "output": {
+    "is_radiology_report": true,
+    "is_oncology_related": true,
+    "is_malignancy_identified": true,
+    "scan_metadata": {
+      "modality": "ct",
+      "contrast": "with_contrast",
+      "regions": ["chest", "abdomen", "pelvis"]
+    },
+    "scan_rationale": "diagnosis_or_screening",
+    "cancer_status": {
+      "overall_status": null,
+      "recist_response": null,
+      "progression_desc": null,
+      "disease_specific_scores": [
+        {
+          "scoring_system": "tnm",
+          "scoring_system_name_desc": "TNM",
+          "score_or_stage": "T3cN1M1",
+          "laterality": null,
+          "score_desc": "Radiological stage T3c N1 M1"
+        },
+        {
+          "scoring_system": "figo",
+          "scoring_system_name_desc": "FIGO",
+          "score_or_stage": "IVB",
+          "laterality": null,
+          "score_desc": "corresponds to FIGO stage IVB given the pleural component"
+        }
+      ]
+    },
+    "cancer_lesions": [
+      {
+        "anatomical_site": "ovary",
+        "anatomical_site_desc": "right ovary / right adnexal mass",
+        "lesion_status": "cancerous",
+        "change": "new",
+        "laterality": "right",
+        "size": {
+          "longest_diameter_mm": 112,
+          "short_axis_mm": null,
+          "x_mm": 112,
+          "y_mm": 96,
+          "z_mm": 88,
+          "volume_ml": null
+        },
+        "is_recist_target": true,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "primary",
+        "morphology": "mixed_solid_cystic",
+        "internal_features": [],
+        "margin": null,
+        "shape": "lobulated",
+        "uptake": null
+      },
+      {
+        "anatomical_site": "omentum",
+        "anatomical_site_desc": "transverse and left-sided omentum (omental caking)",
+        "lesion_status": "cancerous",
+        "change": "new",
+        "laterality": null,
+        "size": {
+          "longest_diameter_mm": 27,
+          "short_axis_mm": null,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": true,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": "solid",
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      },
+      {
+        "anatomical_site": "peritoneum",
+        "anatomical_site_desc": "right hemidiaphragm, paracolic gutters and pelvic peritoneal reflections",
+        "lesion_status": "cancerous",
+        "change": "new",
+        "laterality": null,
+        "size": null,
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": true,
+        "nature": "metastasis",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      },
+      {
+        "anatomical_site": "liver",
+        "anatomical_site_desc": "segment IVb hepatic surface (capsular/serosal deposit)",
+        "lesion_status": "cancerous",
+        "change": "new",
+        "laterality": null,
+        "size": {
+          "longest_diameter_mm": 14,
+          "short_axis_mm": null,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": "solid",
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      },
+      {
+        "anatomical_site": "lymph_node_retroperitoneal",
+        "anatomical_site_desc": "retroperitoneal (aortocaval) lymph node",
+        "lesion_status": "cancerous",
+        "change": "new",
+        "laterality": null,
+        "size": {
+          "longest_diameter_mm": null,
+          "short_axis_mm": 16,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      },
+      {
+        "anatomical_site": "lung",
+        "anatomical_site_desc": "4 mm right lower lobe pulmonary nodule",
+        "lesion_status": "uncertain",
+        "change": "new",
+        "laterality": "right",
+        "size": {
+          "longest_diameter_mm": 4,
+          "short_axis_mm": null,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "not_stated_unclear",
+        "morphology": "solid",
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      }
+    ],
+    "non_cancer_findings": [
+      {
+        "finding": "ascites",
+        "finding_desc": "Large volume ascites is present throughout the abdomen and pelvis, in this context representing malignant ascites.",
+        "anatomical_site": "peritoneum",
+        "anatomical_site_desc": "abdomen and pelvis",
+        "is_cancer_lesion_related": true
+      },
+      {
+        "finding": "effusion",
+        "finding_desc": "A small right pleural effusion is present without a discrete pleural mass.",
+        "anatomical_site": "pleura",
+        "anatomical_site_desc": "right pleural space",
+        "is_cancer_lesion_related": true
+      },
+      {
+        "finding": "cyst_benign_collection",
+        "finding_desc": "A simple cortical cyst in the upper pole of the left kidney measures 19 mm, of uniform fluid attenuation with no enhancing component, benign (Bosniak I).",
+        "anatomical_site": "kidney",
+        "anatomical_site_desc": "upper pole of the left kidney",
+        "is_cancer_lesion_related": false
+      },
+      {
+        "finding": "other",
+        "finding_desc": "A 38 mm intramural uterine fibroid is noted, of benign appearance and degenerate centrally; this is not a site of malignancy.",
+        "anatomical_site": "uterus",
+        "anatomical_site_desc": "intramural uterine fibroid",
+        "is_cancer_lesion_related": false
+      },
+      {
+        "finding": "degenerative_change",
+        "finding_desc": "Mild lumbar degenerative change only.",
+        "anatomical_site": "bone_spine",
+        "anatomical_site_desc": "lumbar spine",
+        "is_cancer_lesion_related": false
+      }
+    ],
+    "report_summary": "Baseline staging contrast CT for suspected ovarian malignancy demonstrates a large mixed solid-cystic right ovarian primary (112 mm, target lesion) with extensive peritoneal carcinomatosis, including infiltrative omental caking and a miliary pattern of innumerable peritoneal implants. There is a capsular segment IVb hepatic surface deposit and a pathological retroperitoneal node, with malignant ascites and a small right pleural effusion. Radiological stage T3c N1 M1 (FIGO IVB). A 4 mm right lower lobe nodule is indeterminate and kept under review. An incidental benign left renal cyst and a uterine fibroid were downgraded and excluded from the malignant lesion list."
+  }
+}

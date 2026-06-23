@@ -1,0 +1,115 @@
+{
+  "content": "FDG PET-CT Whole Body\n\nPatient: [redacted]   Hospital number: [redacted]   DOB: [redacted]\nStudy date: [redacted]   Referring team: Haematology\n\nAN ADDENDUM HAS BEEN APPENDED FOLLOWING MDT DISCUSSION - PLEASE SEE END OF REPORT\n\nClinical details: Stage III classical Hodgkin lymphoma, bulky supradiaphragmatic disease at diagnosis. Has completed two cycles of ABVD. Interim response assessment requested. Previous wide local excision of cutaneous melanoma (right forearm, 2019), in remission with no further treatment. No diabetes.\n\nComparison: Baseline staging FDG PET-CT [redacted].\n\nTechnique: Whole-body FDG PET-CT from skull base to mid-thigh acquired 62 minutes after administration of 320 MBq of F-18 FDG. Fasting blood glucose 5.1 mmol/L. Low-dose unenhanced CT for attenuation correction and anatomical localisation. Liver and mediastinal blood pool reference uptake recorded.\n\nFindings:\n\nNodal disease:\nRight cervical level III nodal conglomerate, previously markedly FDG-avid, has substantially regressed and now shows uptake below mediastinal blood pool. No residual measurable nodal mass. Appearances consistent with treatment response.\n\nResidual right axillary node measures 11 mm in short axis (previously 22 mm), with low-grade residual uptake approximating mediastinal blood pool. Improving.\n\nResidual anterior mediastinal nodal mass at the site of previously bulky disease has reduced from 64 mm to 31 mm in longest diameter. It demonstrates persistent uptake clearly greater than the liver, scored Deauville 4 in isolation, raising the possibility of residual active lymphoma. Recommend MDT correlation.\n\nSpleen: previously diffusely FDG-avid splenic involvement has resolved; the spleen is now of normal size with physiological uptake below liver background. Responding.\n\nOther findings:\nModerate diffuse marrow and splenic reticuloendothelial uptake in keeping with G-CSF / post-chemotherapy reactive change rather than disease. A small pericardial effusion is noted, non-specific. Mild basal atelectasis bilaterally, non-FDG-avid.\n\nImpression:\n1. Good interim metabolic response to ABVD with regression of cervical, axillary and splenic disease.\n2. Residual anterior mediastinal node with persistent uptake above liver (Deauville 4 in isolation) - residual active disease cannot be excluded on imaging alone. For MDT review.\n3. Overall appearances favour a partial metabolic response.\n\nADDENDUM START\nDiscussed at lymphoma MDT with second-read by a second nuclear medicine consultant. On careful review the residual anterior mediastinal uptake is mild, distributed in a pattern typical of post-chemotherapy thymic / reactive change, and on quantitative reassessment lies only marginally above liver background. The node is re-graded to Deauville 3 and is favoured to represent inflammatory / reactive change rather than residual lymphoma. There is therefore no PET evidence of residual active mediastinal disease. Final interpretation: good interim response, Deauville 3, no residual active lymphoma identified.\nADDENDUM END",
+  "output": {
+    "is_radiology_report": true,
+    "is_oncology_related": true,
+    "is_malignancy_identified": true,
+    "scan_metadata": {
+      "modality": "pet_ct",
+      "contrast": "without_contrast",
+      "regions": ["whole_body"]
+    },
+    "scan_rationale": "post_diagnosis_follow_up",
+    "cancer_status": {
+      "overall_status": "improving",
+      "recist_response": null,
+      "progression_desc": "Good interim metabolic response to ABVD with regression of cervical, axillary and splenic disease; per addendum re-graded to Deauville 3 with no residual active lymphoma identified.",
+      "disease_specific_scores": [
+        {
+          "scoring_system": "deauville",
+          "scoring_system_name_desc": "Deauville 5-point scale",
+          "score_or_stage": "3",
+          "laterality": null,
+          "score_desc": "Final interpretation: good interim response, Deauville 3, no residual active lymphoma identified."
+        }
+      ]
+    },
+    "cancer_lesions": [
+      {
+        "anatomical_site": "lymph_node_cervical",
+        "anatomical_site_desc": "right cervical level III nodal conglomerate",
+        "lesion_status": "cancerous",
+        "change": "improving",
+        "laterality": "right",
+        "size": null,
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "primary",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": "non_avid"
+      },
+      {
+        "anatomical_site": "lymph_node_axillary",
+        "anatomical_site_desc": "residual right axillary node",
+        "lesion_status": "cancerous",
+        "change": "improving",
+        "laterality": "right",
+        "size": {
+          "longest_diameter_mm": null,
+          "short_axis_mm": 11,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "primary",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": "equivocal"
+      },
+      {
+        "anatomical_site": "spleen",
+        "anatomical_site_desc": "diffuse splenic involvement",
+        "lesion_status": "cancerous",
+        "change": "resolved",
+        "laterality": null,
+        "size": null,
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "primary",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": "non_avid"
+      }
+    ],
+    "non_cancer_findings": [
+      {
+        "finding": "effusion",
+        "finding_desc": "A small pericardial effusion is noted, non-specific.",
+        "anatomical_site": "heart",
+        "anatomical_site_desc": "pericardium",
+        "is_cancer_lesion_related": false
+      },
+      {
+        "finding": "volume_loss_collapse",
+        "finding_desc": "Mild basal atelectasis bilaterally, non-FDG-avid.",
+        "anatomical_site": "lung",
+        "anatomical_site_desc": "bilateral lung bases",
+        "is_cancer_lesion_related": false
+      },
+      {
+        "finding": "inflammation_infection",
+        "finding_desc": "Moderate diffuse marrow and splenic reticuloendothelial uptake in keeping with G-CSF / post-chemotherapy reactive change rather than disease.",
+        "anatomical_site": "bone_marrow",
+        "anatomical_site_desc": "bone marrow and splenic reticuloendothelial system",
+        "is_cancer_lesion_related": false
+      }
+    ],
+    "report_summary": "Interim FDG PET-CT for stage III classical Hodgkin lymphoma after two cycles of ABVD shows a good metabolic response: the right cervical conglomerate has regressed below mediastinal blood pool, the right axillary node is smaller with low-grade residual uptake, and previously avid splenic involvement has resolved. The residual anterior mediastinal node was scored Deauville 4 in the body, but the addendum (post-MDT second read) re-grades it to Deauville 3, favouring post-chemotherapy reactive/inflammatory change with no residual active lymphoma; it is therefore excluded as a cancer lesion. Overall a good interim response (Deauville 3). Incidental small pericardial effusion, basal atelectasis and reactive marrow/splenic uptake noted. Prior excised cutaneous melanoma is historical and not a finding on this scan."
+  }
+}

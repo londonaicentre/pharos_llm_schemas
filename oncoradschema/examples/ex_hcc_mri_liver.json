@@ -1,0 +1,125 @@
+{
+  "content": "MRI Liver (multiphasic, with primovist)\n\nPatient: [redacted], MRN [redacted], DOB [redacted]\nReferring clinician: [redacted]\nStudy date: [redacted]\n\nClinical details: Child-Pugh A alcohol-related cirrhosis under six-monthly surveillance. Rising AFP. Equivocal nodule on recent ultrasound. Please characterise.\n\nComparison: ultrasound liver [redacted] and prior MRI liver [redacted].\n\nTechnique: Multiphasic contrast-enhanced MRI of the liver. Axial T1 in and opposed phase, T2, diffusion-weighted imaging with ADC mapping, and dynamic post-contrast T1 sequences obtained in the late arterial, portal venous and delayed phases following intravenous gadolinium.\n\nFindings:\n\nBackground: The liver is shrunken and nodular in keeping with the known cirrhosis. Splenomegaly and a small volume of perihepatic ascites are noted, consistent with portal hypertension. No biliary dilatation.\n\nObservation 1 (segment VIII): A 38 mm solid mass demonstrates non-rim arterial phase hyperenhancement with washout appearance and an enhancing capsule on the portal venous and delayed phases. The lesion has an irregular, ill-defined margin. These are diagnostic imaging features of hepatocellular carcinoma. LI-RADS 5.\n\nObservation 2 (main portal vein): Contiguous with the segment VIII mass, there is expansile soft tissue within the right and main portal vein measuring up to 19 mm in calibre, which shows arterial enhancement and restricted diffusion. Appearances are those of tumour (malignant) thrombus rather than bland clot. LI-RADS TIV (tumour in vein).\n\nObservation 3 (segment IVb): A separate 12 mm arterially hyperenhancing nodule shows no washout and no capsule. It is indeterminate and cannot be confidently characterised as benign or malignant on this study. LI-RADS 3.\n\nObservation 4 (segment VI): A 9 mm lesion shows peripheral nodular discontinuous enhancement with progressive centripetal fill-in and follows blood pool signal on all phases. This is a typical haemangioma, benign. LI-RADS 1.\n\nThere is a separate simple cyst in segment II measuring 8 mm, of uniform fluid signal with no enhancement, benign.\n\nNo suspicious lymphadenopathy. Imaged lung bases are clear.\n\nImpression:\n1. Definite hepatocellular carcinoma in segment VIII (LI-RADS 5), 38 mm, with associated malignant portal vein tumour thrombus extending into the main portal vein (LR-TIV).\n2. Indeterminate segment IVb nodule (LI-RADS 3) requiring short-interval follow-up.\n3. Benign segment VI haemangioma (LI-RADS 1) and a simple segment II cyst; no further action.\n4. Background cirrhosis with features of portal hypertension and trace ascites.",
+  "output": {
+    "is_radiology_report": true,
+    "is_oncology_related": true,
+    "is_malignancy_identified": true,
+    "scan_metadata": {
+      "modality": "mri",
+      "contrast": "triple_phase",
+      "regions": ["abdomen"]
+    },
+    "scan_rationale": "diagnosis_or_screening",
+    "cancer_status": {
+      "overall_status": null,
+      "recist_response": null,
+      "progression_desc": null,
+      "disease_specific_scores": [
+        {
+          "scoring_system": "li_rads",
+          "scoring_system_name_desc": "LI-RADS",
+          "score_or_stage": "LR-5",
+          "laterality": null,
+          "score_desc": "Segment VIII mass: diagnostic imaging features of hepatocellular carcinoma. LI-RADS 5."
+        },
+        {
+          "scoring_system": "li_rads",
+          "scoring_system_name_desc": "LI-RADS",
+          "score_or_stage": "LR-TIV",
+          "laterality": null,
+          "score_desc": "Main portal vein: tumour (malignant) thrombus. LI-RADS TIV (tumour in vein)."
+        },
+        {
+          "scoring_system": "li_rads",
+          "scoring_system_name_desc": "LI-RADS",
+          "score_or_stage": "LR-3",
+          "laterality": null,
+          "score_desc": "Segment IVb nodule: indeterminate. LI-RADS 3."
+        }
+      ]
+    },
+    "cancer_lesions": [
+      {
+        "anatomical_site": "liver",
+        "anatomical_site_desc": "segment VIII",
+        "lesion_status": "cancerous",
+        "change": null,
+        "laterality": null,
+        "size": {
+          "longest_diameter_mm": 38,
+          "short_axis_mm": null,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": true,
+        "is_miliary": false,
+        "nature": "primary",
+        "morphology": "solid",
+        "internal_features": [],
+        "margin": "indistinct_illdefined",
+        "shape": "irregular",
+        "uptake": null
+      },
+      {
+        "anatomical_site": "liver",
+        "anatomical_site_desc": "segment IVb",
+        "lesion_status": "uncertain",
+        "change": null,
+        "laterality": null,
+        "size": {
+          "longest_diameter_mm": 12,
+          "short_axis_mm": null,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "not_stated_unclear",
+        "morphology": "solid",
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null
+      }
+    ],
+    "non_cancer_findings": [
+      {
+        "finding": "thrombus",
+        "finding_desc": "Expansile soft tissue within the right and main portal vein measuring up to 19 mm in calibre, with arterial enhancement and restricted diffusion, in keeping with tumour (malignant) thrombus rather than bland clot. LI-RADS TIV (tumour in vein).",
+        "anatomical_site": "vessel_portal_vein",
+        "anatomical_site_desc": "right and main portal vein",
+        "is_cancer_lesion_related": true
+      },
+      {
+        "finding": "cyst_benign_collection",
+        "finding_desc": "A separate simple cyst in segment II measuring 8 mm, of uniform fluid signal with no enhancement, benign.",
+        "anatomical_site": "liver",
+        "anatomical_site_desc": "segment II",
+        "is_cancer_lesion_related": false
+      },
+      {
+        "finding": "ascites",
+        "finding_desc": "A small volume of perihepatic ascites, consistent with portal hypertension. Trace ascites.",
+        "anatomical_site": "peritoneum",
+        "anatomical_site_desc": "perihepatic",
+        "is_cancer_lesion_related": false
+      },
+      {
+        "finding": "other",
+        "finding_desc": "The liver is shrunken and nodular in keeping with the known cirrhosis. Splenomegaly noted, consistent with portal hypertension.",
+        "anatomical_site": "liver",
+        "anatomical_site_desc": "whole liver, background cirrhosis with portal hypertension",
+        "is_cancer_lesion_related": false
+      }
+    ],
+    "report_summary": "Multiphasic surveillance liver MRI in alcohol-related cirrhosis identifies a definite 38 mm hepatocellular carcinoma in segment VIII (LI-RADS 5) with associated malignant portal vein tumour thrombus extending into the main portal vein (LR-TIV). A 12 mm segment IVb nodule is indeterminate (LI-RADS 3). A segment VI haemangioma (LI-RADS 1) and a simple segment II cyst are benign and excluded from cancer lesions. Background cirrhosis with portal hypertension and trace ascites."
+  }
+}

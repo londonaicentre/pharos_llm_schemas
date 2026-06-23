@@ -1,0 +1,114 @@
+{
+  "content": "68Ga-PSMA PET-CT, skull base to mid-thigh\n\nPatient: [redacted]   MRN: [redacted]   DOB: [redacted]\nStudy date: [redacted]   Referring clinician: [redacted]\n\nClinical details: Prostate adenocarcinoma (Gleason 4+3=7), treated with radical prostatectomy in [redacted] followed by salvage pelvic radiotherapy. Rising PSA, now 1.8 ng/mL (previously 0.4 ng/mL). For restaging to localise site of biochemical recurrence.\n\nComparison: No prior PSMA PET-CT available. Comparison made with staging CT abdomen/pelvis [redacted].\n\nTechnique: 198 MBq of 68Ga-PSMA-11 administered intravenously. Whole-body PET acquired from skull base to mid-thigh after a 60 minute uptake interval, with low-dose non-contrast CT for attenuation correction and anatomical localisation.\n\nFindings:\n\nProstate bed: Post-surgical changes following radical prostatectomy. No focal abnormal tracer uptake within the prostatectomy bed to suggest local recurrence.\n\nLymph nodes: There is an intensely PSMA-avid left external iliac lymph node measuring 11 mm in short axis (SUVmax 9.6). Appearances are highly consistent with nodal metastatic disease. A 7 mm right common iliac node demonstrates only low-grade, equivocal tracer uptake (SUVmax 2.3) which is indeterminate and could reflect early nodal involvement or reactive change; short-interval correlation is advised. No supradiaphragmatic or retroperitoneal nodal disease.\n\nSkeleton: There is a focal sclerotic lesion in the L3 vertebral body measuring 14 mm with corresponding intense PSMA uptake (SUVmax 7.1), in keeping with a sclerotic skeletal metastasis. Mild symmetrical tracer uptake at both sacroiliac joints corresponds to subchondral sclerosis and osteophytosis on CT and is degenerative in nature, not metastatic.\n\nOther: Physiological tracer excretion is noted within both ureters; a focus of activity projected over the left mid-ureter follows the course of the ureter and corresponds to excreted tracer, not a pathological deposit. Physiological uptake within both kidneys, salivary glands and bowel is unremarkable. Lung bases are clear. No ascites.\n\nImpression:\n1. PSMA-avid left external iliac nodal metastasis and an avid sclerotic L3 vertebral metastasis, consistent with metastatic biochemical recurrence (M1 disease).\n2. Equivocal low-grade uptake in a small right common iliac node, indeterminate; suggest short-interval follow-up.\n3. No local recurrence within the prostatectomy bed.\n4. Degenerative sacroiliac uptake and physiological ureteric activity, both benign.",
+  "output": {
+    "is_radiology_report": true,
+    "is_oncology_related": true,
+    "is_malignancy_identified": true,
+    "scan_metadata": {
+      "modality": "pet_ct",
+      "contrast": "without_contrast",
+      "regions": ["whole_body"]
+    },
+    "scan_rationale": "post_diagnosis_follow_up",
+    "cancer_status": {
+      "overall_status": "new",
+      "recist_response": null,
+      "progression_desc": "PSMA-avid left external iliac nodal metastasis and an avid sclerotic L3 vertebral metastasis, consistent with metastatic biochemical recurrence (M1 disease).",
+      "disease_specific_scores": null
+    },
+    "cancer_lesions": [
+      {
+        "anatomical_site": "lymph_node_pelvic",
+        "anatomical_site_desc": "left external iliac lymph node",
+        "lesion_status": "cancerous",
+        "change": "new",
+        "laterality": "left",
+        "size": {
+          "longest_diameter_mm": null,
+          "short_axis_mm": 11,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": "avid"
+      },
+      {
+        "anatomical_site": "lymph_node_pelvic",
+        "anatomical_site_desc": "right common iliac node",
+        "lesion_status": "uncertain",
+        "change": "new",
+        "laterality": "right",
+        "size": {
+          "longest_diameter_mm": null,
+          "short_axis_mm": 7,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": "equivocal"
+      },
+      {
+        "anatomical_site": "bone_spine",
+        "anatomical_site_desc": "L3 vertebral body",
+        "lesion_status": "cancerous",
+        "change": "new",
+        "laterality": null,
+        "size": {
+          "longest_diameter_mm": 14,
+          "short_axis_mm": null,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null
+        },
+        "is_recist_target": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "morphology": null,
+        "internal_features": ["sclerotic"],
+        "margin": null,
+        "shape": null,
+        "uptake": "avid"
+      }
+    ],
+    "non_cancer_findings": [
+      {
+        "finding": "degenerative_change",
+        "finding_desc": "Mild symmetrical tracer uptake at both sacroiliac joints corresponds to subchondral sclerosis and osteophytosis on CT and is degenerative in nature, not metastatic.",
+        "anatomical_site": "bone_pelvis",
+        "anatomical_site_desc": "both sacroiliac joints",
+        "is_cancer_lesion_related": false
+      },
+      {
+        "finding": "other",
+        "finding_desc": "Physiological tracer excretion within both ureters; a focus over the left mid-ureter follows the course of the ureter and corresponds to excreted tracer, not a pathological deposit.",
+        "anatomical_site": "ureter",
+        "anatomical_site_desc": "left mid-ureter",
+        "is_cancer_lesion_related": false
+      }
+    ],
+    "report_summary": "Restaging 68Ga-PSMA PET-CT for biochemical recurrence (rising PSA) following radical prostatectomy and salvage radiotherapy. Shows an intensely PSMA-avid left external iliac nodal metastasis and an avid sclerotic L3 vertebral metastasis, consistent with new metastatic disease. A small right common iliac node shows equivocal low-grade uptake and is indeterminate, with short-interval follow-up advised. No local recurrence in the prostatectomy bed. Degenerative sacroiliac joint uptake and physiological ureteric tracer activity were both judged benign and excluded from the malignant findings."
+  }
+}
