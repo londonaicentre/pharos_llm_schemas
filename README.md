@@ -2,7 +2,7 @@
 
 For testing only
 
-#### Review guide for schemas:
+#### Review guide for schemas:
 
 (1) Does the schema capture all necessary information in the Pharos data model?
 
