@@ -1,0 +1,72 @@
+{
+  "is_radiology_report": true,
+  "is_oncology_related": true,
+  "is_malignancy_identified_on_scan": false,
+  "is_malignancy_suspected_on_scan": false,
+  "scan_metadata": {
+    "modality": "mammography",
+    "contrast": null,
+    "regions": [
+      "breast",
+      "axilla"
+    ],
+    "image_quality_desc": null
+  },
+  "scan_rationale": "follow_up",
+  "cancer_status": {
+    "overall_status": "stable",
+    "recist_response": null,
+    "progression_desc": "Right M1 - post-treatment changes, stable. No new suspicious findings. Left M1 - normal."
+  },
+  "specialty_specific_scores": [
+    {
+      "scoring_system": "acr_breast_density",
+      "scoring_system_name_desc": "ACR Density",
+      "score_or_stage": "B",
+      "laterality": "bilateral",
+      "score_desc": "The breast parenchyma is scattered fibroglandular bilaterally. ACR B."
+    },
+    {
+      "scoring_system": "rcr",
+      "scoring_system_name_desc": "RCR",
+      "score_or_stage": "M1",
+      "laterality": "right",
+      "score_desc": "Right M1 - post-treatment changes, stable. No new suspicious findings."
+    },
+    {
+      "scoring_system": "rcr",
+      "scoring_system_name_desc": "RCR",
+      "score_or_stage": "M1",
+      "laterality": "left",
+      "score_desc": "Left M1 - normal."
+    }
+  ],
+  "cancer_lesions": [],
+  "non_cancer_findings": [
+    {
+      "finding": "other",
+      "finding_desc": "Post-surgical and post-RT changes in the right UOQ in keeping with previous WLE. Surgical clips in situ.",
+      "anatomical_site": "breast",
+      "anatomical_site_desc": "right UOQ",
+      "anatomical_subsite": "upper outer quadrant",
+      "is_cancer_related": true
+    },
+    {
+      "finding": "cyst_benign_collection",
+      "finding_desc": "Seroma / fat necrosis in the right upper breast - stable cf. 2024.",
+      "anatomical_site": "breast",
+      "anatomical_site_desc": "right upper breast",
+      "anatomical_subsite": "upper breast",
+      "is_cancer_related": true
+    },
+    {
+      "finding": "fibrosis_scarring",
+      "finding_desc": "Skin thickening right UOQ - stable.",
+      "anatomical_site": "breast",
+      "anatomical_site_desc": "right UOQ",
+      "anatomical_subsite": "upper outer quadrant",
+      "is_cancer_related": true
+    }
+  ],
+  "report_summary": "Bilateral surveillance mammogram 3 years after right breast cancer treatment (WLE, SLNB, adjuvant radiotherapy and ongoing letrozole). Right breast shows stable post-surgical and post-radiotherapy changes in the upper outer quadrant, with stable seroma/fat necrosis, surgical clips and stable skin thickening; no new mass, density, suspicious calcification or new architectural distortion. Left breast normal. No suspicious axillary nodes bilaterally. ACR density B. RCR right M1, left M1. Continue annual surveillance."
+}

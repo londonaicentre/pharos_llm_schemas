@@ -3,49 +3,58 @@
   "output": {
     "is_radiology_report": true,
     "is_oncology_related": true,
-    "is_malignancy_identified": true,
+    "is_malignancy_identified_on_scan": true,
+    "is_malignancy_suspected_on_scan": false,
     "scan_metadata": {
       "modality": "pet_ct",
       "contrast": "without_contrast",
-      "regions": ["whole_body"]
+      "regions": [
+        "whole_body"
+      ],
+      "image_quality_desc": null
     },
-    "scan_rationale": "post_diagnosis_follow_up",
+    "scan_rationale": "follow_up",
     "cancer_status": {
       "overall_status": "improving",
       "recist_response": null,
-      "progression_desc": "Good interim metabolic response to ABVD with regression of cervical, axillary and splenic disease; per addendum re-graded to Deauville 3 with no residual active lymphoma identified.",
-      "disease_specific_scores": [
-        {
-          "scoring_system": "deauville",
-          "scoring_system_name_desc": "Deauville 5-point scale",
-          "score_or_stage": "3",
-          "laterality": null,
-          "score_desc": "Final interpretation: good interim response, Deauville 3, no residual active lymphoma identified."
-        }
-      ]
+      "progression_desc": "Final interpretation: good interim response, Deauville 3, no residual active lymphoma identified."
     },
+    "specialty_specific_scores": [
+      {
+        "scoring_system": "deauville",
+        "scoring_system_name_desc": "Deauville",
+        "score_or_stage": "Deauville 3",
+        "laterality": null,
+        "score_desc": "The node is re-graded to Deauville 3 and is favoured to represent inflammatory / reactive change rather than residual lymphoma."
+      }
+    ],
     "cancer_lesions": [
       {
         "anatomical_site": "lymph_node_cervical",
-        "anatomical_site_desc": "right cervical level III nodal conglomerate",
+        "anatomical_site_desc": "Right cervical level III nodal conglomerate",
+        "anatomical_subsite": "level III",
         "lesion_status": "cancerous",
-        "change": "improving",
+        "change": "resolved",
         "laterality": "right",
         "size": null,
         "is_recist_target": false,
+        "is_index_lesion": false,
         "is_infiltrative": false,
         "is_vascular_involvement": false,
         "is_miliary": false,
-        "nature": "primary",
+        "nature": "not_stated_unclear",
+        "associated_primary_cancer": "classical Hodgkin lymphoma",
         "morphology": null,
         "internal_features": [],
         "margin": null,
         "shape": null,
-        "uptake": "non_avid"
+        "uptake": "non_avid",
+        "characterisation_desc": "previously markedly FDG-avid, has substantially regressed and now shows uptake below mediastinal blood pool. No residual measurable nodal mass. Appearances consistent with treatment response."
       },
       {
         "anatomical_site": "lymph_node_axillary",
-        "anatomical_site_desc": "residual right axillary node",
+        "anatomical_site_desc": "Residual right axillary node",
+        "anatomical_subsite": null,
         "lesion_status": "cancerous",
         "change": "improving",
         "laterality": "right",
@@ -55,61 +64,80 @@
           "x_mm": null,
           "y_mm": null,
           "z_mm": null,
-          "volume_ml": null
+          "volume_ml": null,
+          "lesion_depth_mm": null
         },
         "is_recist_target": false,
+        "is_index_lesion": false,
         "is_infiltrative": false,
         "is_vascular_involvement": false,
         "is_miliary": false,
-        "nature": "primary",
+        "nature": "not_stated_unclear",
+        "associated_primary_cancer": "classical Hodgkin lymphoma",
         "morphology": null,
         "internal_features": [],
         "margin": null,
         "shape": null,
-        "uptake": "equivocal"
+        "uptake": "equivocal",
+        "characterisation_desc": "with low-grade residual uptake approximating mediastinal blood pool. Improving."
       },
       {
         "anatomical_site": "spleen",
-        "anatomical_site_desc": "diffuse splenic involvement",
+        "anatomical_site_desc": "Spleen",
+        "anatomical_subsite": null,
         "lesion_status": "cancerous",
         "change": "resolved",
-        "laterality": null,
+        "laterality": "not_applicable",
         "size": null,
         "is_recist_target": false,
+        "is_index_lesion": false,
         "is_infiltrative": false,
         "is_vascular_involvement": false,
         "is_miliary": false,
-        "nature": "primary",
+        "nature": "not_stated_unclear",
+        "associated_primary_cancer": "classical Hodgkin lymphoma",
         "morphology": null,
         "internal_features": [],
         "margin": null,
         "shape": null,
-        "uptake": "non_avid"
+        "uptake": "non_avid",
+        "characterisation_desc": "previously diffusely FDG-avid splenic involvement has resolved; the spleen is now of normal size with physiological uptake below liver background. Responding."
       }
     ],
     "non_cancer_findings": [
       {
+        "finding": "other",
+        "finding_desc": "The node is re-graded to Deauville 3 and is favoured to represent inflammatory / reactive change rather than residual lymphoma. There is therefore no PET evidence of residual active mediastinal disease.",
+        "anatomical_site": "lymph_node_mediastinal",
+        "anatomical_site_desc": "Residual anterior mediastinal nodal mass",
+        "anatomical_subsite": "anterior mediastinum",
+        "is_cancer_related": true
+      },
+      {
+        "finding": "other",
+        "finding_desc": "Moderate diffuse marrow and splenic reticuloendothelial uptake in keeping with G-CSF / post-chemotherapy reactive change rather than disease.",
+        "anatomical_site": "other",
+        "anatomical_site_desc": "marrow and spleen",
+        "anatomical_subsite": null,
+        "is_cancer_related": true
+      },
+      {
         "finding": "effusion",
         "finding_desc": "A small pericardial effusion is noted, non-specific.",
         "anatomical_site": "heart",
-        "anatomical_site_desc": "pericardium",
-        "is_cancer_lesion_related": false
+        "anatomical_site_desc": "pericardial",
+        "anatomical_subsite": null,
+        "is_cancer_related": false
       },
       {
         "finding": "volume_loss_collapse",
         "finding_desc": "Mild basal atelectasis bilaterally, non-FDG-avid.",
         "anatomical_site": "lung",
-        "anatomical_site_desc": "bilateral lung bases",
-        "is_cancer_lesion_related": false
-      },
-      {
-        "finding": "inflammation_infection",
-        "finding_desc": "Moderate diffuse marrow and splenic reticuloendothelial uptake in keeping with G-CSF / post-chemotherapy reactive change rather than disease.",
-        "anatomical_site": "bone_marrow",
-        "anatomical_site_desc": "bone marrow and splenic reticuloendothelial system",
-        "is_cancer_lesion_related": false
+        "anatomical_site_desc": "basal",
+        "anatomical_subsite": "lung bases",
+        "is_cancer_related": false
       }
     ],
-    "report_summary": "Interim FDG PET-CT for stage III classical Hodgkin lymphoma after two cycles of ABVD shows a good metabolic response: the right cervical conglomerate has regressed below mediastinal blood pool, the right axillary node is smaller with low-grade residual uptake, and previously avid splenic involvement has resolved. The residual anterior mediastinal node was scored Deauville 4 in the body, but the addendum (post-MDT second read) re-grades it to Deauville 3, favouring post-chemotherapy reactive/inflammatory change with no residual active lymphoma; it is therefore excluded as a cancer lesion. Overall a good interim response (Deauville 3). Incidental small pericardial effusion, basal atelectasis and reactive marrow/splenic uptake noted. Prior excised cutaneous melanoma is historical and not a finding on this scan."
+    "report_summary": "Interim FDG PET-CT after two cycles of ABVD for stage III classical Hodgkin lymphoma, compared with baseline staging PET-CT. Good interim metabolic response with regression of right cervical and right axillary nodal disease and resolution of splenic involvement. The residual anterior mediastinal nodal mass has reduced from 64 mm to 31 mm; initially scored Deauville 4, but following MDT discussion and second-read the addendum re-grades it to Deauville 3, favoured to be post-chemotherapy inflammatory/reactive change with no PET evidence of residual active lymphoma. Incidental small pericardial effusion, mild bibasal atelectasis, and reactive marrow/splenic uptake attributed to G-CSF/chemotherapy."
   }
 }

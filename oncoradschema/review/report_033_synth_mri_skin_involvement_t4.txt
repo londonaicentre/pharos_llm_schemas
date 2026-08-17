@@ -1,0 +1,44 @@
+MRI BREAST BILATERAL - STAGING
+Date: 17/04/2026 16:00
+Performed in: MRI DEPT - GUY'S HOSPITAL
+
+PATIENT: [Anonymised] - 66F
+Referring: Breast MDT
+
+INDICATION:
+66F presenting with right breast mass with skin changes. O/E: P5 right breast mass 5cm LOQ, skin erythema, peau d'orange change, nipple retraction. Right axilla multiple palpable nodes. ?T4 disease. For staging MRI. Biopsy-proven IDC grade 3 ER3 PR0 HER2 3+ (FISH amplified).
+
+TECHNIQUE:
+MRI both breasts with IV gadolinium. Dedicated breast coil.
+
+FINDINGS:
+BPE: Moderate.
+Fibroglandular pattern: ACR D - extremely dense.
+
+RIGHT BREAST:
+There is a large 52 x 44 x 38mm (AP x ML x CC) avidly and heterogeneously enhancing irregular mass lesion in the right lower outer quadrant. Internal necrosis/heterogeneity present.
+Direct dermal involvement: the lesion directly abuts and invades the overlying skin with frank dermal enhancement and skin nodularity (measured skin thickening 9mm). Consistent with clinical T4b disease.
+Nipple retraction with mild retroareolar enhancement - likely retraction rather than frank nipple involvement.
+Extensive associated NME extending superiorly from the mass into the right UOQ measuring a further 28mm.
+Total disease burden right breast: 52mm mass + 28mm NME superior = approximately 80mm CC extent.
+The posterior margin abuts and appears to involve the pectoral fascia. No definitive pectoral muscle invasion on these sequences but cannot be excluded.
+
+RIGHT AXILLA:
+Multiple enlarged right axillary lymph nodes. Largest level 1 node: 32 x 28mm with complete cortical replacement and extracapsular extension suspected. Level 2 nodes: 2 nodes up to 18mm. Level 3 / apical node: 12mm - indeterminate.
+
+LEFT BREAST:
+No suspicious enhancement or mass. Normal.
+
+IMC:
+No IMC lymphadenopathy identified.
+
+CONCLUSION:
+Right breast: 52mm IDC with frank dermal invasion (T4b) and extensive associated NME. Total disease extent approximately 80mm. Posterior margin involves pectoral fascia. MRI 6.
+Right axilla: bulky multilevel nodal disease with possible extracapsular extension - N2-3 clinically.
+Left breast: MRI 1.
+Advanced locoregional disease. Discuss urgently at MDT. Primary systemic therapy appropriate prior to surgical consideration.
+
+RCR: Right MRI 6, Left MRI 1
+
+Reported By: Dr D. Chambers, Consultant Radiologist GMC 6082310
+Reported On: 18/04/2026

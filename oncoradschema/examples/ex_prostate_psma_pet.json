@@ -3,94 +3,130 @@
   "output": {
     "is_radiology_report": true,
     "is_oncology_related": true,
-    "is_malignancy_identified": true,
+    "is_malignancy_identified_on_scan": true,
+    "is_malignancy_suspected_on_scan": true,
     "scan_metadata": {
       "modality": "pet_ct",
       "contrast": "without_contrast",
-      "regions": ["whole_body"]
+      "regions": [
+        "whole_body"
+      ],
+      "image_quality_desc": null
     },
-    "scan_rationale": "post_diagnosis_follow_up",
+    "scan_rationale": "follow_up",
     "cancer_status": {
-      "overall_status": "new",
+      "overall_status": null,
       "recist_response": null,
-      "progression_desc": "PSMA-avid left external iliac nodal metastasis and an avid sclerotic L3 vertebral metastasis, consistent with metastatic biochemical recurrence (M1 disease).",
-      "disease_specific_scores": null
+      "progression_desc": null
     },
+    "specialty_specific_scores": [
+      {
+        "scoring_system": "tnm",
+        "scoring_system_name_desc": null,
+        "score_or_stage": "M1",
+        "laterality": null,
+        "score_desc": "consistent with metastatic biochemical recurrence (M1 disease)"
+      },
+      {
+        "scoring_system": "gleason",
+        "scoring_system_name_desc": "Gleason",
+        "score_or_stage": "4+3=7",
+        "laterality": null,
+        "score_desc": "Prostate adenocarcinoma (Gleason 4+3=7)"
+      }
+    ],
     "cancer_lesions": [
       {
         "anatomical_site": "lymph_node_pelvic",
         "anatomical_site_desc": "left external iliac lymph node",
+        "anatomical_subsite": "external iliac",
         "lesion_status": "cancerous",
-        "change": "new",
+        "change": null,
         "laterality": "left",
         "size": {
           "longest_diameter_mm": null,
-          "short_axis_mm": 11,
+          "short_axis_mm": 11.0,
           "x_mm": null,
           "y_mm": null,
           "z_mm": null,
-          "volume_ml": null
+          "volume_ml": null,
+          "lesion_depth_mm": null
         },
         "is_recist_target": false,
+        "is_index_lesion": false,
         "is_infiltrative": false,
         "is_vascular_involvement": false,
         "is_miliary": false,
         "nature": "metastasis",
+        "associated_primary_cancer": "prostate adenocarcinoma",
         "morphology": null,
         "internal_features": [],
         "margin": null,
         "shape": null,
-        "uptake": "avid"
+        "uptake": "avid",
+        "characterisation_desc": "intensely PSMA-avid left external iliac lymph node (SUVmax 9.6). Appearances are highly consistent with nodal metastatic disease."
       },
       {
         "anatomical_site": "lymph_node_pelvic",
         "anatomical_site_desc": "right common iliac node",
+        "anatomical_subsite": "common iliac",
         "lesion_status": "uncertain",
-        "change": "new",
+        "change": null,
         "laterality": "right",
         "size": {
           "longest_diameter_mm": null,
-          "short_axis_mm": 7,
+          "short_axis_mm": 7.0,
           "x_mm": null,
           "y_mm": null,
           "z_mm": null,
-          "volume_ml": null
+          "volume_ml": null,
+          "lesion_depth_mm": null
         },
         "is_recist_target": false,
+        "is_index_lesion": false,
         "is_infiltrative": false,
         "is_vascular_involvement": false,
         "is_miliary": false,
-        "nature": "metastasis",
+        "nature": "not_stated_unclear",
+        "associated_primary_cancer": "prostate adenocarcinoma",
         "morphology": null,
         "internal_features": [],
         "margin": null,
         "shape": null,
-        "uptake": "equivocal"
+        "uptake": "equivocal",
+        "characterisation_desc": "demonstrates only low-grade, equivocal tracer uptake (SUVmax 2.3) which is indeterminate and could reflect early nodal involvement or reactive change; short-interval correlation is advised"
       },
       {
         "anatomical_site": "bone_spine",
         "anatomical_site_desc": "L3 vertebral body",
+        "anatomical_subsite": "L3 vertebral body",
         "lesion_status": "cancerous",
-        "change": "new",
-        "laterality": null,
+        "change": null,
+        "laterality": "not_applicable",
         "size": {
-          "longest_diameter_mm": 14,
+          "longest_diameter_mm": 14.0,
           "short_axis_mm": null,
           "x_mm": null,
           "y_mm": null,
           "z_mm": null,
-          "volume_ml": null
+          "volume_ml": null,
+          "lesion_depth_mm": null
         },
         "is_recist_target": false,
+        "is_index_lesion": false,
         "is_infiltrative": false,
         "is_vascular_involvement": false,
         "is_miliary": false,
         "nature": "metastasis",
+        "associated_primary_cancer": "prostate adenocarcinoma",
         "morphology": null,
-        "internal_features": ["sclerotic"],
+        "internal_features": [
+          "sclerotic"
+        ],
         "margin": null,
         "shape": null,
-        "uptake": "avid"
+        "uptake": "avid",
+        "characterisation_desc": "focal sclerotic lesion with corresponding intense PSMA uptake (SUVmax 7.1), in keeping with a sclerotic skeletal metastasis"
       }
     ],
     "non_cancer_findings": [
@@ -99,16 +135,18 @@
         "finding_desc": "Mild symmetrical tracer uptake at both sacroiliac joints corresponds to subchondral sclerosis and osteophytosis on CT and is degenerative in nature, not metastatic.",
         "anatomical_site": "bone_pelvis",
         "anatomical_site_desc": "both sacroiliac joints",
-        "is_cancer_lesion_related": false
+        "anatomical_subsite": "sacroiliac joints",
+        "is_cancer_related": false
       },
       {
         "finding": "other",
-        "finding_desc": "Physiological tracer excretion within both ureters; a focus over the left mid-ureter follows the course of the ureter and corresponds to excreted tracer, not a pathological deposit.",
-        "anatomical_site": "ureter",
-        "anatomical_site_desc": "left mid-ureter",
-        "is_cancer_lesion_related": false
+        "finding_desc": "Post-surgical changes following radical prostatectomy. No focal abnormal tracer uptake within the prostatectomy bed to suggest local recurrence.",
+        "anatomical_site": "prostate",
+        "anatomical_site_desc": "prostate bed",
+        "anatomical_subsite": "prostatectomy bed",
+        "is_cancer_related": true
       }
     ],
-    "report_summary": "Restaging 68Ga-PSMA PET-CT for biochemical recurrence (rising PSA) following radical prostatectomy and salvage radiotherapy. Shows an intensely PSMA-avid left external iliac nodal metastasis and an avid sclerotic L3 vertebral metastasis, consistent with new metastatic disease. A small right common iliac node shows equivocal low-grade uptake and is indeterminate, with short-interval follow-up advised. No local recurrence in the prostatectomy bed. Degenerative sacroiliac joint uptake and physiological ureteric tracer activity were both judged benign and excluded from the malignant findings."
+    "report_summary": "68Ga-PSMA PET-CT from skull base to mid-thigh for restaging of biochemically recurrent prostate adenocarcinoma after radical prostatectomy and salvage pelvic radiotherapy. Demonstrates a PSMA-avid 11 mm left external iliac nodal metastasis and an avid 14 mm sclerotic L3 vertebral metastasis, consistent with metastatic biochemical recurrence (M1 disease). A 7 mm right common iliac node shows equivocal low-grade uptake of indeterminate significance, with short-interval follow-up suggested. No local recurrence in the prostatectomy bed. Sacroiliac uptake is degenerative and ureteric activity physiological."
   }
 }

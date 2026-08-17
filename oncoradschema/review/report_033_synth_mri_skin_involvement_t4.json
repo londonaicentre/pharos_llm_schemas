@@ -1,0 +1,249 @@
+{
+  "is_radiology_report": true,
+  "is_oncology_related": true,
+  "is_malignancy_identified_on_scan": true,
+  "is_malignancy_suspected_on_scan": true,
+  "scan_metadata": {
+    "modality": "mri",
+    "contrast": "with_contrast",
+    "regions": [
+      "breast",
+      "axilla"
+    ],
+    "image_quality_desc": null
+  },
+  "scan_rationale": "diagnostic_pre_treatment",
+  "cancer_status": null,
+  "specialty_specific_scores": [
+    {
+      "scoring_system": "acr_breast_density",
+      "scoring_system_name_desc": "Fibroglandular pattern",
+      "score_or_stage": "D",
+      "laterality": "bilateral",
+      "score_desc": "Fibroglandular pattern: ACR D - extremely dense."
+    },
+    {
+      "scoring_system": "rcr",
+      "scoring_system_name_desc": "RCR",
+      "score_or_stage": "MRI 6",
+      "laterality": "right",
+      "score_desc": "RCR: Right MRI 6, Left MRI 1"
+    },
+    {
+      "scoring_system": "rcr",
+      "scoring_system_name_desc": "RCR",
+      "score_or_stage": "MRI 1",
+      "laterality": "left",
+      "score_desc": "RCR: Right MRI 6, Left MRI 1"
+    },
+    {
+      "scoring_system": "tnm",
+      "scoring_system_name_desc": null,
+      "score_or_stage": "T4b",
+      "laterality": "right",
+      "score_desc": "52mm IDC with frank dermal invasion (T4b) and extensive associated NME."
+    },
+    {
+      "scoring_system": "tnm",
+      "scoring_system_name_desc": null,
+      "score_or_stage": "N2-3",
+      "laterality": "right",
+      "score_desc": "Right axilla: bulky multilevel nodal disease with possible extracapsular extension - N2-3 clinically."
+    }
+  ],
+  "cancer_lesions": [
+    {
+      "anatomical_site": "breast",
+      "anatomical_site_desc": "right lower outer quadrant",
+      "anatomical_subsite": "lower outer quadrant",
+      "lesion_status": "cancerous",
+      "change": null,
+      "laterality": "right",
+      "size": {
+        "longest_diameter_mm": 52.0,
+        "short_axis_mm": null,
+        "x_mm": 52.0,
+        "y_mm": 44.0,
+        "z_mm": 38.0,
+        "volume_ml": null,
+        "lesion_depth_mm": null
+      },
+      "is_recist_target": false,
+      "is_index_lesion": true,
+      "is_infiltrative": true,
+      "is_vascular_involvement": false,
+      "is_miliary": false,
+      "nature": "primary",
+      "associated_primary_cancer": "breast",
+      "morphology": "solid",
+      "internal_features": [
+        "necrotic"
+      ],
+      "margin": null,
+      "shape": "irregular",
+      "uptake": null,
+      "characterisation_desc": "large avidly and heterogeneously enhancing irregular mass lesion. Internal necrosis/heterogeneity present. Direct dermal involvement: the lesion directly abuts and invades the overlying skin with frank dermal enhancement and skin nodularity (measured skin thickening 9mm). The posterior margin abuts and appears to involve the pectoral fascia. No definitive pectoral muscle invasion on these sequences but cannot be excluded."
+    },
+    {
+      "anatomical_site": "breast",
+      "anatomical_site_desc": "right UOQ",
+      "anatomical_subsite": "upper outer quadrant, extending superiorly from the mass",
+      "lesion_status": "cancerous",
+      "change": null,
+      "laterality": "right",
+      "size": {
+        "longest_diameter_mm": 28.0,
+        "short_axis_mm": null,
+        "x_mm": null,
+        "y_mm": null,
+        "z_mm": null,
+        "volume_ml": null,
+        "lesion_depth_mm": null
+      },
+      "is_recist_target": false,
+      "is_index_lesion": false,
+      "is_infiltrative": false,
+      "is_vascular_involvement": false,
+      "is_miliary": false,
+      "nature": "primary",
+      "associated_primary_cancer": "breast",
+      "morphology": "non_mass_enhancement",
+      "internal_features": [],
+      "margin": null,
+      "shape": null,
+      "uptake": null,
+      "characterisation_desc": "Extensive associated NME extending superiorly from the mass into the right UOQ"
+    },
+    {
+      "anatomical_site": "lymph_node_axillary",
+      "anatomical_site_desc": "right axillary lymph nodes",
+      "anatomical_subsite": "level 1",
+      "lesion_status": "cancerous",
+      "change": null,
+      "laterality": "right",
+      "size": {
+        "longest_diameter_mm": 32.0,
+        "short_axis_mm": null,
+        "x_mm": 32.0,
+        "y_mm": 28.0,
+        "z_mm": null,
+        "volume_ml": null,
+        "lesion_depth_mm": null
+      },
+      "is_recist_target": false,
+      "is_index_lesion": false,
+      "is_infiltrative": false,
+      "is_vascular_involvement": false,
+      "is_miliary": false,
+      "nature": "metastasis",
+      "associated_primary_cancer": "breast",
+      "morphology": null,
+      "internal_features": [],
+      "margin": null,
+      "shape": null,
+      "uptake": null,
+      "characterisation_desc": "Largest level 1 node: complete cortical replacement and extracapsular extension suspected"
+    },
+    {
+      "anatomical_site": "lymph_node_axillary",
+      "anatomical_site_desc": "right axillary lymph nodes",
+      "anatomical_subsite": "level 2",
+      "lesion_status": "cancerous",
+      "change": null,
+      "laterality": "right",
+      "size": {
+        "longest_diameter_mm": 18.0,
+        "short_axis_mm": null,
+        "x_mm": null,
+        "y_mm": null,
+        "z_mm": null,
+        "volume_ml": null,
+        "lesion_depth_mm": null
+      },
+      "is_recist_target": false,
+      "is_index_lesion": false,
+      "is_infiltrative": false,
+      "is_vascular_involvement": false,
+      "is_miliary": false,
+      "nature": "metastasis",
+      "associated_primary_cancer": "breast",
+      "morphology": null,
+      "internal_features": [],
+      "margin": null,
+      "shape": null,
+      "uptake": null,
+      "characterisation_desc": "Level 2 nodes: 2 nodes up to 18mm"
+    },
+    {
+      "anatomical_site": "lymph_node_axillary",
+      "anatomical_site_desc": "right axillary lymph nodes",
+      "anatomical_subsite": "level 2",
+      "lesion_status": "cancerous",
+      "change": null,
+      "laterality": "right",
+      "size": {
+        "longest_diameter_mm": 18.0,
+        "short_axis_mm": null,
+        "x_mm": null,
+        "y_mm": null,
+        "z_mm": null,
+        "volume_ml": null,
+        "lesion_depth_mm": null
+      },
+      "is_recist_target": false,
+      "is_index_lesion": false,
+      "is_infiltrative": false,
+      "is_vascular_involvement": false,
+      "is_miliary": false,
+      "nature": "metastasis",
+      "associated_primary_cancer": "breast",
+      "morphology": null,
+      "internal_features": [],
+      "margin": null,
+      "shape": null,
+      "uptake": null,
+      "characterisation_desc": "Level 2 nodes: 2 nodes up to 18mm"
+    },
+    {
+      "anatomical_site": "lymph_node_axillary",
+      "anatomical_site_desc": "right axillary lymph nodes",
+      "anatomical_subsite": "level 3 / apical",
+      "lesion_status": "uncertain",
+      "change": null,
+      "laterality": "right",
+      "size": {
+        "longest_diameter_mm": 12.0,
+        "short_axis_mm": null,
+        "x_mm": null,
+        "y_mm": null,
+        "z_mm": null,
+        "volume_ml": null,
+        "lesion_depth_mm": null
+      },
+      "is_recist_target": false,
+      "is_index_lesion": false,
+      "is_infiltrative": false,
+      "is_vascular_involvement": false,
+      "is_miliary": false,
+      "nature": "not_stated_unclear",
+      "associated_primary_cancer": "breast",
+      "morphology": null,
+      "internal_features": [],
+      "margin": null,
+      "shape": null,
+      "uptake": null,
+      "characterisation_desc": "Level 3 / apical node: indeterminate"
+    }
+  ],
+  "non_cancer_findings": [
+    {
+      "finding": "other",
+      "finding_desc": "Nipple retraction with mild retroareolar enhancement - likely retraction rather than frank nipple involvement.",
+      "anatomical_site": "breast",
+      "anatomical_site_desc": "nipple / retroareolar right breast",
+      "anatomical_subsite": "nipple-areolar complex",
+      "is_cancer_related": true
+    }
+  ],
+  "report_summary": "Bilateral staging breast MRI with IV gadolinium in a 66-year-old with biopsy-proven right breast invasive ductal carcinoma. Right breast shows a 52 x 44 x 38mm irregular avidly enhancing necrotic mass in the lower outer quadrant with frank dermal invasion (T4b, 9mm skin thickening) and extensive associated non-mass enhancement extending a further 28mm superiorly, giving approximately 80mm total disease extent; the posterior margin involves the pectoral fascia with pectoral muscle invasion not definitively excluded. Bulky multilevel right axillary nodal disease with a 32 x 28mm level 1 node showing complete cortical replacement and suspected extracapsular extension, level 2 nodes to 18mm and an indeterminate 12mm level 3 apical node (N2-3 clinically). Left breast normal and no internal mammary chain lymphadenopathy. Right MRI 6, left MRI 1. Advanced locoregional disease for urgent MDT discussion with primary systemic therapy recommended prior to surgery."
+}

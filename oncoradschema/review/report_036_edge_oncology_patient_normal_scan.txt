@@ -1,0 +1,40 @@
+MRI BREAST BILATERAL - ANNUAL SURVEILLANCE
+Date: 14/05/2026 10:30
+Performed in: MRI DEPT - THE ROYAL MARSDEN NHS FOUNDATION TRUST
+
+PATIENT: [Anonymised] - 44F
+Referring: Clinical Genetics / High-Risk Screening Programme
+
+INDICATION:
+44F BRCA2 pathogenic variant carrier. Strong FHx (mother and maternal aunt bilateral breast cancer). No personal history of breast cancer. Annual MRI surveillance as per NICE guidance for high-risk women under 50. Previous annual MRI 2025 - normal. Asymptomatic.
+
+TECHNIQUE:
+MRI both breasts with IV gadolinium. High-risk surveillance protocol.
+
+FINDINGS:
+BPE: Mild background parenchymal enhancement.
+Fibroglandular pattern: ACR C heterogenously dense.
+
+RIGHT BREAST:
+No suspicious mass, NME, or focal enhancement. No architectural distortion. Normal appearances.
+
+LEFT BREAST:
+No suspicious mass, NME, or focal enhancement. No architectural distortion. Normal appearances.
+
+BILATERAL AXILLAE:
+Normal morphology lymph nodes bilaterally. No pathological nodes.
+
+BILATERAL IMC:
+No IMC lymphadenopathy.
+
+No extramammary findings of significance on limited FOV.
+
+CONCLUSION:
+Normal bilateral breast MRI. No evidence of malignancy.
+Right MRI 1. Left MRI 1.
+Continue annual MRI surveillance as per NICE high-risk protocol. Next scan due 2027.
+
+RCR: Right MRI 1, Left MRI 1
+
+Reported By: Dr A. Foster, Consultant Radiologist GMC 5720034
+Reported On: 14/05/2026

@@ -2,7 +2,7 @@
 
 For testing only
 
-#### Review guide for schemas:
+#### Review guide for schemas:
 
 (1) Does the schema capture all necessary information in the Pharos data model?
 
@@ -17,9 +17,8 @@ For testing only
 
 #### How to test in Claude / ChatGPT (web)
 
-1. `prompt_main.txt` contains the full prompt, including the schema. Paste it as the system prompt (e.g. in Claude, a Project's custom instructions)
+1. `prompt_main.txt` contains the full prompt, including the schema. Paste it as the system prompt (e.g. in Claude, a Project's custom instructions). `prompt_datagen.txt` is what is used to generate training data, and also includes a canonical example (i.e. one-shot).
 2. In the next message, paste a radiology report. Use this step to test different cases.
 3. The model should return JSON in `<output></output>` tags.
 
 Only one report per chat - start a fresh chat between reports. Use the strongest available model.
-
