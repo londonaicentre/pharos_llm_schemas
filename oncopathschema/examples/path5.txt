@@ -1,0 +1,46 @@
+Nature Of Specimen: Left Breast Core Biopsy
+NATURE OF SPECIMEN: Left breast core biopsy
+CLINICAL DETAILS
+  Asymmetrically dense left breast: M3, U3.
+MACROSCOPICAL DESCRIPTION
+  Outside material received from and to bereturned to:
+  Department of Histopathology
+ 
+  Date of biopsy:  Nature of specimen: left breast core biopsy
+  Referring consultant: Dr , Histopathology
+  Material received:
+  1 x block, 2 x slides
+  KCH histology ref:     15:30  NE
+HISTOLOGY
+  As reported by my Haematopathology specialist colleagues  and at , the specimen consists of two cores of densely fibrous breast
+  tissue showing infiltration by predominantly small lymphocytes with a vaguely
+  nodular growth pattern. Some lymphocytes show plasmacytoid differentiation and
+  there are admixed mature plasma cells plus a few eosinophils. Larger blasts
+  are s
+een admixed, but also focally forming aggregates. There are residual
+  ductal structures, but no lympho-epithelial lesions are seen.
+  The combined immunohistochemistry results obtained at and ,
+  indicate that thelymphocytes are positive for CD20, CD79a and BCL2 but are
+  negative for CD5, CD10 and cyclin D1. There is patchy expression of CD23 and a
+  proportion of cells, mainly among the larger ones, express IRF4/MUM1, BCL6 and
+  CD30. A few of the largerblasts are also CD10 positive and have an underlying
+  FDC meshwork; these are therefore interpreted as overrun follicles rather than
+  areas of transformation although the MUM1 expression is unusual. CD138 is also
+  expressed in a few areas of greatest confluence of larger cells and these
+  cells can be seen slightly more easily in the H&E stains performed at St
+  Thomas' to be part of the plasmacytoid/plasma cell component of the tumour.
+  Unfortunately, attempted kappa and lambda immunohistochemistry wa
+s
+  uninformative. The proliferative fraction varies but is generally low,
+  approximately 20%.
+  The features are those of extranodal marginal zone lymphoma and there is
+  nothing at this site to indicate high grade progression/transformation.
+DIAGNOSIS
+  Left breast (core biopsy): Extranodal marginal zone B cell lymphoma, presumed
+                              to be of MALT type.
+                              CD20+, CD79a+, CD138-/+, BCL2+, BCL6-/+,
+            IRF4/MUM1-/+.
+   T04000, MP11490, M96993.
+   Reported by Dr . 17.12.10.
+  T04000, M96993
+   17/12/10   Authorised by:   

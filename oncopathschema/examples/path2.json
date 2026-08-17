@@ -1,0 +1,130 @@
+{
+  "is_pathology_report": true,
+  "is_oncology_related": true,
+  "is_malignancy_identified_on_specimen": true,
+  "clinical_indication": "Anterior resection and loop ileostomy for recto-sigmoid junction tumour. A left nephrectomy was performed at the same time for unrelated benign renal disease.",
+  "specimens": [
+    {
+      "anatomical_site": "colon",
+      "anatomical_site_name_desc": "Recto-sigmoid resection",
+      "anatomical_subsite": "recto-sigmoid junction",
+      "laterality": "not_applicable",
+      "procedure_desc": "Anterior resection (sigmoid colectomy)",
+      "nodes_examined": 14,
+      "nodes_positive": 8,
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "cancerous",
+          "finding_summary": "Moderately differentiated adenocarcinoma of the recto-sigmoid colon invading through the bowel wall into the mesocolon, with a separate tumour nodule at the circumferential resection margin, extramural vascular invasion, perineural invasion, and multiple mesocolic tumour deposits.",
+          "features": [
+            "lymphovascular_invasion",
+            "perineural_invasion"
+          ],
+          "morphology": "adenocarcinoma",
+          "invasion_status": "invasive",
+          "tumour_nature": "primary",
+          "differentiation": "moderate",
+          "dimensions_desc": "40x30x35mm",
+          "biomarkers": [],
+          "scores": [
+            {
+              "score_name": "tnm_pathological",
+              "score_name_desc": null,
+              "score_value": "pT3 pN2 pM0"
+            },
+            {
+              "score_name": "dukes",
+              "score_name_desc": null,
+              "score_value": "C1 (lymph nodes positive but highest node spared)"
+            }
+          ]
+        },
+        {
+          "is_lymph_node": false,
+          "finding_summary": "Additional large tumour deposit within the mesocolon, close to or abutting the circumferential resection margin, separate from the primary tumour mass.",
+          "finding_status": "cancerous",
+          "features": [],
+          "morphology": "adenocarcinoma",
+          "invasion_status": "invasive",
+          "tumour_nature": "primary",
+          "differentiation": null,
+          "dimensions_desc": "40x35x35mm",
+          "biomarkers": [],
+          "scores": []
+        },
+        {
+          "is_lymph_node": true,
+          "finding_status": "cancerous",
+          "finding_summary": "Regional mesocolic lymph nodes, 8 of 14 examined involved by metastatic adenocarcinoma; the highest (apical) node was negative.",
+          "features": [],
+          "morphology": "adenocarcinoma",
+          "invasion_status": "invasive",
+          "tumour_nature": "metastasis",
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": []
+        }
+      ],
+      "general_features": [],
+      "general_features_summary": "A small lymphoid aggregate of monomorphic lymphocytes was seen within the mesentery, comprising a mixture of B- and T-cells.",
+      "margins": [
+        {
+          "margin_status": "clear",
+          "distance_mm": null,
+          "margin_desc": "Longitudinal: clear"
+        },
+        {
+          "margin_status": "involved",
+          "distance_mm": null,
+          "margin_desc": "Circumferential: positive (A6); tumour present macroscopically at the posterior circumferential resection margin (R2)"
+        }
+      ]
+    },
+    {
+      "anatomical_site": "colon",
+      "anatomical_site_name_desc": "Proximal donut",
+      "anatomical_subsite": "proximal resection margin",
+      "laterality": "not_applicable",
+      "procedure_desc": "Sutured donut (anastomotic ring)",
+      "nodes_examined": null,
+      "nodes_positive": null,
+      "findings": [],
+      "general_features": [
+        "normal_unremarkable"
+      ],
+      "general_features_summary": "Large bowel mucosa with no dysplasia or malignancy.",
+      "margins": []
+    },
+    {
+      "anatomical_site": "colon",
+      "anatomical_site_name_desc": "Distal donut",
+      "anatomical_subsite": "distal resection margin",
+      "laterality": "not_applicable",
+      "procedure_desc": "Donut (anastomotic ring)",
+      "nodes_examined": null,
+      "nodes_positive": null,
+      "findings": [],
+      "general_features": [
+        "normal_unremarkable"
+      ],
+      "general_features_summary": "Large bowel mucosa with no dysplasia or malignancy.",
+      "margins": []
+    },
+    {
+      "anatomical_site": "peritoneum",
+      "anatomical_site_name_desc": "Peritoneal nodule",
+      "anatomical_subsite": null,
+      "laterality": "not_applicable",
+      "procedure_desc": null,
+      "nodes_examined": null,
+      "nodes_positive": null,
+      "findings": [],
+      "general_features": [],
+      "general_features_summary": "Well-circumscribed fibroadipose nodule containing a benign cyst; no dysplasia or malignancy.",
+      "margins": []
+    }
+  ],
+  "report_summary": "Recto-sigmoid resection shows a moderately differentiated adenocarcinoma invading through the bowel wall into the mesocolon, with a separate tumour deposit macroscopically and microscopically involving the circumferential resection margin (R2). Extramural vascular invasion and perineural invasion are present, with multiple additional mesocolic tumour deposits. 8 of 14 lymph nodes are involved, with the highest node negative. Staging: pT3 pN2 pM0, Dukes C1. Longitudinal margin clear; circumferential margin involved. Proximal and distal donuts show normal bowel mucosa with no dysplasia or malignancy. The peritoneal nodule is a benign cyst with no dysplasia or malignancy."
+}

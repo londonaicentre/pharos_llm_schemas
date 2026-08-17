@@ -1,0 +1,58 @@
+{
+  "is_pathology_report": true,
+  "is_oncology_related": true,
+  "is_malignancy_identified_on_specimen": true,
+  "clinical_indication": null,
+  "specimens": [
+    {
+      "anatomical_site": "kidney",
+      "anatomical_site_name_desc": "Left kidney radical nephrectomy",
+      "anatomical_subsite": null,
+      "laterality": "left",
+      "procedure_desc": "radical nephrectomy",
+      "nodes_examined": null,
+      "nodes_positive": null,
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "cancerous",
+          "finding_summary": "Clear cell renal cell carcinoma, 85mm in diameter, WHO/ISUP nuclear grade 2, without sarcomatoid or rhabdoid differentiation. Invasion of the renal vein/segmental branches and of the renal sinus/peripelvic fat is present; no microvascular invasion, pelvicalyceal system invasion, or perinephric fat invasion. Surgical margins clear. Staged pT3a.",
+          "features": [],
+          "morphology": "clear_cell_carcinoma",
+          "invasion_status": "invasive",
+          "tumour_nature": "primary",
+          "differentiation": null,
+          "dimensions_desc": "85mm dia",
+          "biomarkers": [],
+          "scores": [
+            {
+              "score_name": "who_isup_nuclear_grade",
+              "score_name_desc": "WHO/ISUP grade",
+              "score_value": "2"
+            },
+            {
+              "score_name": "tnm_pathological",
+              "score_name_desc": "TNM 8th ed.",
+              "score_value": "pT3a"
+            },
+            {
+              "score_name": "leibovich",
+              "score_name_desc": "Leibovich score",
+              "score_value": "Intermediate risk Group (5)"
+            }
+          ]
+        }
+      ],
+      "general_features": [],
+      "general_features_summary": "Background kidney showed no significant abnormality. Renal pelvis and ureter showed no evidence of urothelial neoplasia. Adrenal not involved.",
+      "margins": [
+        {
+          "margin_status": "clear",
+          "distance_mm": null,
+          "margin_desc": "Surgical margins: clear"
+        }
+      ]
+    }
+  ],
+  "report_summary": "Left radical nephrectomy shows clear cell renal cell carcinoma, 85mm diameter, WHO/ISUP nuclear grade 2, invading the renal vein and renal sinus/peripelvic fat, staged pT3a, with clear surgical margins. Leibovich score places this in the intermediate risk group (5). No sarcomatoid/rhabdoid differentiation, microvascular invasion, pelvicalyceal invasion, or perinephric fat invasion. Background kidney, renal pelvis/ureter, and adrenal gland unremarkable."
+}

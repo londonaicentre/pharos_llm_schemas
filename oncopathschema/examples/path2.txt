@@ -1,0 +1,69 @@
+SPECIMEN DETAILS
+A. Recto-sigmoid resection
+B. Proximal donut
+C. Distal donut
+D. Peritoneal nodule
+CLINICAL DETAILS
+Anterior resection and loop ileostomy for recto-sigmoid junction tumour.
+Note:  A left nephrectomy was performed at the same time (Previous left kidney TB, large left renal cyst and left ureteric stone):  histology number 16S1273.
+MACROSCOPIC DETAILS
+A)  Sigmoid colectomy measuring 200mm in length and 35mm in diameter. The entire specimen is above the peritoneal reflection. Approximately 35mm away from the distal resection margin there is a tumour which appears circumferential and measures 
+40x30x35mm. The tumour appears to extend to the fat posteriorly. There is no serosa perforation. In addition, there are multiple large tumour deposits within mesocolon. These are present very close or even abutting the CRM ( inked black, 40 mm in 
+diameter). The largest tumour nodule measuring 40x35x35mm. Tissue remains.
+B) Sutured donut measuring 15x10x8mm.
+ Tissueremains.
+C)  Donut measuring 25x20x8mm. Tissue remains.
+D)  Well-circumscribed nodule measuring 3x2x1mm with attached fat measuring 8mm.  All embedded.
+BLOCK DETAILS
+A1 1 (1) Tumour
+A2 1 (1)}
+A3 1 (1)}
+A4 1 (1) Distal resection margin
+A5 1 (1) Tumour involvement of the CRM
+A6 1 (1)}
+A7 ? (1)}
+A8 ? (1) Multiple matted positive nodes
+A9 2 (1) Single node bisected
+A10 1 (1) Possible EMVI
+A11 2 (1) Single node bisected
+A12 1 (1) Hight tie tissue
+A13 1 (1) Multiple nodes
+A14 1(1) Remainder of tissue containing nodes
+A15 1 (1)}
+A16 1 (1)}
+A17 1 (1)}
+Tissue remains
+B1 1 (1)
+Tissue remains
+C1 1 (1)
+Tissue remains
+D1 1 (1)
+All
+(HAA)
+MICROSCOPIC DETAILS
+A. The tumour is a moderately differentiated adenocarcinoma, it invades through the bowel wall and into mesocolon.  A separate tumour nodule is macroscopically and microscopically seen at the circumferential resection margin (R2).  There are multiple 
+smaller tumour deposits within the mes
+ocolon (e.g. A8).  Extramural vascular invasion is identified (A16) and there are more examples of tumour deposits surround large vessels.  Perineural invasion is also noted (A8). A small lymphoid aggregate of 
+monomorphic lymphocytes is seen within the mesentery, but this consists of a mixture of B and T-cells.
+B and C)  Both pieces comprise large bowel mucosa with no dysplasia or malignancy.
+D)  Fibroadipose tissue containing a benign cyst.  There is no dysplasia or malignancy.
+Dataset summary
+Histological tumour type:  adenocarcinoma
+Histological differentiation:  moderate
+Maximum extent of local invasion:  mesocolon
+Maximum distance of extramural spread:  7mm (A1)
+Resection margins
+-  Longitudinal:  clear
+-  Circumferential:  positive (A6)
+Lymph node status:  8/14 lymph nodes involved (highest lymph node negative)
+Venous invasion:  Present (extramural)
+Dukes Staging:  C1 Lymph nodes positive but highest node spared
+TNM Staging:  pT3 pN2 pM0
+DIAGNOSIS
+A. Recto-sigmoidectomy:
+-  Moderately differentiated adenocarcinoma of the colon, pT3 pN2
+-  Tumour present (macroscopically) at the posterior circumferential resection margin (R2).
+-  Extramural vascular invasion is present
+-  8/14 lymph nodes involved (highest is negative)
+B&C: Donuts: Normal.
+D. Peritoneal nodule: Benign peritoneal cyst

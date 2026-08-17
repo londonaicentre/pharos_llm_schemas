@@ -1,0 +1,24 @@
+{
+  "is_pathology_report": true,
+  "is_oncology_related": true,
+  "is_malignancy_identified_on_specimen": false,
+  "clinical_indication": "2-month history of erythematous non-specific patches on the lower legs, clinically suspected DSAP (disseminated superficial actinic porokeratosis). Patient attends for phototherapy for chronic itch secondary to liver disease, with a background of stage IV melanoma. Punch biopsy requested for diagnosis.",
+  "specimens": [
+    {
+      "anatomical_site": "skin",
+      "anatomical_site_name_desc": "Left shin, punch biopsy",
+      "anatomical_subsite": "left shin",
+      "laterality": "left",
+      "procedure_desc": "4mm punch biopsy",
+      "nodes_examined": null,
+      "nodes_positive": null,
+      "findings": [],
+      "general_features": [
+        "inflammation"
+      ],
+      "general_features_summary": "Mild hyperkeratosis with an attenuated/atrophic epidermis and a mild chronic perivascular inflammatory cell infiltrate in the superficial reticular dermis. No convincing evidence of cornoid lamella identified in the planes of section examined (multiple recut levels evaluated), arguing against the clinical suspicion of DSAP. Close clinicopathological correlation advised.",
+      "margins": []
+    }
+  ],
+  "report_summary": "4mm punch biopsy of the left shin, taken for a 2-month history of erythematous patches clinically suspected to be DSAP. Multiple recut sections show mild hyperkeratosis, an atrophic epidermis, and a mild chronic perivascular inflammatory infiltrate, with no convincing evidence of cornoid lamella to support a diagnosis of DSAP. Close clinicopathological correlation advised. No malignancy identified on this specimen."
+}
