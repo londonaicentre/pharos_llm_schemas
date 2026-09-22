@@ -1,0 +1,37 @@
+MAMMOGRAM BILATERAL - SCREENING RECALL
+Date: 07/03/2026 11:45
+Performed in: NHS BREAST SCREENING PROGRAMME - CITY BREAST UNIT
+
+PATIENT: [Anonymised] - 56F
+NHS No: [Anonymised]
+
+INDICATION:
+Recalled from routine NHS screening mammogram performed 20/02/2026. Asymetric density noted left breast on initial screen read. For further assessment.
+
+TECHNIQUE:
+Addtional views: Left CC, Left MLO magnification, Left spot compression.
+Bilateral comparison views obtained.
+
+FINDINGS:
+Compairson with the screening mamogram dated 20/02/2026.
+The breast parenchyma is heterogenously dense bilaterally. ACR grade C.
+
+LEFT BREAST:
+There is an ill-defined area of asymetric density in the left upper outer quadrant measuring approx 18mm. This is better seen on the CC view. No definite spiculation identified on these views however appearances are indeterminate and further US assessment is reccomended.
+No suspicious calcification identified in the left breast.
+
+RIGHT BREAST:
+No mammographic abnormality.
+
+CONCLUSION:
+Left M3 - indeterminate density, US assessment recommended.
+Right M1.
+Patient to be seen in assessment clinic.
+
+ACR Density: C
+RCR Scores: Left M3, Right M1
+
+Reported By: H. Blackmore, Advanced Practitioner HCPC RA44291
+Second Reader: P. Okafor, Consultant Radiologist GMC 6023411
+Reported On: 08/03/2026
+Arbitration: In agreement - left M3.

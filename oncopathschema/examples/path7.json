@@ -1,0 +1,127 @@
+{
+  "is_pathology_report": true,
+  "is_oncology_related": true,
+  "is_malignancy_identified_on_specimen": true,
+  "clinical_indication": "Recent enlarging left axillary lymph node; core biopsy taken from the largest node.",
+  "specimens": [
+    {
+      "anatomical_site": "lymph_node_axillary",
+      "anatomical_site_name_desc": "Core biopsy, left axilla, lymph node",
+      "anatomical_subsite": "left axilla",
+      "laterality": "left",
+      "procedure_desc": "Core biopsy",
+      "nodes_examined": null,
+      "nodes_positive": null,
+      "findings": [
+        {
+          "is_lymph_node": true,
+          "finding_status": "cancerous",
+          "finding_summary": "Left axillary lymph node core biopsy showing metastatic carcinoma, grade 3. Immunohistochemistry (TTF-1 diffusely strongly positive, GATA-3 and progesterone receptor negative, oestrogen receptor weak nuclear positivity) indicates a lung primary rather than the initially favoured breast origin. Additional molecular/biomarker testing performed on the tumour.",
+          "features": [],
+          "morphology": "carcinoma_other",
+          "invasion_status": "not_stated",
+          "tumour_nature": "metastasis",
+          "differentiation": null,
+          "dimensions_desc": "Two cores, larger measuring 12 x 1 x 1mm and smaller measuring 10 x 1 x 1mm, plus two fragments",
+          "biomarkers": [
+            {
+              "biomarker": "ttf1",
+              "biomarker_name_desc": "TTF-1",
+              "biomarker_status": "altered",
+              "method": "immunohistochemistry",
+              "result_value": "Diffusely strongly positive, indicating primary origin from lung"
+            },
+            {
+              "biomarker": "gata3",
+              "biomarker_name_desc": "GATA-3",
+              "biomarker_status": "negative",
+              "method": "immunohistochemistry",
+              "result_value": "Negative"
+            },
+            {
+              "biomarker": "pgr_pr",
+              "biomarker_name_desc": "Progesterone receptor",
+              "biomarker_status": "negative",
+              "method": "immunohistochemistry",
+              "result_value": "Negative"
+            },
+            {
+              "biomarker": "esr1_er",
+              "biomarker_name_desc": "Oestrogen receptor",
+              "biomarker_status": "altered",
+              "method": "immunohistochemistry",
+              "result_value": "Weak nuclear expression"
+            },
+            {
+              "biomarker": "pdl1",
+              "biomarker_name_desc": "PD-L1",
+              "biomarker_status": "altered",
+              "method": "immunohistochemistry",
+              "result_value": "Strongly positive; 100% of tumour cells show membranous expression (Dako pharmDx 22C3)"
+            },
+            {
+              "biomarker": "pdl1",
+              "biomarker_name_desc": "PD-L1",
+              "biomarker_status": "altered",
+              "method": "immunohistochemistry",
+              "result_value": "Strongly positive; 80% of tumour cells show membranous expression (Ventana PD-L1 SP263)"
+            },
+            {
+              "biomarker": "egfr",
+              "biomarker_name_desc": "EGFR",
+              "biomarker_status": "negative",
+              "method": null,
+              "result_value": "No variants with established therapeutic or prognostic implications detected"
+            },
+            {
+              "biomarker": "kras",
+              "biomarker_name_desc": "KRAS",
+              "biomarker_status": "negative",
+              "method": null,
+              "result_value": "No variants with established therapeutic or prognostic implications detected"
+            },
+            {
+              "biomarker": "nras",
+              "biomarker_name_desc": "NRAS",
+              "biomarker_status": "negative",
+              "method": null,
+              "result_value": "No variants with established therapeutic or prognostic implications detected"
+            },
+            {
+              "biomarker": "braf",
+              "biomarker_name_desc": "BRAF",
+              "biomarker_status": "negative",
+              "method": null,
+              "result_value": "No variants with established therapeutic or prognostic implications detected"
+            },
+            {
+              "biomarker": "alk",
+              "biomarker_name_desc": "ALK",
+              "biomarker_status": "negative",
+              "method": null,
+              "result_value": "ALK negative"
+            },
+            {
+              "biomarker": "ros1",
+              "biomarker_name_desc": "ROS1",
+              "biomarker_status": "negative",
+              "method": null,
+              "result_value": "ROS1 negative"
+            }
+          ],
+          "scores": [
+            {
+              "score_name": "pathological_grade",
+              "score_name_desc": "Grade (T3 P3 M2)",
+              "score_value": "Grade 3 (T3 P3 M2)"
+            }
+          ]
+        }
+      ],
+      "general_features": [],
+      "general_features_summary": null,
+      "margins": []
+    }
+  ],
+  "report_summary": "Core biopsy of an enlarging left axillary lymph node shows metastatic carcinoma, grade 3. Initial impression favoured breast primary, but subsequent immunohistochemistry (TTF-1 diffusely strongly positive; GATA-3 and progesterone receptor negative; oestrogen receptor weak) indicated a lung primary. PD-L1 testing was strongly positive on two occasions with different assays (100% with Dako pharmDx 22C3, corrected by amendment from an initial clerical mislabelling as 22CS; 80% with Ventana SP263). Molecular testing showed no targetable variants in EGFR, KRAS, NRAS or BRAF, and ALK and ROS1 were negative."
+}

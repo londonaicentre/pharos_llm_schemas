@@ -27,4 +27,3 @@ For testing only
 (3) The model should return JSON in `<output></output>` tags.
 
 Only one report per chat - start a fresh chat between reports. Use the strongest available model.
-

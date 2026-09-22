@@ -1,0 +1,43 @@
+{
+  "is_radiology_report": true,
+  "is_oncology_related": true,
+  "is_malignancy_identified_on_scan": false,
+  "is_malignancy_suspected_on_scan": false,
+  "scan_metadata": {
+    "modality": "mri",
+    "contrast": "with_contrast",
+    "regions": [
+      "breast",
+      "axilla"
+    ],
+    "image_quality_desc": null
+  },
+  "scan_rationale": "routine_screening",
+  "cancer_status": null,
+  "specialty_specific_scores": [
+    {
+      "scoring_system": "acr_breast_density",
+      "scoring_system_name_desc": "Fibroglandular pattern: ACR",
+      "score_or_stage": "C",
+      "laterality": "bilateral",
+      "score_desc": "Fibroglandular pattern: ACR C heterogenously dense."
+    },
+    {
+      "scoring_system": "rcr",
+      "scoring_system_name_desc": "RCR",
+      "score_or_stage": "MRI 1",
+      "laterality": "right",
+      "score_desc": "RCR: Right MRI 1, Left MRI 1"
+    },
+    {
+      "scoring_system": "rcr",
+      "scoring_system_name_desc": "RCR",
+      "score_or_stage": "MRI 1",
+      "laterality": "left",
+      "score_desc": "RCR: Right MRI 1, Left MRI 1"
+    }
+  ],
+  "cancer_lesions": [],
+  "non_cancer_findings": [],
+  "report_summary": "Annual high-risk surveillance bilateral breast MRI with IV gadolinium in a BRCA2 pathogenic variant carrier with no personal history of breast cancer. Mild background parenchymal enhancement, ACR C heterogeneously dense fibroglandular pattern. No suspicious mass, non-mass enhancement, focal enhancement or architectural distortion in either breast. Normal axillary lymph nodes bilaterally and no internal mammary chain lymphadenopathy. Normal bilateral breast MRI with no evidence of malignancy; RCR Right MRI 1, Left MRI 1. Continue annual MRI surveillance per NICE high-risk protocol."
+}

@@ -3,145 +3,185 @@
   "output": {
     "is_radiology_report": true,
     "is_oncology_related": true,
-    "is_malignancy_identified": true,
+    "is_malignancy_identified_on_scan": true,
+    "is_malignancy_suspected_on_scan": true,
     "scan_metadata": {
       "modality": "ct",
       "contrast": "with_contrast",
-      "regions": ["chest", "abdomen", "pelvis"]
+      "regions": [
+        "chest",
+        "abdomen",
+        "pelvis"
+      ],
+      "image_quality_desc": null
     },
-    "scan_rationale": "post_diagnosis_follow_up",
+    "scan_rationale": "follow_up",
     "cancer_status": {
       "overall_status": "improving",
       "recist_response": null,
-      "progression_desc": "Overall appearances consistent with a partial response to neoadjuvant treatment.",
-      "disease_specific_scores": [
-        {
-          "scoring_system": "tnm",
-          "scoring_system_name_desc": "TNM",
-          "score_or_stage": "ypT3N1M1",
-          "laterality": null,
-          "score_desc": "ypT3 N1 M1"
-        }
-      ]
+      "progression_desc": "Overall appearances consistent with a partial response to neoadjuvant treatment."
     },
+    "specialty_specific_scores": [
+      {
+        "scoring_system": "tnm",
+        "scoring_system_name_desc": "Overall stage",
+        "score_or_stage": "ypT3 N1 M1",
+        "laterality": null,
+        "score_desc": "Overall stage: ypT3 N1 M1."
+      }
+    ],
     "cancer_lesions": [
       {
         "anatomical_site": "colon",
         "anatomical_site_desc": "sigmoid colon",
+        "anatomical_subsite": "sigmoid",
         "lesion_status": "cancerous",
         "change": "improving",
         "laterality": "not_applicable",
         "size": {
-          "longest_diameter_mm": 42,
+          "longest_diameter_mm": 42.0,
           "short_axis_mm": null,
           "x_mm": null,
           "y_mm": null,
           "z_mm": null,
-          "volume_ml": null
+          "volume_ml": null,
+          "lesion_depth_mm": null
         },
         "is_recist_target": false,
+        "is_index_lesion": true,
         "is_infiltrative": true,
-        "is_vascular_involvement": true,
+        "is_vascular_involvement": false,
         "is_miliary": false,
         "nature": "primary",
-        "morphology": "solid",
+        "associated_primary_cancer": "sigmoid colon adenocarcinoma",
+        "morphology": null,
         "internal_features": [],
         "margin": "spiculated",
         "shape": "irregular",
-        "uptake": null
+        "uptake": null,
+        "characterisation_desc": "It shows an irregular, spiculated margin with infiltration of the pericolic fat and abuts the left iliac vessels. Appearances are those of the treated primary tumour, reduced in size."
       },
       {
         "anatomical_site": "liver",
-        "anatomical_site_desc": "segment VII",
+        "anatomical_site_desc": "Liver",
+        "anatomical_subsite": "segment VII",
         "lesion_status": "cancerous",
         "change": "improving",
         "laterality": null,
         "size": {
-          "longest_diameter_mm": 24,
+          "longest_diameter_mm": 24.0,
           "short_axis_mm": null,
           "x_mm": null,
           "y_mm": null,
           "z_mm": null,
-          "volume_ml": null
+          "volume_ml": null,
+          "lesion_depth_mm": null
         },
         "is_recist_target": true,
+        "is_index_lesion": false,
         "is_infiltrative": false,
         "is_vascular_involvement": false,
         "is_miliary": false,
         "nature": "metastasis",
+        "associated_primary_cancer": "sigmoid colon adenocarcinoma",
         "morphology": "solid",
-        "internal_features": ["necrotic"],
+        "internal_features": [
+          "necrotic"
+        ],
         "margin": "circumscribed_welldefined",
         "shape": null,
-        "uptake": null
+        "uptake": null,
+        "characterisation_desc": "A solid metastatic deposit in segment VII. Central low attenuation is in keeping with necrosis. Margins are circumscribed."
       },
       {
         "anatomical_site": "lymph_node_pelvic",
         "anatomical_site_desc": "left pelvic lymph node",
+        "anatomical_subsite": null,
         "lesion_status": "cancerous",
         "change": null,
         "laterality": "left",
         "size": {
           "longest_diameter_mm": null,
-          "short_axis_mm": 13,
+          "short_axis_mm": 13.0,
           "x_mm": null,
           "y_mm": null,
           "z_mm": null,
-          "volume_ml": null
+          "volume_ml": null,
+          "lesion_depth_mm": null
         },
         "is_recist_target": false,
+        "is_index_lesion": false,
         "is_infiltrative": false,
         "is_vascular_involvement": false,
         "is_miliary": false,
         "nature": "metastasis",
+        "associated_primary_cancer": "sigmoid colon adenocarcinoma",
         "morphology": null,
         "internal_features": [],
         "margin": null,
         "shape": null,
-        "uptake": null
+        "uptake": null,
+        "characterisation_desc": "A pathological left pelvic lymph node, considered metastatic in this context."
       },
       {
         "anatomical_site": "bone_spine",
         "anatomical_site_desc": "L4 vertebral body",
-        "lesion_status": "cancerous",
+        "anatomical_subsite": "L4",
+        "lesion_status": "uncertain",
         "change": null,
         "laterality": null,
         "size": null,
         "is_recist_target": false,
+        "is_index_lesion": false,
         "is_infiltrative": false,
         "is_vascular_involvement": false,
         "is_miliary": false,
         "nature": "metastasis",
+        "associated_primary_cancer": "sigmoid colon adenocarcinoma",
         "morphology": null,
-        "internal_features": ["sclerotic"],
+        "internal_features": [
+          "sclerotic"
+        ],
         "margin": null,
         "shape": null,
-        "uptake": null
+        "uptake": null,
+        "characterisation_desc": "On review with the bone radiologist, the L4 sclerotic focus is more likely to represent a sclerotic skeletal metastasis."
       }
     ],
     "non_cancer_findings": [
       {
-        "finding": "obstruction_dilatation",
-        "finding_desc": "The colon is dilated proximal to the sigmoid primary with associated obstruction. Malignant large bowel obstruction proximal to the primary.",
-        "anatomical_site": "colon",
-        "anatomical_site_desc": "colon proximal to the sigmoid primary",
-        "is_cancer_lesion_related": true
-      },
-      {
         "finding": "effusion",
         "finding_desc": "A small left pleural effusion is noted.",
         "anatomical_site": "pleura",
-        "anatomical_site_desc": "left pleural space",
-        "is_cancer_lesion_related": false
+        "anatomical_site_desc": "pleural",
+        "anatomical_subsite": null,
+        "is_cancer_related": false
+      },
+      {
+        "finding": "other",
+        "finding_desc": "A 6 mm right lower lobe nodule is unlikely to represent metastasis and is favoured to be a benign perifissural node.",
+        "anatomical_site": "lung",
+        "anatomical_site_desc": "right lower lobe",
+        "anatomical_subsite": "right lower lobe",
+        "is_cancer_related": false
       },
       {
         "finding": "cyst_benign_collection",
         "finding_desc": "Simple cortical cyst in the left kidney, of fluid attenuation, benign.",
         "anatomical_site": "kidney",
         "anatomical_site_desc": "left kidney",
-        "is_cancer_lesion_related": false
+        "anatomical_subsite": "cortical",
+        "is_cancer_related": false
+      },
+      {
+        "finding": "obstruction_dilatation",
+        "finding_desc": "The colon is dilated proximal to the sigmoid primary with associated obstruction. Malignant large bowel obstruction proximal to the primary.",
+        "anatomical_site": "colon",
+        "anatomical_site_desc": "colon",
+        "anatomical_subsite": "proximal to the sigmoid primary",
+        "is_cancer_related": true
       }
     ],
-    "report_summary": "Restaging contrast CT for treated sigmoid colon adenocarcinoma shows the primary reduced in size with pericolic infiltration and iliac vessel abutment, a smaller segment VII hepatic metastasis (target lesion), a pathological left pelvic node, and (per addendum) a sclerotic L4 metastasis. Overall partial response (ypT3 N1 M1). Malignant large bowel obstruction proximal to the primary. Background of previous cholecystectomy. A 6 mm right lower lobe nodule was favoured benign and excluded."
+    "report_summary": "Contrast-enhanced CT chest, abdomen and pelvis for restaging of known sigmoid colon adenocarcinoma after neoadjuvant chemotherapy. The sigmoid primary has reduced to 42 mm (from 58 mm), with pericolic fat infiltration and abutment of the left iliac vessels. A segment VII hepatic metastasis (24 mm, target lesion) is smaller, and there is a pathological 13 mm short-axis left pelvic node. Overall appearances are consistent with a partial response to neoadjuvant treatment; stage ypT3 N1 M1. A small left pleural effusion and malignant large bowel obstruction proximal to the primary are noted. Per addendum, the L4 sclerotic focus is more likely a sclerotic skeletal metastasis."
   }
 }

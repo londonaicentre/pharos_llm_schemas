@@ -1,0 +1,61 @@
+{
+  "is_pathology_report": true,
+  "is_oncology_related": true,
+  "is_malignancy_identified_on_specimen": true,
+  "clinical_indication": "Active surveillance for prostate cancer, Gleason 3+4, with an increase in size of a left midgland lesion.",
+  "specimens": [
+    {
+      "anatomical_site": "prostate",
+      "anatomical_site_name_desc": "Prostate, needle biopsy (template)",
+      "anatomical_subsite": null,
+      "laterality": "bilateral",
+      "procedure_desc": "needle biopsy (template)",
+      "nodes_examined": null,
+      "nodes_positive": null,
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "cancerous",
+          "finding_summary": "Acinar adenocarcinoma in the right posterior site (site C), involving 1 of 3 cores, Gleason score 3 + 4 = 7, measuring 2mm within a 14mm core (apical third).",
+          "features": [],
+          "morphology": "acinar_carcinoma",
+          "invasion_status": "invasive",
+          "tumour_nature": "primary",
+          "differentiation": null,
+          "dimensions_desc": "2/14mm (apical third)",
+          "biomarkers": [],
+          "scores": [
+            {
+              "score_name": "gleason",
+              "score_name_desc": null,
+              "score_value": "3 + 4 = 7"
+            }
+          ]
+        },
+        {
+          "is_lymph_node": false,
+          "finding_status": "cancerous",
+          "finding_summary": "Acinar adenocarcinoma in the left midzone site (site E), involving 1 of 3 cores, Gleason score 4 + 3 = 7, measuring 5mm within a 16mm core (basal half).",
+          "features": [],
+          "morphology": "acinar_carcinoma",
+          "invasion_status": "invasive",
+          "tumour_nature": "primary",
+          "differentiation": null,
+          "dimensions_desc": "5/16mm (basal half)",
+          "biomarkers": [],
+          "scores": [
+            {
+              "score_name": "gleason",
+              "score_name_desc": null,
+              "score_value": "4 + 3 = 7"
+            }
+          ]
+        }
+      ],
+      "general_features": [],
+      "general_features_summary": null,
+      "margins": []
+    }
+  ],
+  "report_summary": "Template prostate needle biopsy (sites A-G, 22 cores total) shows acinar adenocarcinoma in 2 of 22 cores at 2 of 7 sites (right posterior and left midzone). Highest Gleason score 4 + 3 = 7. Maximum cancer length 5mm, at the left midzone site."
+}

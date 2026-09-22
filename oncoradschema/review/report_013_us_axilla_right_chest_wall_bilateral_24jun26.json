@@ -1,0 +1,158 @@
+{
+  "is_radiology_report": true,
+  "is_oncology_related": true,
+  "is_malignancy_identified_on_scan": true,
+  "is_malignancy_suspected_on_scan": true,
+  "scan_metadata": {
+    "modality": "ultrasound",
+    "contrast": null,
+    "regions": [
+      "axilla",
+      "chest"
+    ],
+    "image_quality_desc": "This was extremely challenging to fully examine given the postsurgical state and multiple surgical clips."
+  },
+  "scan_rationale": "interventional",
+  "cancer_status": null,
+  "specialty_specific_scores": [
+    {
+      "scoring_system": "rcr",
+      "scoring_system_name_desc": "U",
+      "score_or_stage": "U6",
+      "laterality": "left",
+      "score_desc": "Left breast U6 (biopsy-proven disease)"
+    },
+    {
+      "scoring_system": "rcr",
+      "scoring_system_name_desc": "U",
+      "score_or_stage": "U3",
+      "laterality": "right",
+      "score_desc": "Right breast U3 (right axillary node ? involved - challenging examination, FNA recommended if sampling required)"
+    }
+  ],
+  "cancer_lesions": [
+    {
+      "anatomical_site": "lymph_node_axillary",
+      "anatomical_site_desc": "left axilla",
+      "anatomical_subsite": null,
+      "lesion_status": "cancerous",
+      "change": null,
+      "laterality": "left",
+      "size": null,
+      "is_recist_target": false,
+      "is_index_lesion": false,
+      "is_infiltrative": false,
+      "is_vascular_involvement": false,
+      "is_miliary": false,
+      "nature": "not_stated_unclear",
+      "associated_primary_cancer": null,
+      "morphology": null,
+      "internal_features": [],
+      "margin": null,
+      "shape": null,
+      "uptake": null,
+      "characterisation_desc": "The biopsy-proven disease in the left axilla was sonographically identified."
+    },
+    {
+      "anatomical_site": "chest_wall",
+      "anatomical_site_desc": "left lateral chest wall",
+      "anatomical_subsite": "left lateral chest wall",
+      "lesion_status": "uncertain",
+      "change": null,
+      "laterality": "left",
+      "size": {
+        "longest_diameter_mm": 8.0,
+        "short_axis_mm": null,
+        "x_mm": null,
+        "y_mm": null,
+        "z_mm": null,
+        "volume_ml": null,
+        "lesion_depth_mm": null
+      },
+      "is_recist_target": false,
+      "is_index_lesion": false,
+      "is_infiltrative": false,
+      "is_vascular_involvement": false,
+      "is_miliary": false,
+      "nature": "not_stated_unclear",
+      "associated_primary_cancer": null,
+      "morphology": null,
+      "internal_features": [],
+      "margin": null,
+      "shape": null,
+      "uptake": null,
+      "characterisation_desc": "enhancing lesion"
+    },
+    {
+      "anatomical_site": "chest_wall",
+      "anatomical_site_desc": "left lateral chest wall",
+      "anatomical_subsite": "left lateral chest wall",
+      "lesion_status": "uncertain",
+      "change": null,
+      "laterality": "left",
+      "size": {
+        "longest_diameter_mm": 9.0,
+        "short_axis_mm": null,
+        "x_mm": null,
+        "y_mm": null,
+        "z_mm": null,
+        "volume_ml": null,
+        "lesion_depth_mm": null
+      },
+      "is_recist_target": false,
+      "is_index_lesion": false,
+      "is_infiltrative": false,
+      "is_vascular_involvement": false,
+      "is_miliary": false,
+      "nature": "not_stated_unclear",
+      "associated_primary_cancer": null,
+      "morphology": null,
+      "internal_features": [],
+      "margin": null,
+      "shape": null,
+      "uptake": null,
+      "characterisation_desc": "enhancing lesion"
+    },
+    {
+      "anatomical_site": "lymph_node_axillary",
+      "anatomical_site_desc": "right axillary region",
+      "anatomical_subsite": null,
+      "lesion_status": "uncertain",
+      "change": null,
+      "laterality": "right",
+      "size": {
+        "longest_diameter_mm": 5.0,
+        "short_axis_mm": null,
+        "x_mm": null,
+        "y_mm": null,
+        "z_mm": null,
+        "volume_ml": null,
+        "lesion_depth_mm": null
+      },
+      "is_recist_target": false,
+      "is_index_lesion": false,
+      "is_infiltrative": false,
+      "is_vascular_involvement": false,
+      "is_miliary": false,
+      "nature": "not_stated_unclear",
+      "associated_primary_cancer": null,
+      "morphology": null,
+      "internal_features": [],
+      "margin": null,
+      "shape": null,
+      "uptake": null,
+      "characterisation_desc": "The CT identified lymph node was most likely appreciated. There were multiple vessels seen around the lesion. Right axillary node ? involved - challenging examination."
+    }
+  ],
+  "non_cancer_findings": [
+    {
+      "finding": "other",
+      "finding_desc": "the postsurgical state and multiple surgical clips",
+      "anatomical_site": "soft_tissue_thorax",
+      "anatomical_site_desc": "right axillary region",
+      "anatomical_subsite": "right axilla",
+      "is_cancer_related": true
+    }
+  ],
+  "report_summary": "Ultrasound of the right axilla and left chest wall performed at [redacted] on [redacted] in a patient with previously treated bilateral breast cancer and left axillary recurrence, following PET CT showing a right axillary node and suspicious left chest wall lesions. Biopsy-proven disease in the left axilla was sonographically identified. Two enhancing lesions measuring 8 mm and 9 mm were identified in the left lateral chest wall. The right axilla was extremely challenging to examine due to postsurgical change and multiple surgical clips; the CT-identified lymph node was most likely appreciated, measuring 5 mm, with multiple adjacent vessels. Ultrasound-guided core biopsy (2 cores) of the left anterior chest wall lesion was performed; the patient elected to await histology before right axillary sampling, which if required should be by FNA with cytology present. Conclusion: left breast U6 (biopsy-proven disease); right breast U3."
+}

@@ -1,0 +1,89 @@
+{
+  "is_radiology_report": true,
+  "is_oncology_related": true,
+  "is_malignancy_identified_on_scan": false,
+  "is_malignancy_suspected_on_scan": true,
+  "scan_metadata": {
+    "modality": "ultrasound",
+    "contrast": null,
+    "regions": [
+      "axilla"
+    ],
+    "image_quality_desc": null
+  },
+  "scan_rationale": "interventional",
+  "cancer_status": null,
+  "specialty_specific_scores": [
+    {
+      "scoring_system": "rcr",
+      "scoring_system_name_desc": "U3",
+      "score_or_stage": "U3",
+      "laterality": "right",
+      "score_desc": "Right axilla U3: FNA performed and clip deployed superior to targeted node."
+    }
+  ],
+  "cancer_lesions": [
+    {
+      "anatomical_site": "lymph_node_axillary",
+      "anatomical_site_desc": "right axilla",
+      "anatomical_subsite": "overlying the right axillary bundle",
+      "lesion_status": "uncertain",
+      "change": null,
+      "laterality": "right",
+      "size": {
+        "longest_diameter_mm": null,
+        "short_axis_mm": 3.5,
+        "x_mm": null,
+        "y_mm": null,
+        "z_mm": null,
+        "volume_ml": null,
+        "lesion_depth_mm": null
+      },
+      "is_recist_target": false,
+      "is_index_lesion": true,
+      "is_infiltrative": false,
+      "is_vascular_involvement": false,
+      "is_miliary": false,
+      "nature": "not_stated_unclear",
+      "associated_primary_cancer": null,
+      "morphology": null,
+      "internal_features": [],
+      "margin": null,
+      "shape": null,
+      "uptake": null,
+      "characterisation_desc": "slightly thickened lymph node"
+    },
+    {
+      "anatomical_site": "lymph_node_axillary",
+      "anatomical_site_desc": "right axilla",
+      "anatomical_subsite": null,
+      "lesion_status": "uncertain",
+      "change": null,
+      "laterality": "right",
+      "size": {
+        "longest_diameter_mm": null,
+        "short_axis_mm": 3.5,
+        "x_mm": null,
+        "y_mm": null,
+        "z_mm": null,
+        "volume_ml": null,
+        "lesion_depth_mm": null
+      },
+      "is_recist_target": false,
+      "is_index_lesion": false,
+      "is_infiltrative": false,
+      "is_vascular_involvement": false,
+      "is_miliary": false,
+      "nature": "not_stated_unclear",
+      "associated_primary_cancer": null,
+      "morphology": null,
+      "internal_features": [],
+      "margin": null,
+      "shape": null,
+      "uptake": null,
+      "characterisation_desc": "slightly thickened lymph node"
+    }
+  ],
+  "non_cancer_findings": null,
+  "report_summary": "Ultrasound of the right axilla with US-guided FNA and marker clip insertion, performed on [redacted]. Two slightly thickened right axillary lymph nodes with cortical thickness up to 3.5 mm were seen overlying the right axillary bundle; one was targeted for four FNA passes under local anaesthetic with samples sent to cytology. A marker clip was deployed immediately superior to the targeted node due to its proximity to the axillary bundle, with the surgical team present. No immediate complications. Right axilla graded U3."
+}

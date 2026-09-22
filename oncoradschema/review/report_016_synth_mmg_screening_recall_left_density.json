@@ -1,0 +1,73 @@
+{
+  "is_radiology_report": true,
+  "is_oncology_related": true,
+  "is_malignancy_identified_on_scan": false,
+  "is_malignancy_suspected_on_scan": true,
+  "scan_metadata": {
+    "modality": "mammography",
+    "contrast": null,
+    "regions": [
+      "breast"
+    ],
+    "image_quality_desc": null
+  },
+  "scan_rationale": "diagnostic_pre_treatment",
+  "cancer_status": null,
+  "specialty_specific_scores": [
+    {
+      "scoring_system": "acr_breast_density",
+      "scoring_system_name_desc": "ACR Density",
+      "score_or_stage": "C",
+      "laterality": "bilateral",
+      "score_desc": "The breast parenchyma is heterogenously dense bilaterally. ACR grade C."
+    },
+    {
+      "scoring_system": "rcr",
+      "scoring_system_name_desc": "RCR Scores",
+      "score_or_stage": "M3",
+      "laterality": "left",
+      "score_desc": "Left M3 - indeterminate density, US assessment recommended."
+    },
+    {
+      "scoring_system": "rcr",
+      "scoring_system_name_desc": "RCR Scores",
+      "score_or_stage": "M1",
+      "laterality": "right",
+      "score_desc": "Right M1."
+    }
+  ],
+  "cancer_lesions": [
+    {
+      "anatomical_site": "breast",
+      "anatomical_site_desc": "left breast",
+      "anatomical_subsite": "upper outer quadrant",
+      "lesion_status": "uncertain",
+      "change": null,
+      "laterality": "left",
+      "size": {
+        "longest_diameter_mm": 18.0,
+        "short_axis_mm": null,
+        "x_mm": null,
+        "y_mm": null,
+        "z_mm": null,
+        "volume_ml": null,
+        "lesion_depth_mm": null
+      },
+      "is_recist_target": false,
+      "is_index_lesion": true,
+      "is_infiltrative": false,
+      "is_vascular_involvement": false,
+      "is_miliary": false,
+      "nature": "not_stated_unclear",
+      "associated_primary_cancer": null,
+      "morphology": null,
+      "internal_features": [],
+      "margin": "indistinct_illdefined",
+      "shape": null,
+      "uptake": null,
+      "characterisation_desc": "There is an ill-defined area of asymetric density... This is better seen on the CC view. No definite spiculation identified on these views however appearances are indeterminate and further US assessment is reccomended."
+    }
+  ],
+  "non_cancer_findings": [],
+  "report_summary": "Bilateral mammogram performed as screening recall for an asymmetric density in the left breast noted on a prior routine screening study. Heterogeneously dense parenchyma bilaterally (ACR grade C). An ill-defined asymmetric density measuring approximately 18mm is present in the left upper outer quadrant, without definite spiculation but indeterminate in appearance, scored left M3 with ultrasound assessment recommended. No suspicious calcification in the left breast. No mammographic abnormality in the right breast (M1). Arbitration in agreement with left M3; patient to be seen in the assessment clinic."
+}

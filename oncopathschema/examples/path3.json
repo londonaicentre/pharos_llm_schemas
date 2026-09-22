@@ -1,0 +1,74 @@
+{
+  "is_pathology_report": true,
+  "is_oncology_related": true,
+  "is_malignancy_identified_on_specimen": true,
+  "clinical_indication": "Enlarged right axillary lymph node, previous biopsy B1, with known right breast cancer; query involvement. Repeat biopsy as per MDM recommendation.",
+  "specimens": [
+    {
+      "anatomical_site": "lymph_node_axillary",
+      "anatomical_site_name_desc": "Breast axilla node core biopsy - RT",
+      "anatomical_subsite": "axilla",
+      "laterality": "right",
+      "procedure_desc": "core biopsy",
+      "nodes_examined": null,
+      "nodes_positive": null,
+      "findings": [
+        {
+          "is_lymph_node": true,
+          "finding_status": "cancerous",
+          "finding_summary": "Right axillary lymph node core biopsy shows infiltration by invasive carcinoma of no special type (invasive adenocarcinoma NST), no in-situ component identified; ER and PR strongly positive, HER2 negative.",
+          "features": [],
+          "morphology": "invasive_carcinoma_nst",
+          "invasion_status": "invasive",
+          "tumour_nature": "metastasis",
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [
+            {
+              "biomarker": "esr1_er",
+              "biomarker_name_desc": "oestrogen receptor",
+              "biomarker_status": "altered",
+              "method": "immunohistochemistry",
+              "result_value": "Allred score = 7 (range 0-8), strongly positive, >66% of tumour cell nuclei reactive, predominantly moderate intensity"
+            },
+            {
+              "biomarker": "pgr_pr",
+              "biomarker_name_desc": "progesterone receptor (PgR)",
+              "biomarker_status": "altered",
+              "method": "immunohistochemistry",
+              "result_value": "Allred score = 8 (range 0-8), strongly positive, >66% of tumour cell nuclei reactive, predominantly strong intensity"
+            },
+            {
+              "biomarker": "erbb2_her2",
+              "biomarker_name_desc": "HER2",
+              "biomarker_status": "negative",
+              "method": "immunohistochemistry",
+              "result_value": "score = 1+ (Negative); focal, faint, incomplete membrane reactivity only"
+            }
+          ],
+          "scores": [
+            {
+              "score_name": "breast_b_category",
+              "score_name_desc": null,
+              "score_value": "B5b"
+            },
+            {
+              "score_name": "allred",
+              "score_name_desc": "ER Allred score",
+              "score_value": "7/8"
+            },
+            {
+              "score_name": "allred",
+              "score_name_desc": "PR Allred score",
+              "score_value": "8/8"
+            }
+          ]
+        }
+      ],
+      "general_features": [],
+      "general_features_summary": null,
+      "margins": []
+    }
+  ],
+  "report_summary": "Right axillary lymph node core biopsy performed for an enlarged node in a patient with known right breast cancer, previously B1. Shows infiltration by invasive carcinoma of no special type (B5b), no in-situ component. ER strongly positive (Allred 7/8), PR strongly positive (Allred 8/8), HER2 negative (IHC score 1+)."
+}

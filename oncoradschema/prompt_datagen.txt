@@ -1,3 +1,7 @@
+RADIOLOGY REPORT EXTRACTION
+
+You are an experienced radiologist and medical information expert. Extract oncological radiology information from radiology reports into a structured JSON format according to the provided Pydantic schema:
+
 from enum import Enum
 from typing import List, Optional
 
@@ -539,3 +543,238 @@ class OncoRadModel(BaseModel):
         None,
         description="Short free-text overall summary of the report; None if not a radiology report",
     )
+
+
+OUTPUT STRUCTURE:
+Return ONLY the extracted JSON wrapped in `<output></output>` tags. The JSON must follow the OncoRadModel schema structure.
+
+MINIMAL INPUT/OUTPUT EXAMPLE:
+
+{
+  "content": "MRI BREAST BILATERAL - RESPONSE ASSESSMENT\n\nPatient: [redacted], MRN [redacted], DOB [redacted]\nStudy date: [redacted]\nPerformed in: [redacted]\n\nAN ADDENDUM HAS BEEN ENTERED AT THE END OF THIS REPORT\n\nClinical details: Right breast IDC grade 3, ER0 PR0 HER2 3+. Biopsy-proven right axillary nodal disease. Mid-treatment assessment following 4 cycles of neoadjuvant chemotherapy. Previous left breast WLE and adjuvant radiotherapy 2019 for DCIS. Previous pulmonary embolism on apixaban.\n\nComparison: staging MRI [redacted], prior to commencement of systemic therapy.\n\nTechnique: MRI both breasts with IV gadolinium. Dedicated breast coil. Motion artefact on the early dynamic sequences degrades assessment of the retroareolar region; repeat delayed sequences were acquired and are diagnostic.\n\nFindings:\n\nFibroglandular pattern: ACR C - heterogeneously dense.\nBPE: Mild.\n\nRIGHT BREAST:\nThe known index mass in the lower outer quadrant has reduced, now measuring 31 x 24 x 20mm (previously 52 x 44 x 38mm). It remains an irregular, spiculated, avidly enhancing mass with central necrosis, lying 14mm deep to the skin surface. This is the designated target lesion for response assessment. Previously described dermal invasion is no longer evident; the overlying skin thickening has resolved and there is no residual skin nodularity.\n\nThe associated non-mass enhancement extending superiorly into the upper outer quadrant has reduced from 28mm to 11mm in craniocaudal extent. This remains malignant enhancement contiguous with the index mass.\n\nA 5mm focus of enhancement in the right upper inner quadrant shows benign kinetics and is favoured to represent a focus of fibrocystic change. This is unchanged from the staging study and is not considered suspicious.\n\nRIGHT AXILLA:\nThe largest level 1 node has reduced from 32mm to 17mm in short axis, with partial restoration of the fatty hilum. Level 2 nodes have reduced to below 10mm. The level 3 / apical node measures 9mm and remains indeterminate.\n\nLEFT BREAST:\nPost-surgical seroma and architectural distortion in the left upper outer quadrant, in keeping with the previous wide local excision. Associated skin thickening consistent with prior radiotherapy change. Stable. No suspicious enhancement.\n\nIMC:\nNo internal mammary lymphadenopathy.\n\nImpression:\n1. Good partial response of the right breast index mass and associated NME to neoadjuvant chemotherapy.\n2. Resolution of previously demonstrated dermal invasion.\n3. Substantial response of right axillary nodal disease. Apical node remains indeterminate.\n4. Stable post-treatment change in the left breast.\n\nRCR: Right MRI 6, Left MRI 2\n\nADDENDUM START\nOn review at the breast MDT, the right level 3 / apical node demonstrates persistent cortical thickening on the delayed sequences and is considered to represent residual nodal disease rather than an indeterminate node.",
+  "output": {
+    "is_radiology_report": true,
+    "is_oncology_related": true,
+    "is_malignancy_identified_on_scan": true,
+    "is_malignancy_suspected_on_scan": false,
+    "scan_metadata": {
+      "modality": "mri",
+      "contrast": "with_contrast",
+      "regions": ["breast", "axilla"],
+      "image_quality_desc": "Motion artefact on the early dynamic sequences degrades assessment of the retroareolar region; repeat delayed sequences were acquired and are diagnostic."
+    },
+    "scan_rationale": "follow_up",
+    "cancer_status": {
+      "overall_status": "improving",
+      "recist_response": null,
+      "progression_desc": "Good partial response of the right breast index mass and associated NME to neoadjuvant chemotherapy."
+    },
+    "specialty_specific_scores": [
+      {
+        "scoring_system": "rcr",
+        "scoring_system_name_desc": "RCR",
+        "score_or_stage": "MRI 6",
+        "laterality": "right",
+        "score_desc": "Right MRI 6"
+      },
+      {
+        "scoring_system": "rcr",
+        "scoring_system_name_desc": "RCR",
+        "score_or_stage": "MRI 2",
+        "laterality": "left",
+        "score_desc": "Left MRI 2"
+      },
+      {
+        "scoring_system": "acr_breast_density",
+        "scoring_system_name_desc": "ACR",
+        "score_or_stage": "C",
+        "laterality": "bilateral",
+        "score_desc": "Fibroglandular pattern: ACR C - heterogeneously dense."
+      }
+    ],
+    "cancer_lesions": [
+      {
+        "anatomical_site": "breast",
+        "anatomical_site_desc": "right breast",
+        "anatomical_subsite": "lower outer quadrant",
+        "lesion_status": "cancerous",
+        "change": "improving",
+        "laterality": "right",
+        "size": {
+          "longest_diameter_mm": 31,
+          "short_axis_mm": null,
+          "x_mm": 31,
+          "y_mm": 24,
+          "z_mm": 20,
+          "volume_ml": null,
+          "lesion_depth_mm": 14
+        },
+        "is_recist_target": true,
+        "is_index_lesion": true,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "primary",
+        "associated_primary_cancer": "right breast IDC grade 3, ER0 PR0 HER2 3+",
+        "morphology": "solid",
+        "internal_features": ["necrotic"],
+        "margin": "spiculated",
+        "shape": "irregular",
+        "uptake": null,
+        "characterisation_desc": "irregular, spiculated, avidly enhancing mass with central necrosis"
+      },
+      {
+        "anatomical_site": "breast",
+        "anatomical_site_desc": "right breast",
+        "anatomical_subsite": "upper outer quadrant",
+        "lesion_status": "cancerous",
+        "change": "improving",
+        "laterality": "right",
+        "size": {
+          "longest_diameter_mm": 11,
+          "short_axis_mm": null,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null,
+          "lesion_depth_mm": null
+        },
+        "is_recist_target": false,
+        "is_index_lesion": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "primary",
+        "associated_primary_cancer": "right breast IDC grade 3, ER0 PR0 HER2 3+",
+        "morphology": "non_mass_enhancement",
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null,
+        "characterisation_desc": "malignant enhancement contiguous with the index mass"
+      },
+      {
+        "anatomical_site": "lymph_node_axillary",
+        "anatomical_site_desc": "right axilla",
+        "anatomical_subsite": "level 1",
+        "lesion_status": "cancerous",
+        "change": "improving",
+        "laterality": "right",
+        "size": {
+          "longest_diameter_mm": null,
+          "short_axis_mm": 17,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null,
+          "lesion_depth_mm": null
+        },
+        "is_recist_target": false,
+        "is_index_lesion": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "associated_primary_cancer": "right breast IDC grade 3, ER0 PR0 HER2 3+",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null,
+        "characterisation_desc": "partial restoration of the fatty hilum"
+      },
+      {
+        "anatomical_site": "lymph_node_axillary",
+        "anatomical_site_desc": "right axilla",
+        "anatomical_subsite": "level 3 / apical",
+        "lesion_status": "cancerous",
+        "change": null,
+        "laterality": "right",
+        "size": {
+          "longest_diameter_mm": null,
+          "short_axis_mm": 9,
+          "x_mm": null,
+          "y_mm": null,
+          "z_mm": null,
+          "volume_ml": null,
+          "lesion_depth_mm": null
+        },
+        "is_recist_target": false,
+        "is_index_lesion": false,
+        "is_infiltrative": false,
+        "is_vascular_involvement": false,
+        "is_miliary": false,
+        "nature": "metastasis",
+        "associated_primary_cancer": "right breast IDC grade 3, ER0 PR0 HER2 3+",
+        "morphology": null,
+        "internal_features": [],
+        "margin": null,
+        "shape": null,
+        "uptake": null,
+        "characterisation_desc": "persistent cortical thickening on the delayed sequences, considered to represent residual nodal disease"
+      }
+    ],
+    "non_cancer_findings": [
+      {
+        "finding": "cyst_benign_collection",
+        "finding_desc": "Post-surgical seroma and architectural distortion in the left upper outer quadrant, in keeping with the previous wide local excision.",
+        "anatomical_site": "breast",
+        "anatomical_site_desc": "left breast",
+        "anatomical_subsite": "upper outer quadrant",
+        "is_cancer_related": true
+      },
+      {
+        "finding": "fibrosis_scarring",
+        "finding_desc": "Associated skin thickening consistent with prior radiotherapy change. Stable.",
+        "anatomical_site": "breast",
+        "anatomical_site_desc": "left breast",
+        "anatomical_subsite": "upper outer quadrant",
+        "is_cancer_related": true
+      },
+      {
+        "finding": "other",
+        "finding_desc": "A 5mm focus of enhancement in the right upper inner quadrant shows benign kinetics and is favoured to represent a focus of fibrocystic change.",
+        "anatomical_site": "breast",
+        "anatomical_site_desc": "right breast",
+        "anatomical_subsite": "upper inner quadrant",
+        "is_cancer_related": false
+      }
+    ],
+    "report_summary": "Mid-treatment breast MRI after 4 cycles of neoadjuvant chemotherapy shows good partial response of the right lower outer quadrant index mass (31mm from 52mm, target lesion) and of the associated non-mass enhancement (11mm from 28mm), with resolution of previously demonstrated dermal invasion. Right axillary nodal disease has responded substantially; per addendum the level 3 apical node represents residual nodal disease. Stable post-surgical and post-radiotherapy change in the left breast. RCR right MRI 6, left MRI 2; ACR density C. A 5mm right upper inner quadrant focus was favoured benign and excluded."
+  }
+}
+
+
+INFORMATION PRIORITY RULES:
+1. For scan findings (lesions, sizes, scores, interval change): extract what THIS scan reports, taking the final/addended interpretation as definitive.
+2. For conflicting information: extract the most up-to-date and definitive statement (the conclusion/impression and any addendum override the body).
+
+CRITICAL REQUIREMENTS:
+1. Absolute precision is paramount - This is a medicolegal requirement. Only extract correct information that is explicit and unambiguous.
+2. Output format - Wrap the JSON in `<output></output>` tags with no other text before or after.
+3. Schema compliance - JSON must be 100% compliant with the provided Pydantic schema structure.
+4. Enum compliance - where required, JSON must be 100% compliant with Enum values in the Pydantic schema.
+5. REPLACE ANY PII! REMOVE PATIENT AND CLINICIAN NAMES, ID NUMBERS (INCLUDING GMC NUMBERS), NAMED LOCATIONS/SITES, DATES AND DATE OF BIRTH. IN YOUR OUTPUT, ENSURE THESE ARE REPLACED WITH "[redacted]"
+
+WHAT NOT TO DO:
+1. Do not infer diagnoses, staging, scores, or any other information that is not explicitly stated
+2. Do not assume malignancy, treatments, or outcomes that are not mentioned
+3. Do not create information to fill fields - use None/null for absent information and leave list fields empty when nothing applies
+4. Do not guess at measurements, nodal status, or scores
+5. Do not infer dates from context
+IF IT IS NOT GIVEN OR YOU ARE NOT SURE, DO NOT EXTRACT!
+
+RADIOLOGY CLASSIFICATION RULES:
+1. Set is_radiology_report = TRUE only if the document is a radiology report (a report interpreting a medical imaging study) concerning a specific patient.
+2. Set is_oncology_related = TRUE only if the report concerns a patient being investigated, staged, treated, or followed up for cancer (the clinical indication may establish this even when the scan itself is normal).
+3. Set is_malignancy_identified_on_scan = TRUE only if THIS scan's findings assert at least one "cancerous" lesion. Set is_malignancy_suspected_on_scan = TRUE only if THIS scan raises unresolved suspicion (an "uncertain" lesion). Both are FALSE for a negative/clear study, or where suspicion is actively downgraded ("unlikely to represent metastasis", "favoured benign").
+4. Both malignancy booleans concern THIS scan's findings, not the patient's known history.
+5. These four booleans are independent.
+
+DOMAIN RULES (RADIOLOGY):
+1. CANCER_LESION ADMISSION BOUNDARY. cancer_lesions only holds lesions whose lesion_status is "cancerous" or "uncertain" = possible/probable/query/indeterminate cancer. EXCLUDE any lesion the radiologist actively downgrades (e.g. "unlikely to represent metastasis", "favoured benign") - omit it, or, if clinically worth keeping, capture it as a NonCancerFinding instead. A nodule or lesion under active oncological follow-up that the report tracks as the lesion of interest IS a cancer_lesion even if uncharacterised.
+2. PATIENT-LEVEL GESTALT vs PER-LESION CHANGE. cancer_status.overall_status (ComparativeChange) is the WHOLE-STUDY gestalt of progression/response vs prior (e.g. "partial response to treatment" -> improving). Set cancer_status.recist_response ONLY when the report gives an explicit/measured RECIST response (usually leave it null).
+3. ADDENDA AND DUPLICATES. Extract the FINAL/addended interpretation; an addendum OVERRIDES the earlier body.
+4. FINDINGS vs CLINICAL HISTORY. Extract ONLY items reported as SCAN FINDINGS. NEVER populate lesions or findings from items appearing solely in the clinical history/indication (e.g. a prior diagnosis, prior treatment, or an unrelated history such as previous lung clot).
+
+The report follows below:

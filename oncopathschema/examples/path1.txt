@@ -1,0 +1,21 @@
+Histological tumour type: Clear cell renal carcinoma
+Nuclear grade: WHO/ISUP grade 2
+Sarcomatoid / rhabdoid differentiation: No
+Necrotic areas: not sampled
+Microvascular invasion: no
+Invasion of the renal vein or its segmental branches: yes
+Invasion of the pelvicalyceal system: no
+Invasion of renal sinus / peripelvic fat: yes
+Invasion of perinephric fat: no
+Surgical margins: Clear
+Background kidney: No significant abnormality
+Renal pelvis and ureter: No evidence of urothelial neoplasia.
+Adrenal: not involved.
+Left kidney radical nephrectomy:
+Clear cell renal cell carcinoma, 85mm dia
+WHO/ISUP grade 2
+Invasion of pelvic fat and renal vein
+Surgical margins: clear
+Staging (TNM 8th ed.): pT3a
+Leibovich score - Intermediate risk Group (5)
+NS/VT/AC
