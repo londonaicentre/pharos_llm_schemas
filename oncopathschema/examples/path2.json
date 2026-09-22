@@ -1,8 +1,7 @@
 {
   "is_pathology_report": true,
-  "is_oncology_related": true,
-  "is_malignancy_identified_on_specimen": true,
-  "clinical_indication": "Anterior resection and loop ileostomy for recto-sigmoid junction tumour. A left nephrectomy was performed at the same time for unrelated benign renal disease.",
+  "is_neoplastic_disease_identified": true,
+  "clinical_indication": "Anterior resection and loop ileostomy for recto-sigmoid junction tumour. A left nephrectomy was performed at the same time (previous left kidney TB, large left renal cyst and left ureteric stone).",
   "specimens": [
     {
       "anatomical_site": "colon",
@@ -10,6 +9,10 @@
       "anatomical_subsite": "recto-sigmoid junction",
       "laterality": "not_applicable",
       "procedure_desc": "Anterior resection (sigmoid colectomy)",
+      "is_sentinel": false,
+      "is_multifocal": true,
+      "is_multicentric": false,
+      "treatment_response": null,
       "nodes_examined": 14,
       "nodes_positive": 8,
       "findings": [
@@ -18,12 +21,27 @@
           "finding_status": "cancerous",
           "finding_summary": "Moderately differentiated adenocarcinoma of the recto-sigmoid colon invading through the bowel wall into the mesocolon, with a separate tumour nodule at the circumferential resection margin, extramural vascular invasion, perineural invasion, and multiple mesocolic tumour deposits.",
           "features": [
-            "lymphovascular_invasion",
-            "perineural_invasion"
+            {
+              "feature": "macrovascular_invasion",
+              "feature_name_desc": "Extramural vascular invasion (EMVI)",
+              "feature_status": "present"
+            },
+            {
+              "feature": "perineural_invasion",
+              "feature_name_desc": null,
+              "feature_status": "present"
+            },
+            {
+              "feature": "other",
+              "feature_name_desc": "serosal perforation",
+              "feature_status": "absent"
+            }
           ],
           "morphology": "adenocarcinoma",
           "invasion_status": "invasive",
-          "tumour_nature": "primary",
+          "tumour_nature": "not_stated_unclear",
+          "tumour_source": null,
+          "tumour_source_desc": null,
           "differentiation": "moderate",
           "dimensions_desc": "40x30x35mm",
           "biomarkers": [],
@@ -42,12 +60,14 @@
         },
         {
           "is_lymph_node": false,
-          "finding_summary": "Additional large tumour deposit within the mesocolon, close to or abutting the circumferential resection margin, separate from the primary tumour mass.",
           "finding_status": "cancerous",
+          "finding_summary": "Additional large tumour deposit within the mesocolon, close to or abutting the circumferential resection margin, separate from the primary tumour mass.",
           "features": [],
           "morphology": "adenocarcinoma",
           "invasion_status": "invasive",
-          "tumour_nature": "primary",
+          "tumour_nature": "not_stated_unclear",
+          "tumour_source": null,
+          "tumour_source_desc": null,
           "differentiation": null,
           "dimensions_desc": "40x35x35mm",
           "biomarkers": [],
@@ -56,19 +76,49 @@
         {
           "is_lymph_node": true,
           "finding_status": "cancerous",
-          "finding_summary": "Regional mesocolic lymph nodes, 8 of 14 examined involved by metastatic adenocarcinoma; the highest (apical) node was negative.",
+          "finding_summary": "Regional mesocolic lymph nodes, 8 of 14 examined involved by metastatic adenocarcinoma.",
           "features": [],
           "morphology": "adenocarcinoma",
-          "invasion_status": "invasive",
+          "invasion_status": "not_stated",
           "tumour_nature": "metastasis",
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": []
+        },
+        {
+          "is_lymph_node": false,
+          "finding_status": "not_cancerous",
+          "finding_summary": "A small lymphoid aggregate of monomorphic lymphocytes within the mesentery, comprising a mixture of B- and T-cells and therefore reactive rather than neoplastic.",
+          "features": [],
+          "morphology": null,
+          "invasion_status": null,
+          "tumour_nature": null,
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": []
+        },
+        {
+          "is_lymph_node": true,
+          "finding_status": "not_cancerous",
+          "finding_summary": "Highest (apical) lymph node is negative; spared of tumour.",
+          "features": [],
+          "morphology": null,
+          "invasion_status": null,
+          "tumour_nature": null,
+          "tumour_source": null,
+          "tumour_source_desc": null,
           "differentiation": null,
           "dimensions_desc": null,
           "biomarkers": [],
           "scores": []
         }
       ],
-      "general_features": [],
-      "general_features_summary": "A small lymphoid aggregate of monomorphic lymphocytes was seen within the mesentery, comprising a mixture of B- and T-cells.",
       "margins": [
         {
           "margin_status": "clear",
@@ -88,13 +138,35 @@
       "anatomical_subsite": "proximal resection margin",
       "laterality": "not_applicable",
       "procedure_desc": "Sutured donut (anastomotic ring)",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
       "nodes_examined": null,
       "nodes_positive": null,
-      "findings": [],
-      "general_features": [
-        "normal_unremarkable"
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "not_cancerous",
+          "finding_summary": "Large bowel mucosa with no dysplasia or malignancy; reported as normal.",
+          "features": [
+            {
+              "feature": "dysplasia",
+              "feature_name_desc": null,
+              "feature_status": "absent"
+            }
+          ],
+          "morphology": null,
+          "invasion_status": null,
+          "tumour_nature": null,
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": []
+        }
       ],
-      "general_features_summary": "Large bowel mucosa with no dysplasia or malignancy.",
       "margins": []
     },
     {
@@ -103,13 +175,35 @@
       "anatomical_subsite": "distal resection margin",
       "laterality": "not_applicable",
       "procedure_desc": "Donut (anastomotic ring)",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
       "nodes_examined": null,
       "nodes_positive": null,
-      "findings": [],
-      "general_features": [
-        "normal_unremarkable"
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "not_cancerous",
+          "finding_summary": "Large bowel mucosa with no dysplasia or malignancy; reported as normal.",
+          "features": [
+            {
+              "feature": "dysplasia",
+              "feature_name_desc": null,
+              "feature_status": "absent"
+            }
+          ],
+          "morphology": null,
+          "invasion_status": null,
+          "tumour_nature": null,
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": []
+        }
       ],
-      "general_features_summary": "Large bowel mucosa with no dysplasia or malignancy.",
       "margins": []
     },
     {
@@ -118,11 +212,40 @@
       "anatomical_subsite": null,
       "laterality": "not_applicable",
       "procedure_desc": null,
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
       "nodes_examined": null,
       "nodes_positive": null,
-      "findings": [],
-      "general_features": [],
-      "general_features_summary": "Well-circumscribed fibroadipose nodule containing a benign cyst; no dysplasia or malignancy.",
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "not_cancerous",
+          "finding_summary": "Well-circumscribed fibroadipose nodule containing a benign peritoneal cyst, with no dysplasia or malignancy.",
+          "features": [
+            {
+              "feature": "benign_neoplasm",
+              "feature_name_desc": null,
+              "feature_status": "present"
+            },
+            {
+              "feature": "dysplasia",
+              "feature_name_desc": null,
+              "feature_status": "absent"
+            }
+          ],
+          "morphology": null,
+          "invasion_status": null,
+          "tumour_nature": null,
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": "3x2x1mm",
+          "biomarkers": [],
+          "scores": []
+        }
+      ],
       "margins": []
     }
   ],

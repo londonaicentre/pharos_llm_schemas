@@ -1,0 +1,77 @@
+{
+  "is_pathology_report": true,
+  "is_neoplastic_disease_identified": true,
+  "clinical_indication": "Rectal carcinoma, for anterior resection.",
+  "specimens": [
+    {
+      "anatomical_site": "rectum",
+      "anatomical_site_name_desc": "Rectum, anterior resection",
+      "anatomical_subsite": null,
+      "laterality": null,
+      "procedure_desc": "anterior resection",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
+      "nodes_examined": 12,
+      "nodes_positive": 3,
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "cancerous",
+          "finding_summary": "Moderately differentiated adenocarcinoma of the rectum, 45mm, extending into the perirectal fat (pT3), with perineural invasion present.",
+          "features": [
+            {
+              "feature": "perineural_invasion",
+              "feature_name_desc": null,
+              "feature_status": "present"
+            }
+          ],
+          "morphology": "adenocarcinoma",
+          "invasion_status": "invasive",
+          "tumour_nature": "not_stated_unclear",
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": "moderate",
+          "dimensions_desc": "45mm",
+          "biomarkers": [],
+          "scores": [
+            {
+              "score_name": "tnm_pathological",
+              "score_name_desc": null,
+              "score_value": "pT3"
+            }
+          ]
+        },
+        {
+          "is_lymph_node": true,
+          "finding_status": "cancerous",
+          "finding_summary": "Twelve lymph nodes examined, 3 involved (3/12).",
+          "features": [],
+          "morphology": null,
+          "invasion_status": "not_stated",
+          "tumour_nature": "not_stated_unclear",
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": []
+        }
+      ],
+      "margins": [
+        {
+          "margin_status": "close",
+          "distance_mm": 1.5,
+          "margin_desc": "Circumferential resection margin described as close, 1.5mm"
+        },
+        {
+          "margin_status": "clear",
+          "distance_mm": 45.0,
+          "margin_desc": "Distal resection margin clear, 45mm"
+        }
+      ]
+    }
+  ],
+  "report_summary": "Rectal anterior resection showing a 45mm moderately differentiated adenocarcinoma extending into the perirectal fat (pT3), with perineural invasion. The circumferential resection margin is described as close at 1.5mm and the distal resection margin is clear at 45mm. Three of twelve lymph nodes are involved (3/12)."
+}

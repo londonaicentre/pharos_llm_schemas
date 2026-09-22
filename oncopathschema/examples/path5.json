@@ -1,7 +1,6 @@
 {
   "is_pathology_report": true,
-  "is_oncology_related": true,
-  "is_malignancy_identified_on_specimen": true,
+  "is_neoplastic_disease_identified": true,
   "clinical_indication": "Asymmetrically dense left breast on imaging (M3, U3).",
   "specimens": [
     {
@@ -10,6 +9,10 @@
       "anatomical_subsite": null,
       "laterality": "left",
       "procedure_desc": "Core biopsy",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
       "nodes_examined": null,
       "nodes_positive": null,
       "findings": [
@@ -17,11 +20,24 @@
           "is_lymph_node": false,
           "finding_status": "cancerous",
           "finding_summary": "Two cores of densely fibrous breast tissue infiltrated by a predominantly small lymphocytic, vaguely nodular lymphoid proliferation with plasmacytoid differentiation, admixed mature plasma cells, eosinophils and scattered/focally aggregated larger blasts; residual ductal structures present, no lympho-epithelial lesions seen. Features consistent with extranodal marginal zone B-cell lymphoma, presumed MALT type, with no evidence of high-grade transformation at this site.",
-          "features": [],
+          "features": [
+            {
+              "feature": "other",
+              "feature_name_desc": "lympho-epithelial lesions",
+              "feature_status": "absent"
+            },
+            {
+              "feature": "other",
+              "feature_name_desc": "high grade progression/transformation",
+              "feature_status": "absent"
+            }
+          ],
           "morphology": "marginal_zone_lymphoma",
           "invasion_status": "not_stated",
           "tumour_nature": "primary",
-          "differentiation": "not_stated",
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
           "dimensions_desc": null,
           "biomarkers": [
             {
@@ -103,26 +119,31 @@
             },
             {
               "biomarker": "other",
-              "biomarker_name_desc": "Kappa/lambda light chain immunohistochemistry",
+              "biomarker_name_desc": "Kappa",
               "biomarker_status": "not_assessable",
               "method": "immunohistochemistry",
               "result_value": "Uninformative"
             },
             {
-              "biomarker": "ki_67",
-              "biomarker_name_desc": "Ki-67 proliferative fraction",
-              "biomarker_status": "altered",
+              "biomarker": "other",
+              "biomarker_name_desc": "Lambda",
+              "biomarker_status": "not_assessable",
               "method": "immunohistochemistry",
+              "result_value": "Uninformative"
+            },
+            {
+              "biomarker": "other",
+              "biomarker_name_desc": "proliferative fraction",
+              "biomarker_status": "altered",
+              "method": null,
               "result_value": "Generally low, approximately 20% (varies)"
             }
           ],
           "scores": []
         }
       ],
-      "general_features": [],
-      "general_features_summary": null,
       "margins": []
     }
   ],
-  "report_summary": "Left breast core biopsy performed for asymmetrically dense left breast on imaging (M3, U3) shows extranodal marginal zone B-cell lymphoma, presumed to be of MALT type, with an immunophenotype of CD20+, CD79a+, BCL2+, CD5-, CD10-, cyclin D1-, patchy CD23, and a subset of larger cells expressing IRF4/MUM1, BCL6, CD30 and CD138. Kappa/lambda immunohistochemistry was uninformative. Ki-67 proliferative fraction generally low (~20%). No evidence of high-grade transformation at this site."
+  "report_summary": "Left breast core biopsy performed for asymmetrically dense left breast on imaging (M3, U3) shows extranodal marginal zone B-cell lymphoma, presumed to be of MALT type, with an immunophenotype of CD20+, CD79a+, BCL2+, CD5-, CD10-, cyclin D1-, patchy CD23, and a subset of larger cells expressing IRF4/MUM1, BCL6, CD30 and CD138. Kappa/lambda immunohistochemistry was uninformative. proliferative fraction generally low (~20%). No evidence of high-grade transformation at this site."
 }
