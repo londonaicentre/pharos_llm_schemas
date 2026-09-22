@@ -1,8 +1,7 @@
 {
   "is_pathology_report": true,
-  "is_oncology_related": true,
-  "is_malignancy_identified_on_specimen": false,
-  "clinical_indication": "2-month history of erythematous non-specific patches on the lower legs, clinically suspected DSAP (disseminated superficial actinic porokeratosis). Patient attends for phototherapy for chronic itch secondary to liver disease, with a background of stage IV melanoma. Punch biopsy requested for diagnosis.",
+  "is_neoplastic_disease_identified": false,
+  "clinical_indication": "2-month history of erythematous non-specific patches on the lower legs, clinically DSAP. Attends for phototherapy twice weekly for chronic itch secondary to liver sclerosis. Background stage IV melanoma.",
   "specimens": [
     {
       "anatomical_site": "skin",
@@ -10,13 +9,35 @@
       "anatomical_subsite": "left shin",
       "laterality": "left",
       "procedure_desc": "4mm punch biopsy",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
       "nodes_examined": null,
       "nodes_positive": null,
-      "findings": [],
-      "general_features": [
-        "inflammation"
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "not_cancerous",
+          "finding_summary": "Mild hyperkeratosis with an attenuated/atrophic epidermis and a mild chronic perivascular inflammatory cell infiltrate in the superficial reticular dermis. No convincing evidence of cornoid lamella identified in the planes of section examined across multiple recut levels, arguing against the clinical suspicion of DSAP. Close clinicopathological correlation advised.",
+          "features": [
+            {
+              "feature": "inflammation",
+              "feature_name_desc": null,
+              "feature_status": "present"
+            }
+          ],
+          "morphology": null,
+          "invasion_status": null,
+          "tumour_nature": null,
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": []
+        }
       ],
-      "general_features_summary": "Mild hyperkeratosis with an attenuated/atrophic epidermis and a mild chronic perivascular inflammatory cell infiltrate in the superficial reticular dermis. No convincing evidence of cornoid lamella identified in the planes of section examined (multiple recut levels evaluated), arguing against the clinical suspicion of DSAP. Close clinicopathological correlation advised.",
       "margins": []
     }
   ],

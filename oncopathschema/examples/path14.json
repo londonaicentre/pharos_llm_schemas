@@ -1,0 +1,79 @@
+{
+  "is_pathology_report": true,
+  "is_neoplastic_disease_identified": true,
+  "clinical_indication": "Rapidly enlarging neck lump. Previous thyroid nodule under surveillance.",
+  "specimens": [
+    {
+      "anatomical_site": "thyroid",
+      "anatomical_site_name_desc": "Thyroid nodule, right lobe - fine needle aspiration",
+      "anatomical_subsite": "right lobe",
+      "laterality": "right",
+      "procedure_desc": "fine needle aspiration",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
+      "nodes_examined": null,
+      "nodes_positive": null,
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "uncertain",
+          "finding_summary": "Microfollicular follicular epithelial proliferation with nuclear enlargement and grooves and scant colloid, suspicious for but not diagnostic of papillary thyroid carcinoma (Thy4). Capsular invasion not assessable on cytological material.",
+          "features": [
+            {
+              "feature": "atypia",
+              "feature_name_desc": "nuclear enlargement and occasional grooves",
+              "feature_status": "present"
+            },
+            {
+              "feature": "other",
+              "feature_name_desc": "definite nuclear inclusions",
+              "feature_status": "absent"
+            },
+            {
+              "feature": "other",
+              "feature_name_desc": "microfollicular architecture",
+              "feature_status": "present"
+            },
+            {
+              "feature": "other",
+              "feature_name_desc": "capsular invasion",
+              "feature_status": "not_assessable"
+            },
+            {
+              "feature": "other",
+              "feature_name_desc": "scant colloid",
+              "feature_status": "present"
+            }
+          ],
+          "morphology": null,
+          "invasion_status": "not_assessable",
+          "tumour_nature": "not_stated_unclear",
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [
+            {
+              "biomarker": "other",
+              "biomarker_name_desc": "HBME-1",
+              "biomarker_status": "not_assessable",
+              "method": "immunohistochemistry",
+              "result_value": "technically unsatisfactory; lesional cells too scant for assessment, could not be interpreted"
+            }
+          ],
+          "scores": [
+            {
+              "score_name": "other",
+              "score_name_desc": "Thy category (RCPath thyroid cytology)",
+              "score_value": "Thy4 (suspicious of malignancy)"
+            }
+          ]
+        }
+      ],
+      "margins": []
+    }
+  ],
+  "report_summary": "Thyroid right lobe FNA showing a microfollicular proliferation with nuclear atypia, suspicious of but not diagnostic for papillary thyroid carcinoma (Thy4). HBME-1 immunocytochemistry was technically unsatisfactory. Diagnostic hemithyroidectomy recommended."
+}

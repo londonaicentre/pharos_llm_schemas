@@ -1,0 +1,82 @@
+{
+  "is_pathology_report": true,
+  "is_neoplastic_disease_identified": true,
+  "clinical_indication": "Sigmoid tumour, referred from another hospital for resection.",
+  "specimens": [
+    {
+      "anatomical_site": "colon",
+      "anatomical_site_name_desc": "Sigmoid colon, anterior resection",
+      "anatomical_subsite": "sigmoid",
+      "laterality": null,
+      "procedure_desc": "anterior resection",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
+      "nodes_examined": 12,
+      "nodes_positive": 0,
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "cancerous",
+          "finding_summary": "Moderately differentiated adenocarcinoma invading through muscularis propria into pericolic fat, with perineural invasion. pT3 N0.",
+          "features": [
+            {
+              "feature": "perineural_invasion",
+              "feature_name_desc": null,
+              "feature_status": "present"
+            },
+            {
+              "feature": "lymphovascular_invasion",
+              "feature_name_desc": null,
+              "feature_status": "absent"
+            },
+            {
+              "feature": "other",
+              "feature_name_desc": "ulceration",
+              "feature_status": "present"
+            }
+          ],
+          "morphology": "adenocarcinoma",
+          "invasion_status": "invasive",
+          "tumour_nature": "not_stated_unclear",
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": "moderate",
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": [
+            {
+              "score_name": "tnm_pathological",
+              "score_name_desc": null,
+              "score_value": "pT3 N0"
+            }
+          ]
+        },
+        {
+          "is_lymph_node": true,
+          "finding_status": "not_cancerous",
+          "finding_summary": "Twelve lymph nodes identified, none involved (0/12).",
+          "features": [],
+          "morphology": null,
+          "invasion_status": null,
+          "tumour_nature": null,
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": []
+        }
+      ],
+      "margins": [
+        {
+          "margin_status": "not_assessable",
+          "distance_mm": null,
+          "margin_desc": "The circumferential resection margin cannot be assessed; the mesocolic aspect is received in multiple fragments and cannot be oriented"
+        }
+      ]
+    }
+  ],
+  "report_summary": "Sigmoid colon anterior resection showing a moderately differentiated adenocarcinoma invading into pericolic fat with perineural invasion, pT3 N0. The circumferential margin could not be assessed because of fragmentation and the longitudinal margins were not commented upon. Twelve lymph nodes are free of tumour (0/12)."
+}

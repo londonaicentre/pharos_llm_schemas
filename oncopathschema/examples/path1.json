@@ -1,7 +1,6 @@
 {
   "is_pathology_report": true,
-  "is_oncology_related": true,
-  "is_malignancy_identified_on_specimen": true,
+  "is_neoplastic_disease_identified": true,
   "clinical_indication": null,
   "specimens": [
     {
@@ -10,6 +9,10 @@
       "anatomical_subsite": null,
       "laterality": "left",
       "procedure_desc": "radical nephrectomy",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
       "nodes_examined": null,
       "nodes_positive": null,
       "findings": [
@@ -17,10 +20,48 @@
           "is_lymph_node": false,
           "finding_status": "cancerous",
           "finding_summary": "Clear cell renal cell carcinoma, 85mm in diameter, WHO/ISUP nuclear grade 2, without sarcomatoid or rhabdoid differentiation. Invasion of the renal vein/segmental branches and of the renal sinus/peripelvic fat is present; no microvascular invasion, pelvicalyceal system invasion, or perinephric fat invasion. Surgical margins clear. Staged pT3a.",
-          "features": [],
+          "features": [
+            {
+              "feature": "lymphovascular_invasion",
+              "feature_name_desc": "Microvascular invasion",
+              "feature_status": "absent"
+            },
+            {
+              "feature": "macrovascular_invasion",
+              "feature_name_desc": "Invasion of the renal vein or its segmental branches",
+              "feature_status": "present"
+            },
+            {
+              "feature": "necrosis",
+              "feature_name_desc": "Necrotic areas",
+              "feature_status": "not_assessable"
+            },
+            {
+              "feature": "other",
+              "feature_name_desc": "Sarcomatoid / rhabdoid differentiation",
+              "feature_status": "absent"
+            },
+            {
+              "feature": "other",
+              "feature_name_desc": "Invasion of the pelvicalyceal system",
+              "feature_status": "absent"
+            },
+            {
+              "feature": "other",
+              "feature_name_desc": "Invasion of renal sinus / peripelvic fat",
+              "feature_status": "present"
+            },
+            {
+              "feature": "other",
+              "feature_name_desc": "Invasion of perinephric fat",
+              "feature_status": "absent"
+            }
+          ],
           "morphology": "clear_cell_carcinoma",
           "invasion_status": "invasive",
-          "tumour_nature": "primary",
+          "tumour_nature": "not_stated_unclear",
+          "tumour_source": null,
+          "tumour_source_desc": null,
           "differentiation": null,
           "dimensions_desc": "85mm dia",
           "biomarkers": [],
@@ -41,10 +82,53 @@
               "score_value": "Intermediate risk Group (5)"
             }
           ]
+        },
+        {
+          "is_lymph_node": false,
+          "finding_status": "not_cancerous",
+          "finding_summary": "Background kidney shows no significant abnormality.",
+          "features": [],
+          "morphology": null,
+          "invasion_status": null,
+          "tumour_nature": null,
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": []
+        },
+        {
+          "is_lymph_node": false,
+          "finding_status": "not_cancerous",
+          "finding_summary": "Renal pelvis and ureter show no evidence of urothelial neoplasia.",
+          "features": [],
+          "morphology": null,
+          "invasion_status": null,
+          "tumour_nature": null,
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": []
+        },
+        {
+          "is_lymph_node": false,
+          "finding_status": "not_cancerous",
+          "finding_summary": "Adrenal is not involved.",
+          "features": [],
+          "morphology": null,
+          "invasion_status": null,
+          "tumour_nature": null,
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": []
         }
       ],
-      "general_features": [],
-      "general_features_summary": "Background kidney showed no significant abnormality. Renal pelvis and ureter showed no evidence of urothelial neoplasia. Adrenal not involved.",
       "margins": [
         {
           "margin_status": "clear",
