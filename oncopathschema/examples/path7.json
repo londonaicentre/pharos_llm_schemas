@@ -1,7 +1,6 @@
 {
   "is_pathology_report": true,
-  "is_oncology_related": true,
-  "is_malignancy_identified_on_specimen": true,
+  "is_neoplastic_disease_identified": true,
   "clinical_indication": "Recent enlarging left axillary lymph node; core biopsy taken from the largest node.",
   "specimens": [
     {
@@ -10,19 +9,25 @@
       "anatomical_subsite": "left axilla",
       "laterality": "left",
       "procedure_desc": "Core biopsy",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
       "nodes_examined": null,
       "nodes_positive": null,
       "findings": [
         {
           "is_lymph_node": true,
           "finding_status": "cancerous",
-          "finding_summary": "Left axillary lymph node core biopsy showing metastatic carcinoma, grade 3. Immunohistochemistry (TTF-1 diffusely strongly positive, GATA-3 and progesterone receptor negative, oestrogen receptor weak nuclear positivity) indicates a lung primary rather than the initially favoured breast origin. Additional molecular/biomarker testing performed on the tumour.",
+          "finding_summary": "Metastatic carcinoma in an axillary lymph node core biopsy, TTF-1 diffusely strongly positive, consistent with origin from a lung primary.",
           "features": [],
           "morphology": "carcinoma_other",
           "invasion_status": "not_stated",
           "tumour_nature": "metastasis",
+          "tumour_source": "lung",
+          "tumour_source_desc": "lung primary",
           "differentiation": null,
-          "dimensions_desc": "Two cores, larger measuring 12 x 1 x 1mm and smaller measuring 10 x 1 x 1mm, plus two fragments",
+          "dimensions_desc": null,
           "biomarkers": [
             {
               "biomarker": "ttf1",
@@ -118,8 +123,6 @@
           ]
         }
       ],
-      "general_features": [],
-      "general_features_summary": null,
       "margins": []
     }
   ],

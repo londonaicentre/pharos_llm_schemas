@@ -1,0 +1,75 @@
+{
+  "is_pathology_report": true,
+  "is_neoplastic_disease_identified": true,
+  "clinical_indication": "Gastric mass on endoscopy.",
+  "specimens": [
+    {
+      "anatomical_site": "stomach",
+      "anatomical_site_name_desc": "Stomach, antrum, endoscopic biopsy",
+      "anatomical_subsite": "antrum",
+      "laterality": null,
+      "procedure_desc": "endoscopic biopsy",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
+      "nodes_examined": null,
+      "nodes_positive": null,
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "cancerous",
+          "finding_summary": "Invasive poorly differentiated adenocarcinoma. HER2 immunohistochemistry score 2+ (equivocal). Mismatch repair proteins MLH1, PMS2, MSH2 and MSH6 all retained/preserved.",
+          "features": [],
+          "morphology": "adenocarcinoma",
+          "invasion_status": "invasive",
+          "tumour_nature": "not_stated_unclear",
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": "poor",
+          "dimensions_desc": null,
+          "biomarkers": [
+            {
+              "biomarker": "erbb2_her2",
+              "biomarker_name_desc": "HER2",
+              "biomarker_status": "equivocal",
+              "method": "immunohistochemistry",
+              "result_value": "score 2+ (equivocal)"
+            },
+            {
+              "biomarker": "mlh1",
+              "biomarker_name_desc": "MLH1",
+              "biomarker_status": "negative",
+              "method": null,
+              "result_value": "retained/preserved"
+            },
+            {
+              "biomarker": "pms2",
+              "biomarker_name_desc": "PMS2",
+              "biomarker_status": "negative",
+              "method": null,
+              "result_value": "retained/preserved"
+            },
+            {
+              "biomarker": "msh2",
+              "biomarker_name_desc": "MSH2",
+              "biomarker_status": "negative",
+              "method": null,
+              "result_value": "retained/preserved"
+            },
+            {
+              "biomarker": "msh6",
+              "biomarker_name_desc": "MSH6",
+              "biomarker_status": "negative",
+              "method": null,
+              "result_value": "retained/preserved"
+            }
+          ],
+          "scores": []
+        }
+      ],
+      "margins": []
+    }
+  ],
+  "report_summary": "Endoscopic biopsy of the gastric antrum shows invasive poorly differentiated adenocarcinoma. HER2 immunohistochemistry is equivocal at score 2+. Mismatch repair proteins (MLH1, PMS2, MSH2, MSH6) are retained."
+}

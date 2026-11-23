@@ -1,7 +1,6 @@
 {
   "is_pathology_report": true,
-  "is_oncology_related": true,
-  "is_malignancy_identified_on_specimen": true,
+  "is_neoplastic_disease_identified": true,
   "clinical_indication": "Enlarged right axillary lymph node, previous biopsy B1, with known right breast cancer; query involvement. Repeat biopsy as per MDM recommendation.",
   "specimens": [
     {
@@ -10,6 +9,10 @@
       "anatomical_subsite": "axilla",
       "laterality": "right",
       "procedure_desc": "core biopsy",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
       "nodes_examined": null,
       "nodes_positive": null,
       "findings": [
@@ -17,10 +20,18 @@
           "is_lymph_node": true,
           "finding_status": "cancerous",
           "finding_summary": "Right axillary lymph node core biopsy shows infiltration by invasive carcinoma of no special type (invasive adenocarcinoma NST), no in-situ component identified; ER and PR strongly positive, HER2 negative.",
-          "features": [],
+          "features": [
+            {
+              "feature": "other",
+              "feature_name_desc": "in-situ component",
+              "feature_status": "absent"
+            }
+          ],
           "morphology": "invasive_carcinoma_nst",
           "invasion_status": "invasive",
           "tumour_nature": "metastasis",
+          "tumour_source": null,
+          "tumour_source_desc": null,
           "differentiation": null,
           "dimensions_desc": null,
           "biomarkers": [
@@ -51,22 +62,10 @@
               "score_name": "breast_b_category",
               "score_name_desc": null,
               "score_value": "B5b"
-            },
-            {
-              "score_name": "allred",
-              "score_name_desc": "ER Allred score",
-              "score_value": "7/8"
-            },
-            {
-              "score_name": "allred",
-              "score_name_desc": "PR Allred score",
-              "score_value": "8/8"
             }
           ]
         }
       ],
-      "general_features": [],
-      "general_features_summary": null,
       "margins": []
     }
   ],

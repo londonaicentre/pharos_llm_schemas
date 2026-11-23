@@ -1,0 +1,82 @@
+{
+  "is_pathology_report": true,
+  "is_neoplastic_disease_identified": true,
+  "clinical_indication": "Known colorectal carcinoma. Liver lesion for biopsy.",
+  "specimens": [
+    {
+      "anatomical_site": "liver",
+      "anatomical_site_name_desc": "Liver, segment VII, core biopsy",
+      "anatomical_subsite": "segment VII",
+      "laterality": null,
+      "procedure_desc": "core biopsy",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
+      "nodes_examined": null,
+      "nodes_positive": null,
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "cancerous",
+          "finding_summary": "Metastatic adenocarcinoma in a segment VII liver core biopsy, with morphology and immunoprofile (CK20 positive, CDX2 positive, CK7 negative) of a colorectal primary.",
+          "features": [],
+          "morphology": "adenocarcinoma",
+          "invasion_status": "not_stated",
+          "tumour_nature": "metastasis",
+          "tumour_source": "other",
+          "tumour_source_desc": "colorectal",
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [
+            {
+              "biomarker": "other",
+              "biomarker_name_desc": "CK20",
+              "biomarker_status": "altered",
+              "method": "immunohistochemistry",
+              "result_value": "positive"
+            },
+            {
+              "biomarker": "other",
+              "biomarker_name_desc": "CDX2",
+              "biomarker_status": "altered",
+              "method": "immunohistochemistry",
+              "result_value": "positive"
+            },
+            {
+              "biomarker": "other",
+              "biomarker_name_desc": "CK7",
+              "biomarker_status": "negative",
+              "method": "immunohistochemistry",
+              "result_value": "negative"
+            }
+          ],
+          "scores": []
+        },
+        {
+          "is_lymph_node": false,
+          "finding_status": "not_cancerous",
+          "finding_summary": "Background liver shows mild steatosis.",
+          "features": [
+            {
+              "feature": "other",
+              "feature_name_desc": "mild steatosis",
+              "feature_status": "present"
+            }
+          ],
+          "morphology": null,
+          "invasion_status": null,
+          "tumour_nature": null,
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": []
+        }
+      ],
+      "margins": []
+    }
+  ],
+  "report_summary": "Segment VII liver core biopsy shows metastatic adenocarcinoma. The morphology and immunoprofile (CK20 positive, CDX2 positive, CK7 negative) are those of a colorectal primary. The background liver shows mild steatosis."
+}

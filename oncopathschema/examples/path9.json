@@ -1,0 +1,93 @@
+{
+  "is_pathology_report": true,
+  "is_neoplastic_disease_identified": false,
+  "clinical_indication": "Invasive ductal carcinoma, right breast. Completed neoadjuvant chemotherapy. Now for mastectomy and axillary clearance.",
+  "specimens": [
+    {
+      "anatomical_site": "breast",
+      "anatomical_site_name_desc": "Right breast, mastectomy",
+      "anatomical_subsite": null,
+      "laterality": "right",
+      "procedure_desc": "mastectomy",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": "complete",
+      "nodes_examined": null,
+      "nodes_positive": null,
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "not_cancerous",
+          "finding_summary": "Complete pathological response with no residual invasive carcinoma and no residual DCIS identified; extensive treatment-related fibrosis and a tumour bed are seen.",
+          "features": [
+            {
+              "feature": "treatment_effect",
+              "feature_name_desc": "treatment-related fibrosis and a tumour bed",
+              "feature_status": "present"
+            }
+          ],
+          "morphology": null,
+          "invasion_status": null,
+          "tumour_nature": null,
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": [
+            {
+              "score_name": "tnm_pathological",
+              "score_name_desc": null,
+              "score_value": "ypT0"
+            },
+            {
+              "score_name": "residual_cancer_burden",
+              "score_name_desc": "Residual Cancer Burden",
+              "score_value": "class 0"
+            }
+          ]
+        }
+      ],
+      "margins": []
+    },
+    {
+      "anatomical_site": "lymph_node_axillary",
+      "anatomical_site_name_desc": "Right axilla, axillary node clearance",
+      "anatomical_subsite": null,
+      "laterality": "right",
+      "procedure_desc": "axillary node clearance",
+      "is_sentinel": false,
+      "is_multifocal": false,
+      "is_multicentric": false,
+      "treatment_response": null,
+      "nodes_examined": 14,
+      "nodes_positive": 0,
+      "findings": [
+        {
+          "is_lymph_node": true,
+          "finding_status": "not_cancerous",
+          "finding_summary": "Fourteen lymph nodes examined, all free of tumour (0/14), ypN0.",
+          "features": [],
+          "morphology": null,
+          "invasion_status": null,
+          "tumour_nature": null,
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": null,
+          "biomarkers": [],
+          "scores": [
+            {
+              "score_name": "tnm_pathological",
+              "score_name_desc": null,
+              "score_value": "ypN0"
+            }
+          ]
+        }
+      ],
+      "margins": []
+    }
+  ],
+  "report_summary": "Right mastectomy and axillary node clearance following neoadjuvant chemotherapy for invasive ductal carcinoma. No residual invasive carcinoma or DCIS is identified, with extensive treatment-related fibrosis and a tumour bed, amounting to a complete pathological response (ypT0) and Residual Cancer Burden class 0. Fourteen axillary lymph nodes are free of tumour (0/14), ypN0."
+}

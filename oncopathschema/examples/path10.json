@@ -1,0 +1,78 @@
+{
+  "is_pathology_report": true,
+  "is_neoplastic_disease_identified": true,
+  "clinical_indication": "Left breast carcinoma.",
+  "specimens": [
+    {
+      "anatomical_site": "breast",
+      "anatomical_site_name_desc": "Left breast, mastectomy",
+      "anatomical_subsite": "upper outer quadrant",
+      "laterality": "left",
+      "procedure_desc": "mastectomy",
+      "is_sentinel": false,
+      "is_multifocal": true,
+      "is_multicentric": false,
+      "treatment_response": null,
+      "nodes_examined": null,
+      "nodes_positive": null,
+      "findings": [
+        {
+          "is_lymph_node": false,
+          "finding_status": "cancerous",
+          "finding_summary": "First of two separate foci of invasive carcinoma of no special type in the upper outer quadrant, 22mm, Nottingham grade 3. Lymphovascular invasion is present.",
+          "features": [
+            {
+              "feature": "lymphovascular_invasion",
+              "feature_name_desc": null,
+              "feature_status": "present"
+            }
+          ],
+          "morphology": "invasive_carcinoma_nst",
+          "invasion_status": "invasive",
+          "tumour_nature": "not_stated_unclear",
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": "22mm",
+          "biomarkers": [],
+          "scores": [
+            {
+              "score_name": "nottingham",
+              "score_name_desc": "Nottingham grade",
+              "score_value": "3"
+            }
+          ]
+        },
+        {
+          "is_lymph_node": false,
+          "finding_status": "cancerous",
+          "finding_summary": "Second of two separate foci of invasive carcinoma of no special type in the upper outer quadrant, 8mm, Nottingham grade 2.",
+          "features": [],
+          "morphology": "invasive_carcinoma_nst",
+          "invasion_status": "invasive",
+          "tumour_nature": "not_stated_unclear",
+          "tumour_source": null,
+          "tumour_source_desc": null,
+          "differentiation": null,
+          "dimensions_desc": "8mm",
+          "biomarkers": [],
+          "scores": [
+            {
+              "score_name": "nottingham",
+              "score_name_desc": "Nottingham grade",
+              "score_value": "2"
+            }
+          ]
+        }
+      ],
+      "margins": [
+        {
+          "margin_status": "clear",
+          "distance_mm": 12.0,
+          "margin_desc": "All margins clear, nearest 12mm"
+        }
+      ]
+    }
+  ],
+  "report_summary": "Left breast mastectomy shows multifocal invasive carcinoma of no special type, with two separate foci in the upper outer quadrant: a 22mm Nottingham grade 3 focus and an 8mm Nottingham grade 2 focus. Lymphovascular invasion is present. All margins are clear, the nearest at 12mm."
+}
