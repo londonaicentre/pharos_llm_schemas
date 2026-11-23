@@ -9,12 +9,14 @@
       "anatomical_subsite": null,
       "laterality": "left",
       "procedure_desc": "radical nephrectomy",
+      "total_size_desc": null,
       "is_sentinel": false,
-      "is_multifocal": false,
-      "is_multicentric": false,
+      "is_multifocal": null,
+      "is_multicentric": null,
       "treatment_response": null,
       "nodes_examined": null,
       "nodes_positive": null,
+      "nodes_previously_positive": null,
       "findings": [
         {
           "is_lymph_node": false,

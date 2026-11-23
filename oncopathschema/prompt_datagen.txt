@@ -27,6 +27,6 @@ DOMAIN RULES (PATHOLOGY):
 4. ONE FINDING PER FOCUS THE REPORT ITEMISES. Where the report describes multiple tumour foci individually - its own size, site, or grade - record one finding per focus, even if they share the same morphology; set is_multifocal/is_multicentric on the Specimen as well. Where foci are only reported in aggregate (e.g. "multifocal, largest 22mm"), keep one finding. An invasive component and its own in-situ component are always two findings.
 5. MARGINS: EXTRACT STATUS AND DISTANCE WHERE MENTIONED. Extract margin_status whenever the report characterises the margin (e.g. clear, involved, close), and distance_mm whenever a number is stated. Never derive one from the other, e.g. do not set CLOSE because a small distance_mm is present. A statement about depth of invasion (e.g. muscularis propria in a TURBT) is not a surgical margin.
 
-To reiterate: Extract only what the report explicitly states; never infer, assume, guess, or calculate a value that isn't written.
+To reiterate: Extract only what the report explicitly states; never infer, assume, guess, or calculate a value that isn't written. Where the report is silent, use None (or omit the item); record False, absent or not performed only where the report says so.
 
 The report follows below:

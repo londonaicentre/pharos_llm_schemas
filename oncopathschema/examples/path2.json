@@ -9,12 +9,14 @@
       "anatomical_subsite": "recto-sigmoid junction",
       "laterality": "not_applicable",
       "procedure_desc": "Anterior resection (sigmoid colectomy)",
+      "total_size_desc": null,
       "is_sentinel": false,
       "is_multifocal": true,
-      "is_multicentric": false,
+      "is_multicentric": null,
       "treatment_response": null,
       "nodes_examined": 14,
       "nodes_positive": 8,
+      "nodes_previously_positive": null,
       "findings": [
         {
           "is_lymph_node": false,
@@ -138,12 +140,14 @@
       "anatomical_subsite": "proximal resection margin",
       "laterality": "not_applicable",
       "procedure_desc": "Sutured donut (anastomotic ring)",
+      "total_size_desc": null,
       "is_sentinel": false,
-      "is_multifocal": false,
-      "is_multicentric": false,
+      "is_multifocal": null,
+      "is_multicentric": null,
       "treatment_response": null,
       "nodes_examined": null,
       "nodes_positive": null,
+      "nodes_previously_positive": null,
       "findings": [
         {
           "is_lymph_node": false,
@@ -175,12 +179,14 @@
       "anatomical_subsite": "distal resection margin",
       "laterality": "not_applicable",
       "procedure_desc": "Donut (anastomotic ring)",
+      "total_size_desc": null,
       "is_sentinel": false,
-      "is_multifocal": false,
-      "is_multicentric": false,
+      "is_multifocal": null,
+      "is_multicentric": null,
       "treatment_response": null,
       "nodes_examined": null,
       "nodes_positive": null,
+      "nodes_previously_positive": null,
       "findings": [
         {
           "is_lymph_node": false,
@@ -212,12 +218,14 @@
       "anatomical_subsite": null,
       "laterality": "not_applicable",
       "procedure_desc": null,
+      "total_size_desc": null,
       "is_sentinel": false,
-      "is_multifocal": false,
-      "is_multicentric": false,
+      "is_multifocal": null,
+      "is_multicentric": null,
       "treatment_response": null,
       "nodes_examined": null,
       "nodes_positive": null,
+      "nodes_previously_positive": null,
       "findings": [
         {
           "is_lymph_node": false,
@@ -225,8 +233,8 @@
           "finding_summary": "Well-circumscribed fibroadipose nodule containing a benign peritoneal cyst, with no dysplasia or malignancy.",
           "features": [
             {
-              "feature": "benign_neoplasm",
-              "feature_name_desc": null,
+              "feature": "other",
+              "feature_name_desc": "benign cyst",
               "feature_status": "present"
             },
             {
@@ -241,7 +249,7 @@
           "tumour_source": null,
           "tumour_source_desc": null,
           "differentiation": null,
-          "dimensions_desc": "3x2x1mm",
+          "dimensions_desc": null,
           "biomarkers": [],
           "scores": []
         }

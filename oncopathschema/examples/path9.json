@@ -9,12 +9,14 @@
       "anatomical_subsite": null,
       "laterality": "right",
       "procedure_desc": "mastectomy",
+      "total_size_desc": null,
       "is_sentinel": false,
-      "is_multifocal": false,
-      "is_multicentric": false,
+      "is_multifocal": null,
+      "is_multicentric": null,
       "treatment_response": "complete",
       "nodes_examined": null,
       "nodes_positive": null,
+      "nodes_previously_positive": null,
       "findings": [
         {
           "is_lymph_node": false,
@@ -57,12 +59,14 @@
       "anatomical_subsite": null,
       "laterality": "right",
       "procedure_desc": "axillary node clearance",
+      "total_size_desc": null,
       "is_sentinel": false,
-      "is_multifocal": false,
-      "is_multicentric": false,
+      "is_multifocal": null,
+      "is_multicentric": null,
       "treatment_response": null,
       "nodes_examined": 14,
       "nodes_positive": 0,
+      "nodes_previously_positive": null,
       "findings": [
         {
           "is_lymph_node": true,

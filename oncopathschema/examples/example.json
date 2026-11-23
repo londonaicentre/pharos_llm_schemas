@@ -1,5 +1,5 @@
 {
-  "content": "SYNNOVIS ANALYTICS\nCELLULAR PATHOLOGY\nHistopathology\n\nPatient: Jane Smith    DOB: 14/03/1962    Accession: S26-04417\nReported by: Dr A. Patel (GMC 1234567), Guy's Hospital, 12/09/2026\n\nClinical details: Screen-detected left breast mass, discussed at the Guy's Hospital breast MDT on 12/09/2026 by Dr A. Patel. For wide local excision and sentinel node biopsy. Right breast B3 lesion on core biopsy.\n\nA. Left breast, wide local excision:\n- Invasive carcinoma of no special type, 18mm, Nottingham grade 2 (3+2+2=7)\n- Associated high-grade ductal carcinoma in situ with comedo necrosis\n- Lymphovascular invasion is not identified\n- Perineural invasion is suspected but not definite\n- Nearest margin is the deep margin, clear at 3mm\n- ER positive (Allred 8/8), PR positive (Allred 6/8), HER2 negative (IHC score 1+)\n\nB. Left axilla, sentinel lymph nodes x3:\n- Three lymph nodes examined, no tumour seen (0/3)\n\nC. Right breast, vacuum-assisted biopsy (previous core S26-04102):\n- Atypical ductal hyperplasia (B3). Malignancy cannot be excluded; excision advised.\n- ER could not be assessed; insufficient lesional tissue in the block\n",
+  "content": "SYNNOVIS ANALYTICS\nCELLULAR PATHOLOGY\nHistopathology\n\nPatient: Jane Smith    DOB: 14/03/1962    Accession: S26-04417\nReported by: Dr A. Patel (GMC 1234567), Guy's Hospital, 12/09/2026\n\nClinical details: Screen-detected left breast mass, discussed at the Guy's Hospital breast MDT on 12/09/2026 by Dr A. Patel. For wide local excision and sentinel node biopsy. Right breast B3 lesion on core biopsy. Left axillary node previously biopsy-proven positive.\n\nA. Left breast, wide local excision:\n- Invasive carcinoma of no special type, 18mm, Nottingham grade 2 (3+2+2=7)\n- Associated high-grade ductal carcinoma in situ with comedo necrosis\n- Pleomorphic lobular carcinoma in situ is also present\n- Total extent of invasive and in-situ disease 30mm\n- The tumour is unifocal\n- Lymphovascular invasion is not identified\n- Perineural invasion is suspected but not definite\n- Nearest margin is the deep margin, clear at 3mm\n- ER positive (Allred 8/8), PR positive (Allred 6/8), HER2 negative (IHC score 1+)\n\nB. Left axilla, sentinel lymph nodes x3:\n- Three lymph nodes examined, no tumour seen (0/3)\n- One node shows fibrosis in keeping with previous involvement\n\nC. Right breast, vacuum-assisted biopsy (previous core S26-04102):\n- Atypical ductal hyperplasia (B3). Malignancy cannot be excluded; excision advised.\n- ER could not be assessed; insufficient lesional tissue in the block\n- HER2 testing was not performed\n",
   "output": {
     "is_pathology_report": true,
     "is_neoplastic_disease_identified": true,
@@ -11,12 +11,14 @@
         "anatomical_subsite": null,
         "laterality": "left",
         "procedure_desc": "wide local excision",
+        "total_size_desc": "Total extent of invasive and in-situ disease 30mm",
         "is_sentinel": false,
         "is_multifocal": false,
-        "is_multicentric": false,
+        "is_multicentric": null,
         "treatment_response": null,
         "nodes_examined": null,
         "nodes_positive": null,
+        "nodes_previously_positive": null,
         "findings": [
           {
             "is_lymph_node": false,
@@ -98,6 +100,27 @@
                 "score_value": "high-grade"
               }
             ]
+          },
+          {
+            "is_lymph_node": false,
+            "finding_status": "cancerous",
+            "finding_summary": "Pleomorphic lobular carcinoma in situ also present.",
+            "features": [
+              {
+                "feature": "lcis_pleomorphic",
+                "feature_name_desc": null,
+                "feature_status": "present"
+              }
+            ],
+            "morphology": "lobular_carcinoma_in_situ",
+            "invasion_status": "in_situ_only",
+            "tumour_nature": "not_stated_unclear",
+            "tumour_source": null,
+            "tumour_source_desc": null,
+            "differentiation": null,
+            "dimensions_desc": null,
+            "biomarkers": [],
+            "scores": []
           }
         ],
         "margins": [
@@ -114,18 +137,26 @@
         "anatomical_subsite": null,
         "laterality": "left",
         "procedure_desc": null,
+        "total_size_desc": null,
         "is_sentinel": true,
-        "is_multifocal": false,
-        "is_multicentric": false,
+        "is_multifocal": null,
+        "is_multicentric": null,
         "treatment_response": null,
         "nodes_examined": 3,
         "nodes_positive": 0,
+        "nodes_previously_positive": 1,
         "findings": [
           {
             "is_lymph_node": true,
             "finding_status": "not_cancerous",
-            "finding_summary": "Three sentinel lymph nodes examined, no tumour seen (0/3).",
-            "features": [],
+            "finding_summary": "Three sentinel lymph nodes examined, no tumour seen (0/3). One node shows fibrosis in keeping with previous involvement.",
+            "features": [
+              {
+                "feature": "fibrosis",
+                "feature_name_desc": null,
+                "feature_status": "present"
+              }
+            ],
             "morphology": null,
             "invasion_status": null,
             "tumour_nature": null,
@@ -145,17 +176,19 @@
         "anatomical_subsite": null,
         "laterality": "right",
         "procedure_desc": "vacuum-assisted biopsy",
+        "total_size_desc": null,
         "is_sentinel": false,
-        "is_multifocal": false,
-        "is_multicentric": false,
+        "is_multifocal": null,
+        "is_multicentric": null,
         "treatment_response": null,
         "nodes_examined": null,
         "nodes_positive": null,
+        "nodes_previously_positive": null,
         "findings": [
           {
             "is_lymph_node": false,
             "finding_status": "uncertain",
-            "finding_summary": "Atypical ductal hyperplasia (B3); malignancy cannot be excluded, excision advised.",
+            "finding_summary": "Atypical ductal hyperplasia (B3); malignancy cannot be excluded, excision advised. ER not assessable; HER2 not performed.",
             "features": [
               {
                 "feature": "atypia",
@@ -177,6 +210,13 @@
                 "biomarker_status": "not_assessable",
                 "method": null,
                 "result_value": "could not be assessed; insufficient lesional tissue in the block"
+              },
+              {
+                "biomarker": "erbb2_her2",
+                "biomarker_name_desc": "HER2",
+                "biomarker_status": "not_performed",
+                "method": null,
+                "result_value": "not performed"
               }
             ],
             "scores": [
@@ -191,6 +231,6 @@
         "margins": []
       }
     ],
-    "report_summary": "Left breast wide local excision shows an 18mm invasive carcinoma of no special type, Nottingham grade 2, with associated high-grade DCIS showing comedo necrosis. Lymphovascular invasion not identified; perineural invasion suspected. Deep margin clear at 3mm. ER and PR positive, HER2 negative. Three sentinel axillary nodes are free of tumour (0/3). Right breast biopsy shows atypical ductal hyperplasia (B3) with malignancy not excluded; ER not assessable."
+    "report_summary": "Left breast wide local excision shows an 18mm invasive carcinoma of no special type, Nottingham grade 2, with associated high-grade DCIS showing comedo necrosis. Pleomorphic LCIS is also present, and the tumour is unifocal with a total extent of 30mm. Lymphovascular invasion not identified; perineural invasion suspected. Deep margin clear at 3mm. ER and PR positive, HER2 negative. Three sentinel axillary nodes are free of tumour (0/3), with one showing fibrosis from previous involvement. Right breast biopsy shows atypical ductal hyperplasia (B3) with malignancy not excluded; ER not assessable and HER2 not performed."
   }
 }

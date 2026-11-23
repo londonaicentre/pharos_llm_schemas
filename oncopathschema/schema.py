@@ -249,6 +249,10 @@ class FeatureType(str, Enum):
     MICROPAPILLARY_ARCHITECTURE = "micropapillary_architecture"
     PAPILLARY_ARCHITECTURE = "papillary_architecture"
 
+    # In-situ lobular subtype
+    LCIS_CLASSICAL = "lcis_classical"
+    LCIS_PLEOMORPHIC = "lcis_pleomorphic"
+
 
 class FeatureStatus(str, Enum):
     """Whether the report explicitly states a feature to be
@@ -399,6 +403,7 @@ class BiomarkerStatus(str, Enum):
     EQUIVOCAL = "equivocal"
     # where explicitly stated borderline/indeterminate
     NOT_ASSESSABLE = "not_assessable"  # e.g. insufficient tumour cells / failed stain
+    NOT_PERFORMED = "not_performed"  # report explicitly states the test was not done
 
 
 class BiomarkerMethod(str, Enum):
@@ -458,7 +463,8 @@ class Feature(BaseModel):
         description="Histological feature. Use OTHER if not in enum."
     )
     feature_name_desc: str | None = Field(
-        None, description="Name of the feature as described in the report"
+        None,
+        description="Feature as specifically named in the report (e.g. 'atypical ductal hyperplasia')",
     )
     feature_status: FeatureStatus = Field(
         description="Whether the report stated this feature to be present, absent, or possible"
@@ -523,7 +529,7 @@ class SpecimenFinding(BaseModel):
     )
     dimensions_desc: str | None = Field(
         None,
-        description="Direct extract of the TUMOUR's own reported size only (e.g. '40x30x35mm', '2mm focus in a 14mm core'). Not the size of the specimen, container or cores received, and not a distance of spread. Count or ratio of nodes belong on Specimen.nodes_examined/nodes_positive.",
+        description="Direct extract of the TUMOUR's own reported size only (e.g. '40x30x35mm', '2mm focus in a 14mm core'). Not the size of the specimen, container or cores received, and not a distance of spread. Count or ratio of nodes belong on Specimen.nodes_examined/nodes_positive. A combined total across components belongs on Specimen.total_size_desc.",
     )
 
     # results specific to this finding
@@ -559,17 +565,21 @@ class Specimen(BaseModel):
         None,
         description="Direct extract naming how the specimen was obtained (e.g. 'radical nephrectomy', 'TURBT', '4mm punch biopsy', 'slide review')",
     )
+    total_size_desc: str | None = Field(
+        None,
+        description="Direct extract of total tumour size, including any in-situ component, where stated (e.g. 'total extent 40mm'). Only where explicitly stated, not a calculated sum.",
+    )
     is_sentinel: bool = Field(
         False,
         description="True if any node in this specimen was taken as a sentinel node (e.g. 'sentinel node x3')",
     )
-    is_multifocal: bool = Field(
-        False,
-        description="True if two or more discrete tumour foci are described in the same quadrant/region of this specimen",
+    is_multifocal: bool | None = Field(
+        None,
+        description="True if two or more discrete tumour foci are described in the same quadrant/region of this specimen. False only if explicitly stated (e.g. 'unifocal'). None if not stated",
     )
-    is_multicentric: bool = Field(
-        False,
-        description="True if two or more discrete tumour foci are described in different quadrants/regions of this specimen",
+    is_multicentric: bool | None = Field(
+        None,
+        description="True if two or more discrete tumour foci are described in different quadrants/regions of this specimen. False only if explicitly states single centre. None if not stated",
     )
     treatment_response: TreatmentResponseStatus | None = Field(
         None,
@@ -583,7 +593,12 @@ class Specimen(BaseModel):
     nodes_positive: int | None = Field(
         None,
         ge=0,
-        description="Total number of lymph nodes involved in this specimen, if stated",
+        description="Total number of lymph nodes involved in this specimen, if stated. Does NOT include previously involved nodes.",
+    )
+    nodes_previously_positive: int | None = Field(
+        None,
+        ge=0,
+        description="Number of lymph nodes that now show only treatment effect (e.g. fibrosis, scarring) with no residual tumour, e.g. after neoadjuvant therapy. NOT counted in nodes_positive.",
     )
     findings: list[SpecimenFinding] = Field(
         default_factory=list,

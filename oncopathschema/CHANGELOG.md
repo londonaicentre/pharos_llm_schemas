@@ -1,5 +1,32 @@
 # Changelog
 
+## [0.7.0] - 2026-11-23 [EJ/JZ]
+
+Arising from the second PharosAI feedback round (October 2026).
+
+### Fields added
+
+- **`Specimen.total_size_desc: str | None`**: direct extract of a stated total tumour size across components, including any in-situ component. Not a sum calculated from findings. `SpecimenFinding.dimensions_desc` now points to it.
+- **`Specimen.nodes_previously_positive: int | None`**: nodes described as previously involved, now showing only treatment effect (e.g. fibrosis) with no residual tumour. Not counted in `nodes_positive`.
+- **`FeatureType` gains `LCIS_CLASSICAL`, `LCIS_PLEOMORPHIC`**, alongside the DCIS members.
+- **`BiomarkerStatus` gains `NOT_PERFORMED`**: report explicitly states the test was not done. Pending results remain unextracted, so the two stay distinct.
+
+### Changes
+
+- **`Specimen.is_multifocal` / `is_multicentric` -> `bool | None`, default `None`.** `False` only where the report explicitly states a single focus/centre, so an explicit negative can be told apart from no value.
+- **`Feature.feature_name_desc`** now also carries the specific named lesion where one is given (e.g. 'atypical ductal hyperplasia', 'intraductal papilloma'), not only for `OTHER`.
+
+### Domain rules / prompt changes
+
+- Reiteration rule extended: where the report is silent use `None` (or omit); record `False`, absent or not performed only where the report says so.
+- `example.json` updated to cover the new fields.
+
+### Pharos feedback deferred or rejected
+
+- Named benign and atypical lesions not added to `FeatureType`: schema is at its complexity limit. Named lesion is captured in `feature_name_desc` instead; current values remain the category tier.
+- In-situ component member on `FeatureType` not added: an absent in-situ component is rarely stated explicitly, and recording it would invite inference. Explicit negatives for multifocality are carried by the `bool | None` change.
+- Lesion grouping key on `SpecimenFinding` not added, to avoid adding structure; the stated total is extracted via `total_size_desc`.
+
 ## [0.5.0] - 2026-09-14 [EJ/JZ]
 
 Arising from the PharosAI pathology schema review (JB, 2026-09-02).

@@ -9,12 +9,14 @@
       "anatomical_subsite": "upper outer quadrant",
       "laterality": "left",
       "procedure_desc": "mastectomy",
+      "total_size_desc": null,
       "is_sentinel": false,
       "is_multifocal": true,
-      "is_multicentric": false,
+      "is_multicentric": null,
       "treatment_response": null,
       "nodes_examined": null,
       "nodes_positive": null,
+      "nodes_previously_positive": null,
       "findings": [
         {
           "is_lymph_node": false,
@@ -46,8 +48,14 @@
         {
           "is_lymph_node": false,
           "finding_status": "cancerous",
-          "finding_summary": "Second of two separate foci of invasive carcinoma of no special type in the upper outer quadrant, 8mm, Nottingham grade 2.",
-          "features": [],
+          "finding_summary": "Second of two separate foci of invasive carcinoma of no special type in the upper outer quadrant, 8mm, Nottingham grade 2. Lymphovascular invasion is present.",
+          "features": [
+            {
+              "feature": "lymphovascular_invasion",
+              "feature_name_desc": null,
+              "feature_status": "present"
+            }
+          ],
           "morphology": "invasive_carcinoma_nst",
           "invasion_status": "invasive",
           "tumour_nature": "not_stated_unclear",
